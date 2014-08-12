@@ -1,0 +1,31 @@
+# Site settings
+title: Homeflow
+email: support@homeflow.co.uk
+description: "Welcome to the Homeflow API Documentation"
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: 48b5cc #80B3FF
+  secondary: 2c3b4b #FD6E8A
+  secondary-dark: 233140 #A2122F
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: http://twitter.com/homeflow
+  - title: facebook
+    url: http://www.facebook.com/homeflow
+  - title: github
+    url: http://github.com/homeflow
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: Unit 7
+  - line: Commodore House
+  - line: Battersea Reach
+  - line: London
+  - line: SW18 1TW
+
+# Build settings
+markdown: kramdown
+permalink: pretty

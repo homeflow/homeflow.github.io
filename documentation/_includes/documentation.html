@@ -1,0 +1,38 @@
+<section id="api">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                {% for post in site.posts %}
+                    <div class="api-item">
+                        <h3>{{ post.title }}</h3>
+                        <p>{{ post.description }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="col-lg-4">
+                <div class="js-toggle-list sidebar-module expandable">
+                    <ul>
+                        <li class="js-topic js-current">
+                            <h3>
+                                <a data-proofer-ignore="" class="js-expand-btn arrow-btn expanded" href="#"></a>
+                                <a href="/">Home</a>
+                            </h3>
+                        </li>
+                        <li>
+                            <h3>
+                                <a data-proofer-ignore="" class="js-expand-btn arrow-btn expanded" href="#"></a>
+                                <a href="/v3/">Getting Started</a>
+                            </h3>
+                            <ul class="js-guides">
+                              <li><a href="/v3/media/">Theme folder structure</a></li>
+                              <li><a href="/v3/oauth/">The layout file</a></li>
+                              <li><a href="/v3/oauth_authorizations/">Building up the layout</a></li>
+                              <li><a href="/v3/auth/">Running your theme</a></li>       
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
