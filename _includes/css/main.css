@@ -34,8 +34,12 @@ pre code {
 }
 
 .api-item h3 {
-    margin: 0;
+    margin: 25px 0 0 0;
     padding: 10px 0 10px 0;
+}
+
+.api-item h3:first-child {
+    margin-top:0;
 }
 
 body {
