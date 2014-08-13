@@ -4,6 +4,26 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+.api-item {
+    padding-bottom: 25px;
+}
+
+.sidebar-posts {
+    padding-top: 25px;
+}
+
+.navbar {
+    padding: 25px 0;
+    transition: padding 0.3s ease 0s;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.api-item h3 {
+    margin: 0;
+    padding: 10px 0 10px 0;
+}
+
 body {
     overflow-x: hidden;
 }
@@ -86,8 +106,7 @@ header {
 }
 
 header .container {
-    padding-top: 50px;
-    padding-bottom: 2px;
+    padding-bottom: 10px;
 }
 
 header img {
@@ -110,8 +129,8 @@ header .intro-text .skills {
 
 @media(min-width:768px) {
     header .container {
-        padding-top: 115px;
-        padding-bottom: 16px;
+        padding-top: 0;
+        padding-bottom: 8px;
     }
 
     header .intro-text .name {
@@ -171,7 +190,7 @@ header .intro-text .skills {
 }
 
 section {
-    padding: 50px 0;
+    padding: 25px 0;
 }
 
 section h2 {
@@ -186,11 +205,11 @@ section.success {
 
 @media(max-width:767px) {
     section {
-        padding: 75px 0;
+        padding: 25px 0;
     }
 
     section.first {
-        padding-top: 75px;
+        padding-top: 25px;
     }
 }
 
@@ -442,4 +461,8 @@ footer .footer-below {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
+}
+
+.sidebar-list {
+    padding-top:50px;
 }

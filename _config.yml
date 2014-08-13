@@ -1,7 +1,8 @@
 # Site settings
-title: Homeflow
+
+title: Homeflow API Documentation
 email: support@homeflow.co.uk
-description: "Welcome to the Homeflow API Documentation"
+description: "Welcome to the Homeflow API Documentation. Learn how to create powerful and beautiful estate agency websites."
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
