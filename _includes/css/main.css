@@ -45,6 +45,7 @@
 .sidebar-posts h4 a:active,
 .sidebar-posts h4 a:focus {
     text-decoration: none;
+    color: #{{ site.color.primary }};
 }
 
 .sidebar-posts h4 {
@@ -71,6 +72,28 @@
     background-color: #f9f9f9;
     border-bottom: 1px solid #eee;
 }
+
+/* tier 3 */
+
+.sidebar-posts .tier2-li {
+    background-color: #ffffff;
+    border-bottom: none;
+}
+
+.sidebar-posts h4 .tier2-a:hover {
+    background-color:#ffffff;
+}
+
+.sidebar-posts h4 .tier2-a {
+    padding: 7px 0 7px 32px;
+    background-position: 3px -5px;
+}
+
+.sidebar-posts .tier2-a {
+    padding: 6px 0 3px 38px;
+}
+
+/* tier3 end */
 
 .sidebar-posts li ul ul li:last-child {
     border-bottom: none;
