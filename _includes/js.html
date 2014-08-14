@@ -23,7 +23,7 @@
 
             $("#js-sidebar").sticky({topSpacing:0});
 
-            $('.sidebar-posts > li').each(function(i){
+            $('ul > li').each(function(i){
                 $(this).bind('click', function(event){
                     $('.sidebar-posts ul').hide(); // hide all the other ULs
                     $('.arrow-btn').removeClass('expanded'); // remove any expanded classes
@@ -32,9 +32,9 @@
                 });     
             });  
 
-            $('.sidebar-posts li ul li').each(function(i){
+            $('ul li > ul li').each(function(i){
                 $(this).bind('click', function(event){
-                    $('.sidebar-posts li ul li').removeClass('active'); // remove any active classes
+                    $('ul li ul li').removeClass('active'); // remove any active classes
                     $(this).addClass('active') // add active class to nested link
                 });     
             });  
