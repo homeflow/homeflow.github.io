@@ -27,7 +27,6 @@
                 $(this).bind('click',function(e){
                     $('.sidebar-posts ul').hide(); // hide all the other ULs
                     $(this).find('ul').toggle(); // toggle the clicked li's nested ul
-                    e.stopPropagation();
                 });   
             });
         });      
