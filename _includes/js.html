@@ -19,15 +19,17 @@
     <script src="{{ "/js/jquery.sticky.js" | prepend: site.baseurl }}"></script>
 
     <script>
-        $(document).ready(function() {
+        $(document).ready(function(){
 
             $("#js-sidebar").sticky({topSpacing:0});
 
             $('.sidebar-posts li').each(function(i){
-                $(this).bind('click',function(e){
+                $(this).bind('click', function(e){
                     $('.sidebar-posts ul').hide(); // hide all the other ULs
                     $(this).find('ul').toggle(); // toggle the clicked li's nested ul
-                });   
-            });
-        });      
+                    $('.arrow-btn').removeClass('expanded'); // remove any expanded classes
+                    $(this).find( '.arrow-btn' ).addClass('expanded'); // just add clicked expanded
+                });     
+            });  
+        }); 
     </script>
