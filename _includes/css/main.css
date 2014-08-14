@@ -73,7 +73,7 @@
     border-bottom: 1px solid #eee;
 }
 
-/* tier 3 */
+/* tier 2 */
 
 .sidebar-posts .tier2-li {
     background-color: #ffffff;
@@ -86,14 +86,17 @@
 
 .sidebar-posts h4 .tier2-a {
     padding: 7px 0 7px 32px;
-    background-position: 3px -5px;
+}
+
+.tier2-a-expanded {
+    background-position: -35px -7px !important;
 }
 
 .sidebar-posts .tier2-a {
     padding: 6px 0 3px 38px;
 }
 
-/* tier3 end */
+/* tier 2 end */
 
 .sidebar-posts li ul ul li:last-child {
     border-bottom: none;
