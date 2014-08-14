@@ -137,6 +137,10 @@
     border-radius: 0;
 }
 
+.navbar-brand {
+    padding: 13.5px 15px 20.5px;
+}
+
 code {
     background-color: rgba(0, 0, 0, 0.04);
     border-radius: 3px;
