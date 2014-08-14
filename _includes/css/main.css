@@ -41,7 +41,9 @@
     color: #666;
 }
 
-.sidebar-posts h4 a:hover {
+.sidebar-posts h4 a:hover,
+.sidebar-posts h4 a:active,
+.sidebar-posts h4 a:focus {
     text-decoration: none;
 }
 
@@ -53,6 +55,10 @@
     border-bottom: 1px solid #eee;
     color: #666;
     position: relative;
+}
+
+.sidebar-module ul ul {
+   display: none;
 }
 
 .sidebar-posts,
@@ -92,7 +98,7 @@
     border-radius: 4px;
     margin-bottom: 20px;
     overflow: hidden;
-    margin-top: 40px;
+    margin-top: 30px;
     font-size: 14px;
 }
 
