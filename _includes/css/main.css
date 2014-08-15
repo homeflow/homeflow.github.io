@@ -41,6 +41,14 @@
     color: #666;
 }
 
+li.active a {
+    font-weight: bold;
+}
+
+li.active {
+    background-color: #f2f2f2;
+}
+
 .sidebar-posts h4 a:hover,
 .sidebar-posts h4 a:active,
 .sidebar-posts h4 a:focus {
@@ -69,7 +77,6 @@
 }
 
 .sidebar-posts li ul li {
-    background-color: #f9f9f9;
     border-bottom: 1px solid #eee;
 }
 
@@ -104,7 +111,6 @@
 
 .sidebar-posts li ul li a {
     display: block;
-    font-weight: normal;
     padding: 6px 0 3px 31px;
     text-decoration: none;
 }

@@ -821,8 +821,27 @@ In principle, Draw a Map works straight out of the box and will immediately appe
 {% highlight css %}
 .leaflet-control-title-interior
 
+'Sketch-A-Search' box styles
+
+
 .leaflet-draw-toolbar .leaflet-draw-edit-edit.leaflet-disabled
 
+<<<<<<< HEAD
+Edit styles
+
+.leaflet-draw-actions li:last-child a
+
+Cancel button
+
+.leaflet-draw-actions li:first-child a
+
+Save button
+
+
+It is possible to extensively retheme draw a map (see: www.leaders.co.uk ) but that is beyond the scope of this documentation.
+
+
+=======
 .leaflet-draw-actions li:last-child a
 
 .leaflet-draw-actions li:first-child a
@@ -831,6 +850,7 @@ In principle, Draw a Map works straight out of the box and will immediately appe
 {% endhighlight %}
 
 It is possible to extensively re-theme Draw a Map (see: [Leaders](http://www.leaders.co.uk)).
+>>>>>>> 75a49d147bde693027628333bc3d52a400f22c52
 
 ###The property show page
 
