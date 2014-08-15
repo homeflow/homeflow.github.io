@@ -35,18 +35,21 @@
             });  
 
             // add/remove active from clicked li tier2
-            $('.tier2 li').each(function(i){
+            $('.tier2 > li').each(function(i){
                 $(this).bind('click', function(event){
                     $('.tier2 > li').removeClass('active'); // remove any active classes
+                    $('.tier3 > li').removeClass('active'); // remove any active classes
                     $(this).addClass('active') // add active class to nested link
-                    $('.tier3-top-level').removeClass('active'); // remove active from tier3 li
+                    console.log('here')
                 });     
             });  
 
              // add/remove active from clicked li tier3
-            $('.tier3 li').each(function(i){
+            $('.tier3 > li').each(function(i){
                 $(this).bind('click', function(event){
-                    $('.tier3 li').removeClass('active'); // remove any active classes
+                    event.stopPropagation();
+                    $('.tier2 > li').removeClass('active'); // remove any active classes
+                    $('.tier3 > li').removeClass('active'); // remove any active classes
                     $(this).addClass('active') // add active class to nested link
                 });     
             }); 
