@@ -66,7 +66,7 @@ li.active {
     position: relative;
 }
 
-.sidebar-module ul ul {
+.sidebar-module .tier2 {
    display: none;
 }
 
