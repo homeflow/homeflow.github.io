@@ -3,37 +3,23 @@
         <div class="footer-above">
             <div class="container">
                 <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>
-                            {% for adress in site.address %}
-                                {{ adress.line }} <br>
-		                    {% endfor %}
-                        </p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
-                        <ul class="list-inline">
-                            {% for network in site.social %}
-                            <li>
-                                <a href="{{ network.url }}" class="btn-social btn-outline"><i class="fa fa-fw fa-{{ network.title }}"></i></a>
+                    <ul class="social">
+                        <li><a href="https://twitter.com/homeflow" target="_blank"><img width="50" height="50" alt="Twitter" src="http://www.homeflow.co.uk/wp-content/uploads/twitter.png"></a></li>
+                        <li><a href="https://www.facebook.com/HomeflowUK" target="_blank"><img width="50" height="50" alt="Facebook" src="http://www.homeflow.co.uk/wp-content/uploads/facebook.png"></a></li>
+                        <li><a href="http://www.linkedin.com/company/homeflow" target="_blank"><img width="50" height="50" alt="LinkedIn" src="http://www.homeflow.co.uk/wp-content/uploads/linkedin.png"></a></li>
+                        <li><a href="https://plus.google.com/117698424869229176210/posts " target="_blank"><img width="50" height="50" alt="Google Plus" src="http://www.homeflow.co.uk/wp-content/uploads/google-plus.png"></a></li>
+                    </ul>
+                    <div class="footer-nav">
+                        <ul class="menu" id="menu-footer-menu">
+                            <li class="menu-item">
+                                <a href="http://www.homeflow.co.uk/terms/">Terms &amp; conditions</a>
                             </li>
-		                    {% endfor %}
+                            <li class="menu-item">
+                                <a href="http://www.homeflow.co.uk/sitemap/">Sitemap</a>
+                            </li>
                         </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>About</h3>
-                        <p>Homeflow provides developers with a comprehensive set of tools that enables them to create powerful and beautiful estate agency websites.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; {{ site.title }} 20{{ site.time | date: '%y' }}
-                    </div>
+                        <p>&copy; Copyright 2014</p>
+                    </div> 
                 </div>
             </div>
         </div>

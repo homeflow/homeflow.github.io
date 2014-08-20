@@ -8,7 +8,9 @@ description: "Welcome to the Homeflow API Documentation. Learn how to create pow
 color:
   primary: 48b5cc #80B3FF
   secondary: 2c3b4b #FD6E8A
-  secondary-dark: 233140 #A2122F
+  footer: 3c3c3c #A2122F
+  links: ff6600 #A2122F
+  hover: 48b5cc #A2122F
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
