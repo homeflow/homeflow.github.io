@@ -32,7 +32,7 @@
 .sidebar-shell {
     margin: 0;
     position: relative;
-    width: 300px;
+    width: 255px;
 }
 
 .sidebar-posts h4 a {
@@ -130,11 +130,50 @@ li.active {
     border-radius: 4px;
     margin-bottom: 20px;
     overflow: hidden;
-    margin-top: 30px;
+    margin-top: 33px;
     font-size: 14px;
 }
 
 /* end sidebar */
+
+/* from HF WP */
+
+#hero-span {
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+#content-span {
+    background-color: #e2e2e2;
+    color: #3a3a3a;
+}
+.full-width {
+    min-width: 100%;
+    width: 100%;
+}
+
+#content-inner {
+    top: -30px;
+    width: 100%;
+    position: relative;
+}
+
+.content {
+    background-color: #fff;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.fixed-width {
+    /*margin: 0 auto;
+    max-width: 1170px;
+    width: auto;*/
+    padding: 20px 2%;
+}
+
+/* HF WP */
 
 .navbar {
     padding: 25px 0;
@@ -161,9 +200,16 @@ pre code {
     white-space: inherit;
 }
 
+#api h3 {
+    font-size: 30px;
+    margin-top: 2px;
+}
+
 .api-item h3 {
     margin: 25px 0 0 0;
     padding: 10px 0 10px 0;
+    color: #8f949b;
+    font-size: 20px !important;
 }
 
 .api-item h3:first-child {
@@ -250,7 +296,7 @@ hr.star-primary:after {
 header {
     text-align: left;
     color: #fff;
-    background: #{{ site.color.primary }};
+    /*background: #{{ site.color.primary }};*/
 }
 
 header .container {
@@ -318,6 +364,8 @@ header .intro-text .skills {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.36);
+    color: #fff;
 }
 
 .navbar a:focus {
