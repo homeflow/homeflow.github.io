@@ -222,6 +222,12 @@ ul.social li a:hover {
 
 /* HF WP END */
 
+.btn-primary {
+    background-color: #{{ site.color.footer }};
+    border-color: #{{ site.color.footer }};
+    color: #ffffff;
+}
+
 .navbar {
     padding: 25px 0;
     transition: padding 0.3s ease 0s;
@@ -254,7 +260,7 @@ pre code {
 
 .api-item h3 {
     margin: 25px 0 25px 0;
-    padding: 10px 0 25px 0;
+    padding: 10px 0 24px 0;
     color: #8f949b;
     font-size: 20px !important;
     border-bottom: 1px solid #e2e2e2;

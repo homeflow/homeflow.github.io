@@ -2,20 +2,29 @@
 <html>
 
   	{% include head.html %}
+
     <body id="page-top" class="index">
 
-	    {% include header.html %}
+    	{% include header.html %}
 
-	    <div class="container">
-	    	<div class="row">
-			    <div class="col-lg-12">
-	   				<section>
-					    {{ content }}
-					</section>
-	   			</div>
-	   		</div>
-	   	</div>
-
+	    <div class="full-width" id="content-span">
+			<div id="content-inner">
+		        <!--<div class="content fixed-width">-->
+		        	
+				    <div class="container content fixed-width">
+				    	<div class="row">
+						    <div class="col-lg-12">
+				   				<section>
+								    {{ content }}
+								</section>
+		   					</div>
+						</div>
+					</div>	        	
+			        		
+				<!--</div>-->
+			</div>
+		</div>
+	    	
 	    {% include footer.html %}
 	    {% include js.html %}
 
