@@ -228,7 +228,7 @@ ul.social li a:hover {
 }
 
 .navbar {
-    padding: 25px 0;
+    padding: 25px 0 0 0;
     transition: padding 0.3s ease 0s;
     margin-bottom: 0;
     border-radius: 0;
@@ -271,7 +271,7 @@ pre code {
 
 body {
     overflow-x: hidden;
-    font-family: "Helvetica",Helvetica,Arial,sans-serif;
+    font-family: "proxima-nova",sans-serif;
     font-size: 18px;
 }
 
@@ -417,12 +417,63 @@ header .intro-text .skills {
     }
 }
 
+/* HF WP Menu Styles */
+
+a#mobile-nav {
+    display: none;
+}
+
+.nav {
+    float: left;
+    width: 78%;
+}
+
+.nav ul {
+    font-size: 14px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 33px 0 0;
+    text-align: right;
+}
+
+.nav ul li {    
+    display: inline-block;
+    float: none;
+    margin-left: -4px;
+}
+
+.nav ul li a {
+    border-radius: 2px;
+    color: #b9c6d3;
+    display: block;
+    /*height: 40px;
+    line-height: 25px;*/
+    padding: 0 12px;
+    font-weight: 400;
+    text-transform: none;
+}
+
+.nav ul li.top-level a {
+    border-radius: 2px 2px 0 0;
+    padding-bottom: 19px;
+    padding-top: 4px;
+}
+
+.nav ul li.current-menu-item a {
+    background-color: transparent;
+    color: #ff6600;
+}
+
+.nav ul li a:hover {
+    background-color: #304d5d;
+    color: #ff6600;
+}
+
+/* HF WP Menu Styles End */
+
 .navbar {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    font-family: "proxima-nova",sans-serif;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.36);
-    color: #fff;
 }
 
 .navbar a:focus {
