@@ -4,6 +4,10 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+.navbar-header {
+    float: left;
+}
+
 .api-item {
     padding-bottom: 25px;
 }
@@ -221,6 +225,60 @@ ul.social li a:hover {
 
 /* HF WP END */
 
+/* HF WP Menu Styles */
+
+a#mobile-nav {
+    display: none;
+}
+
+.nav {
+    float: left;
+    width: 78%;
+}
+
+.nav ul {
+    font-size: 14px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 33px 0 0;
+    text-align: right;
+}
+
+.nav ul li {    
+    display: inline-block;
+    float: none;
+    margin-left: -4px;
+}
+
+.nav ul li a {
+    border-radius: 2px;
+    color: #b9c6d3;
+    display: block;
+    /*height: 40px;
+    line-height: 25px;*/
+    padding: 0 12px;
+    font-weight: 400;
+    text-transform: none;
+}
+
+.nav ul li.top-level a {
+    border-radius: 2px 2px 0 0;
+    padding-bottom: 19px;
+    padding-top: 4px;
+}
+
+.nav ul li.current-menu-item a {
+    background-color: transparent;
+    color: #ff6600;
+}
+
+.nav ul li a:hover {
+    background-color: #304d5d;
+    color: #ff6600;
+}
+
+/* HF WP Menu Styles End */
+
 .btn-primary {
     background-color: #{{ site.color.footer }};
     border-color: #{{ site.color.footer }};
@@ -415,61 +473,12 @@ header .intro-text .skills {
     .navbar-fixed-top.navbar-shrink .navbar-brand {
         font-size: 1.5em;
     }
+
+    .nav {
+        float: none;
+        width: 98%;
+    }
 }
-
-/* HF WP Menu Styles */
-
-a#mobile-nav {
-    display: none;
-}
-
-.nav {
-    float: left;
-    width: 78%;
-}
-
-.nav ul {
-    font-size: 14px;
-    list-style: none outside none;
-    margin: 0;
-    padding: 33px 0 0;
-    text-align: right;
-}
-
-.nav ul li {    
-    display: inline-block;
-    float: none;
-    margin-left: -4px;
-}
-
-.nav ul li a {
-    border-radius: 2px;
-    color: #b9c6d3;
-    display: block;
-    /*height: 40px;
-    line-height: 25px;*/
-    padding: 0 12px;
-    font-weight: 400;
-    text-transform: none;
-}
-
-.nav ul li.top-level a {
-    border-radius: 2px 2px 0 0;
-    padding-bottom: 19px;
-    padding-top: 4px;
-}
-
-.nav ul li.current-menu-item a {
-    background-color: transparent;
-    color: #ff6600;
-}
-
-.nav ul li a:hover {
-    background-color: #304d5d;
-    color: #ff6600;
-}
-
-/* HF WP Menu Styles End */
 
 .navbar {
     font-family: "proxima-nova",sans-serif;
@@ -514,6 +523,11 @@ section.success {
 
     section.first {
         padding-top: 25px;
+    }
+
+    .nav {
+        float: none;
+        width: 98%;
     }
 }
 
