@@ -251,20 +251,15 @@ a#mobile-nav {
 }
 
 .nav ul li a {
-    border-radius: 2px;
     color: #b9c6d3;
     display: block;
-    /*height: 40px;
-    line-height: 25px;*/
-    padding: 0 12px;
     font-weight: 400;
     text-transform: none;
 }
 
 .nav ul li.top-level a {
     border-radius: 2px 2px 0 0;
-    padding-bottom: 19px;
-    padding-top: 4px;
+    padding: 4px 12px 19px 12px;
 }
 
 .nav ul li.current-menu-item a {
@@ -783,4 +778,46 @@ footer .footer-below {
 
 .sidebar-list {
     padding-top:50px;
+}
+
+@media(max-width:622px) {
+    .navbar-header {
+        float: none;
+    }
+
+    .nav {
+        width: auto;
+    }
+
+    .nav ul {
+        text-align: left;
+    }
+}
+
+@media(max-width:377px) {
+    .navbar-header {
+        float: none;
+    }
+
+    .nav {
+        width: auto;
+    }
+
+    .nav ul {
+        text-align: left;
+        padding: 20px 0;
+    }
+
+    .nav ul li {
+        display: block;
+    }
+
+    .nav ul li a {
+       
+    }
+
+    .nav ul li.top-level a {
+        border-radius: 0;
+        padding: 10px 12px;
+    }
 }
