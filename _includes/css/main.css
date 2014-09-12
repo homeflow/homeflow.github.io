@@ -60,6 +60,7 @@ li.active {
     border-bottom: 1px solid #eee;
     color: #666;
     position: relative;
+    text-transform: uppercase;
 }
 
 .sidebar-module .tier2 {
@@ -356,7 +357,6 @@ h3,
 h4,
 h5,
 h6 {
-    text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
