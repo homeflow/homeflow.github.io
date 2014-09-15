@@ -33,12 +33,6 @@
     background-position: -43px -7px;
 }
 
-.sidebar-shell {
-    margin: 0;
-    position: relative;
-    width: 255px;
-}
-
 .sidebar-posts h4 a {
     padding: 7px 0 7px 25px;
     display: block;
@@ -130,6 +124,7 @@ li.active {
     overflow: hidden;
     margin-top: 33px;
     font-size: 14px;
+    width: 255px;
 }
 
 /* end sidebar */
