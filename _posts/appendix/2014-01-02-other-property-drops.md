@@ -4,11 +4,7 @@ title: Other property drops
 modal-id: other-property-drops
 categories: appendix
 ---
-{% highlight html %}
-{% raw %}
-{{property.available_on}}
-{% endraw %}
-{% endhighlight %}
+``{% raw %}{{property.available_on}}{% endraw %}``
 
 If supplied, the date the property is available.
 
