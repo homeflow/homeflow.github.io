@@ -2,6 +2,7 @@
 layout: default
 title: Building up the layout
 modal-id: building-up-the-layout
+categories: getting_started
 ---
 Other than the Liquid directives in the head section, the ``content_for_layout`` we saw earlier and the Ctesius boot, the ``application.liquid`` file is constructed just the same as a regular web page - add your classes and IDs, divs and CSS in the normal way and style them up using your theme CSS. Be sure to to put it in the stylesheets directive and make sure the names match up:
 

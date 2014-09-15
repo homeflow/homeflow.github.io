@@ -2,6 +2,7 @@
 layout: default
 title: Displaying search results
 modal-id: displaying-search-results
+categories: property_searching
 ---
 After the form has been submitted, Ctesius and Hestia will go off an fetch the results - normally ten per page though this is configurable. A JSON response is returned and Liquid loops through and displays the results.
 

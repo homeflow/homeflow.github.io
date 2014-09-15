@@ -2,6 +2,7 @@
 layout: default
 title: Constructing a property search form
 modal-id: constructing-a-property-search-form
+categories: property_searching
 ---
 Somewhere in your application layout file you're likely to have a property search form. There are a myriad of filter options you can show and a couple of methods of searching which we'll explore later, but for now is a basic form is below. Note we have stripped any classes or styling to keep it as simple as possible:
 

@@ -2,6 +2,7 @@
 layout: default
 title: The footer
 modal-id: the-footer
+categories: application_and_homepage
 ---
 Again, the footer is an area where you can hardcode in your design and content, or you can manage the content using the Agent/Portal admin and the ``content chunks`` we have made available. ``Content chunks`` are well-known content areas that get used on all sites - e.g. a header, footer, sidebar and so on. If we add some content to the footer chunk we can then render it out.
 

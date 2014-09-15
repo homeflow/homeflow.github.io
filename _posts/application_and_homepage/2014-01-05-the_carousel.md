@@ -2,6 +2,7 @@
 layout: default
 title: The carousel
 modal-id: the-carousel
+categories: application_and_homepage
 ---
 Many agency sites and indeed portals have what we refer to as a ``carousel`` on their home page. This is a gallery of images with text overlays designed to give the user an attractive initial presentation and to give your site the 'wow' factor. At the time of writing, many theme developers are using full width images within their carousel as well as responsive images to cater for different viewports.
 

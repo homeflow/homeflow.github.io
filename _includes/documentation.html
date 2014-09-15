@@ -1,9 +1,63 @@
 <section id="api">
 	<h3>{{page.title}}</h3>
-    {% for post in site.posts reversed %}
-        <div class="api-item" id="{{post.modal-id}}">
-            <h3>{{ post.title }}</h3>
-          	<p>{{ post.content }}</p>
+    {% for post in site.categories['overview'] reversed %}
+    	<div class="api-item" id="{{post.modal-id}}">
+    		<h3>{{ post.title }}</h3>
+        	<p>{{ post.content }}</p>
+        </div>
+    {% endfor %}
+    {% for post in site.categories['getting_started'] reversed %}
+    	<div class="api-item" id="{{post.modal-id}}">
+    		<h3>{{ post.title }}</h3>
+        	<p>{{ post.content }}</p>
+        </div>
+    {% endfor %}
+    {% for post in site.categories['application_and_homepage'] reversed %}
+    	<div class="api-item" id="{{post.modal-id}}">
+    		<h3>{{ post.title }}</h3>
+        	<p>{{ post.content }}</p>
+        </div>
+    {% endfor %}
+    {% for post in site.categories['property_searching'] reversed %}
+    	<div class="api-item" id="{{post.modal-id}}">
+    		<h3>{{ post.title }}</h3>
+        	<p>{{ post.content }}</p>
+        </div>
+    {% endfor %}
+    {% for post in site.categories['draw_a_map'] reversed %}
+    	<div class="api-item" id="{{post.modal-id}}">
+    		<h3>{{ post.title }}</h3>
+        	<p>{{ post.content }}</p>
+        </div>
+    {% endfor %}
+    {% for post in site.categories['property_show_page'] reversed %}
+    	<div class="api-item" id="{{post.modal-id}}">
+    		<h3>{{ post.title }}</h3>
+        	<p>{{ post.content }}</p>
+        </div>
+    {% endfor %}
+    {% for post in site.categories['working_with_agencies'] reversed %}
+    	<div class="api-item" id="{{post.modal-id}}">
+    		<h3>{{ post.title }}</h3>
+        	<p>{{ post.content }}</p>
+        </div>
+    {% endfor %}
+    {% for post in site.categories['working_with_branches'] reversed %}
+    	<div class="api-item" id="{{post.modal-id}}">
+    		<h3>{{ post.title }}</h3>
+        	<p>{{ post.content }}</p>
+        </div>
+    {% endfor %}
+   	{% for post in site.categories['ctesius'] reversed %}
+    	<div class="api-item" id="{{post.modal-id}}">
+    		<h3>{{ post.title }}</h3>
+        	<p>{{ post.content }}</p>
+        </div>
+    {% endfor %}
+    {% for post in site.categories['appendix'] reversed %}
+    	<div class="api-item" id="{{post.modal-id}}">
+    		<h3>{{ post.title }}</h3>
+        	<p>{{ post.content }}</p>
         </div>
     {% endfor %}
 </section>

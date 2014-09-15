@@ -2,6 +2,7 @@
 layout: default
 title: Search Disambiguation
 modal-id: search-disambiguation
+categories: property_searching
 ---
 Above we touched upon the geo location database - to the user this is an AJAX style dropdown of known locations they can select. If the user does not select a particular result from the auto suggest, Ctesius will send to the user to the page as if they selected the top result. Whilst this may be fine most of the time, you might want to ask your user to 'fine tune' their results by picking one of the alternative locations that were found.
 

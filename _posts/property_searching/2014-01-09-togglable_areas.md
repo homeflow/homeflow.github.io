@@ -2,6 +2,7 @@
 layout: default
 title: Togglable areas
 modal-id: togglable-areas
+categories: property_searching
 ---
 The core ``application javascript include`` comes with a JavaScript toggle system that can show and hide different ``tabs`` on a click. This is useful when working with different views and, as we will see later, it is also very useful on the ``property show`` page.
 

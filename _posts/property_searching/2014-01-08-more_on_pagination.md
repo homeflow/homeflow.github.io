@@ -2,6 +2,7 @@
 layout: default
 title: More on pagination
 modal-id: more-on-pagination
+categories: property_searching
 ---
 Ctesius ships with a ``for pagination`` function. If you've ever used Google before, and let's face it, who hasn't, then you'll be familiar with the pages before and after pagination they utilise at the foot of the search results.
 

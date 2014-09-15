@@ -2,6 +2,7 @@
 layout: default
 title: Theme folder structure
 modal-id: theme-folder-structure
+categories: getting_started
 ---
 Ctesius themes use the standard Rails conventions for folder layouts. Don't worry if you're not familiar with Rails or this structure as an example theme folder structure can be seen below or found on the demo [Stabilisers theme](https://github.com/homeflow/stabilisers).
 
