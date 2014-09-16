@@ -1,7 +1,0 @@
----
-layout: default
-title: Working with agencies
-modal-id: working-with-agencies
-categories: working_with_agencies
----
-More commonly found on portals, the agency page acts as the top level holdall for the agency's branches, staff, contact details and so on. The Ctesius app comes with a URL pattern that can describe the agency, the branch and the staff, should you need it to. Let's look at what a typical agency page might contain.

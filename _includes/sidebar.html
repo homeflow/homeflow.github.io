@@ -1,115 +1,22 @@
-<!-- Menu idea and segments of code courtesy of https://developer.github.com/v3/ -->
+<!-- Menu structure courtesy of https://developer.github.com/v3/ -->
 <div class="sidebar-module">
   <ul class="sidebar-posts">
-    <li>
-      <h4>
-        <a class="arrow-btn" href="#"></a>
-        <a href="#overview">Overview</a>
-      </h4>
-    </li>
-    <li>
-      <h4>
-        <a class="arrow-btn" href="#"></a>
-        <a href="#getting-started">Getting started</a>
-      </h4>
-      <ul class="tier2">
-        <li><a href="#theme-folder-structure">Theme folder structure</a></li>
-        <li><a href="#the-layout-file">The layout file</a></li>
-        <li><a href="#building-up-the-layout">Building up the layout</a>
-        <li><a href="#running-your-theme">Running your theme</a>
-      </ul>
-    </li>
-    <li>
-      <h4>
-        <a class="arrow-btn" href="#"></a>
-        <a href="#building-up-the-application-and-home-page">Application &amp; home page</a>
-      </h4>
-      <ul class="tier2">
-        <li><a href="#page-titles-and-descriptions">Page titles &amp; descriptions</a></li>
-        <li><a href="#the-header">The header</a></li>
-        <li><a href="#the-navigation-menu">The navigation menu</a></li>
-        <li><a href="#the-carousel">The carousel</a></li>
-        <li><a href="#the-footer">The footer</a>
-      </ul>
-    </li>
-    <li>
-      <h4>
-        <a class="arrow-btn" href="#"></a>
-        <a href="#working-with-property-searches">Property Searching</a>
-      </h4>
-      <ul class="tier2">
-        <li><a href="#constructing-a-property-search-form">Property search form</a></li>
-        <li><a href="#search-disambiguation">Search disambiguation</a></li>
-        <li><a href="#displaying-search-results">Displaying search results</a></li>
-        <li><a href="#the-properties-loop">The Properties Loop</a></li>
-        <li><a href="#handling-with-locations-and-postcodes">Locations and Postcodes</a></li>
-        <li><a href="#headings-and-pagination">Headings and pagination</a></li>
-        <li><a href="#more-on-pagination">More on Pagination</a></li>
-        <li><a href="#togglable-areas">Togglable areas</a></li>
-        <li><a href="#working-with-the-map-view">Working with map views</a></li>
-        <li><a href="#working-with-grid-views">Working with grid views</a></li>
-        <li><a href="#saving-properties-to-a-shortlist">Saving to shortlist</a></li>
-        <li><a href="#saving-searches">Saving searches</a></li>
-      </ul>
-    </li>
-    <li>
-      <h4>
-        <a class="arrow-btn" href="#"></a>
-        <a href="#draw-a-map">Draw a Map</a></h4>
-      </h4>
-    </li>
-    <li>
-      <h4>
-        <a class="arrow-btn" href="#"></a>
-        <a href="#the-property-show-page">The property show page</a>
-      </h4>
-      <ul class="tier2">
-        <li><a href="#outputting-basic-information">Outputting basic information</a></li>
-        <li><a href="#other-property-drops">Other property drops</a></li>
-        <li><a href="#working-with-maps">Working with maps</a></li>
-        <li><a href="#submitting-a-lead">Submitting a lead</a></li>
-      </ul>
-    </li>
-    <li>
-      <h4>
-        <a class="arrow-btn" href="#"></a>
-        <a href="#working-with-agencies">Working with agencies</a>
-      </h4>
-      <ul class="tier2">
-        <li><a href="#the-agency-show-page">Agency show page</a></li>
-      </ul>
-    </li>
-    <li>
-      <h4>
-        <a class="arrow-btn" href="#"></a>
-        <a href="#working-with-branches">Working with branches</a>
-      </h4>
-      <ul class="tier2">
-        <li><a href="#the-branches-index">The branches index</a></li>
-        <li><a href="#working-with-branch-maps">Branch maps</a></li>
-        <li><a href="#branch-searching">Branch searching</a></li>
-        <li><a href="#branch-titles-and-pagination">Titles and pagination</a></li>
-        <li><a href="#the-branch-show">The branch show</a></li>
-        <li class="tier3-top-level">
-          <h4>
-            <a class="arrow-btn tier2-a tier2-a-expanded" href="#"></a>
-            <a href="#displaying-branch-properties" class="tier2-a">Branch properties</a>
-          </h4>
-          <ul class="tier3">
-            <li><a href="#recent-sales-and-lettings" class="tier2-a">Recent sales and lettings </a></li>
-            <li><a href="#all-branch-properties" class="tier2-a">All branch properties</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <h4>
-        <a class="arrow-btn" href="#"></a>
-        <a href="#appendix">Appendix</a>
-      </h4>
-      <ul class="tier2">
-        <li><a href="#other-property-drops">Other property drops</a></li>
-      </ul>
-    </li>
+    <!-- find sections in config.yml -->
+    {% for section in site.sections %}
+      <li>
+        <h4>
+          <a class="arrow-btn" href="#{{section.id}}"></a>
+          <a href="#{{section.id}}">{{section.title}}</a>
+        </h4>
+        <ul class="tier2">
+          <!-- section id == post folder name/category -->
+          {% for post in site.categories[{{section.id}}] reversed %}
+            <li>
+              <a href="#{{post.modal-id}}">{{post.title}}</a>
+            </li>
+          {% endfor %}
+         </ul>
+      </li>
+    {% endfor %}
   </ul>
 </div>

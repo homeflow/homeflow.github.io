@@ -29,6 +29,26 @@ address:
   - line: London
   - line: SW18 1TW
 
+sections:
+  - title: Overview
+    id: overview
+  - title: Getting started
+    id: getting-started
+  - title: Application &amp; homepage
+    id: application-and-homepage
+  - title: Property searching
+    id: property-searching
+  - title: Draw a map
+    id: draw-a-map
+  - title: Property show page
+    id: property-show-page
+  - title: Working with agencies
+    id: working-with-agencies
+  - title: Working with branches
+    id: working-with-branches
+  - title: Appendix
+    id: appendix
+
 # Build settings
 markdown: kramdown
 permalink: pretty

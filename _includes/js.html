@@ -27,7 +27,6 @@
             $('.sidebar-posts > li').each(function(i){
                 $(this).bind('click', function(event){
                     $('.sidebar-posts ul').hide(); // hide all the other uls
-                    $('.tier3').show(); // show tier3
                     $('.arrow-btn').removeClass('expanded'); // remove any expanded classes
                     $(this).find('.tier2').toggle(); // toggle the clicked li's nested ul
                     $(this).find('.arrow-btn').addClass('expanded'); // expand the arrow 
@@ -38,21 +37,9 @@
             $('.tier2 > li').each(function(i){
                 $(this).bind('click', function(event){
                     $('.tier2 > li').removeClass('active'); // remove any active classes
-                    $('.tier3 > li').removeClass('active'); // remove any active classes
                     $(this).addClass('active') // add active class to nested link
-                    $('.tier3-top-level').removeClass('active'); // remove any active classes tier3 li
                 });     
             });  
-
-            // add/remove active from clicked li tier3
-            $('.tier3 > li').each(function(i){
-                $(this).bind('click', function(event){
-                    event.stopPropagation();
-                    $('.tier2 > li').removeClass('active'); // remove any active classes
-                    $('.tier3 > li').removeClass('active'); // remove any active classes
-                    $(this).addClass('active') // add active class to nested link
-                });     
-            }); 
         }); 
     </script>
 
