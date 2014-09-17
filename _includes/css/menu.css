@@ -86,11 +86,11 @@
   position: absolute;
 }
 .helper-menu > ul > li.has-sub > a span:before {
-  top: -4px;
+  top: -3px;
   left: -5px;
 }
 .helper-menu > ul > li.has-sub.active > a span:before {
-  background-position: -38px -1px;
+  background-position: -38px -2px;
 }
 /* Sub menu */
 .helper-menu ul ul {
