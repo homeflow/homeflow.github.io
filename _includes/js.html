@@ -18,28 +18,11 @@
 
     <script src="{{ "/js/jquery.sticky.js" | prepend: site.baseurl }}"></script>
 
+    <script src="{{ "/js/menu.js" | prepend: site.baseurl }}"></script>
+
     <script>
         $(document).ready(function(){
-
-            $(".sidebar-module").sticky({topSpacing:0});
-
-            // expand and collapse menus
-            $('.sidebar-posts > li').each(function(i){
-                $(this).bind('click', function(event){
-                    $('.sidebar-posts ul').hide(); // hide all the other uls
-                    $('.arrow-btn').removeClass('expanded'); // remove any expanded classes
-                    $(this).find('.tier2').toggle(); // toggle the clicked li's nested ul
-                    $(this).find('.arrow-btn').addClass('expanded'); // expand the arrow 
-                });     
-            });  
-
-            // add/remove active from clicked li tier2
-            $('.tier2 > li').each(function(i){
-                $(this).bind('click', function(event){
-                    $('.tier2 > li').removeClass('active'); // remove any active classes
-                    $(this).addClass('active') // add active class to nested link
-                });     
-            });  
+            $("#cssmenu").sticky({topSpacing:0}); 
         }); 
     </script>
 

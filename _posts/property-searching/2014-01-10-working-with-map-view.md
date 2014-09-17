@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Working with the map view
+title: Working with map views
 modal-id: working-with-the-map-view
 categories: property-searching
 ---
