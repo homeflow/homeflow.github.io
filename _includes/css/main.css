@@ -678,6 +678,10 @@ footer .footer-below {
     #mobile-menu {
         display: block;
     }
+
+    .scroll-top {
+        display: none;
+    }
 }
 
 @media(max-width:622px) {
