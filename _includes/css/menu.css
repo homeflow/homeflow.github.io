@@ -1,10 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
 @charset "UTF-8";
 /* Base Styles */
-#cssmenu,
-#cssmenu ul,
-#cssmenu li,
-#cssmenu a {
+.helper-menu,
+.helper-menu ul,
+.helper-menu li,
+.helper-menu a {
   margin: 0;
   padding: 0;
   border: 0;
@@ -16,14 +16,14 @@
   font-size: 14px;
   position: relative;
 }
-#cssmenu a {
+.helper-menu a {
   outline: 0;
 }
-#cssmenu a:hover,
-#cssmenu a:active {
+.helper-menu a:hover,
+.helper-menu a:active {
   color: #48b5cc;
 }
-#cssmenu {
+.helper-menu {
   min-width: 20%;
   max-width: 100%;
   background: #fff;
@@ -33,51 +33,51 @@
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
 }
-#cssmenu > ul > li {
+.helper-menu > ul > li {
   border-bottom: 1px solid #eee;
 }
-#cssmenu > ul > li:last-child {
+.helper-menu > ul > li:last-child {
   margin: 0;
   border-bottom: none;
 }
-#cssmenu > ul > li > a {
+.helper-menu > ul > li > a {
   display: block;
   color: #ff6600;
   background: #fff;
 }
-#cssmenu > ul > li .top-a {
+.helper-menu > ul > li .top-a {
   border-radius: 4px 4px 0 0;
   -webkit-border-radius: 4px 4px 0 0;
   -moz-border-radius: 4px 4px 0 0;
 }
-#cssmenu > ul > li .bottom-a {
+.helper-menu > ul > li .bottom-a {
   border-radius: 0 0 4px 4px;
   -webkit-border-radius: 0 0 4px 4px;
   -moz-border-radius: 0 0 4px 4px;
 }
-#cssmenu > ul > li > a > span {
+.helper-menu > ul > li > a > span {
   display: block;
   padding: 11px 0 9px 24px;
   font-weight: bold;
 }
-#cssmenu > ul > li > a:hover {
+.helper-menu > ul > li > a:hover {
   text-decoration: none;
 }
-#cssmenu > ul > li.active {
+.helper-menu > ul > li.active {
   border-bottom: none;
 }
-#cssmenu > ul > li.active > a {
+.helper-menu > ul > li.active > a {
   background: #f2f2f2;
   color: #48b5cc;
 }
-#cssmenu > ul > li.active > .bottom-a {
+.helper-menu > ul > li.active > .bottom-a {
   border-radius: 0;
 }
-#cssmenu > ul > li.active > a span {
+.helper-menu > ul > li.active > a span {
 
 }
-#cssmenu > ul > li.has-sub > a span:before,
-#cssmenu > ul > li.has-sub.active > a span:before {
+.helper-menu > ul > li.has-sub > a span:before,
+.helper-menu > ul > li.has-sub.active > a span:before {
   background-image: url("../img/expand-arrows.png");
   background-repeat: no-repeat;
   height: 31px;
@@ -85,22 +85,22 @@
   content:'';
   position: absolute;
 }
-#cssmenu > ul > li.has-sub > a span:before {
+.helper-menu > ul > li.has-sub > a span:before {
   top: -4px;
   left: -5px;
 }
-#cssmenu > ul > li.has-sub.active > a span:before {
+.helper-menu > ul > li.has-sub.active > a span:before {
   background-position: -38px -1px;
 }
 /* Sub menu */
-#cssmenu ul ul {
+.helper-menu ul ul {
   display: none;
 }
-#cssmenu ul ul li {
+.helper-menu ul ul li {
   padding: 10px 0 8px;
   border-bottom: 1px solid #eee;
 }
-#cssmenu ul ul a {
+.helper-menu ul ul a {
   display: block;
   color: #3a3a3a;
   font-size: 13px;

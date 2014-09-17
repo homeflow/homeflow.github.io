@@ -4,6 +4,15 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+#side-menu {
+    max-width: 100%;
+    min-width: 20%;
+}
+
+#mobile-menu {
+    display: none;
+}
+
 .navbar-header {
     float: left;
 }
@@ -658,6 +667,17 @@ footer .footer-below {
 
 .sidebar-list {
     padding-top:50px;
+}
+
+@media (max-width:992px){
+
+    #side-menu {
+        display: none;
+    }
+
+    #mobile-menu {
+        display: block;
+    }
 }
 
 @media(max-width:622px) {

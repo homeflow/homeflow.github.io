@@ -14,10 +14,15 @@
 				    <div class="container content fixed-width">
 				    	<div class="row">
 						    <div class="col-lg-9 col-md-9">
+						    	<div id="mobile-menu">
+						    		{% include helper-menu.html %}
+						    	</div>
 						    	{% include documentation.html %}
 						    </div>
 						    <div class="col-lg-3 col-md-3">
-						     	{% include sidebar.html %}    
+						    	<div id="side-menu">
+						     		{% include sidebar.html %}
+						     	</div>
 						    </div>
 						</div>
 					</div>	        	

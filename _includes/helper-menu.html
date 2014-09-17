@@ -1,0 +1,18 @@
+<div class="helper-menu">
+  <ul>
+    <!-- find sections in config.yml -->
+    {% for section in site.sections %}
+      <li class="has-sub">
+        <!-- section id == post folder name/category -->
+        <a href="#{{section.id}}" {% if forloop.first %}class="top-a"{% endif %} {% if forloop.last %}class="bottom-a"{% endif %}><span>{{section.title}}</span></a>
+        <ul>
+          {% for post in site.categories[{{section.id}}] reversed %}
+            <li>
+              <a href="#{{post.modal-id}}"><span>{{post.title}}</span></a>
+            </li>
+          {% endfor %}
+        </ul>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
