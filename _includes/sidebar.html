@@ -4,7 +4,7 @@
     {% for section in site.sections %}
       <li class="has-sub">
         <!-- section id == post folder name/category -->
-        <a href="#{{section.id}}"><span>{{section.title}}</span></a>
+        <a href="#{{section.id}}" {% if forloop.first %}class="top-a"{% endif %} {% if forloop.last %}class="bottom-a"{% endif %}><span>{{section.title}}</span></a>
         <ul>
           {% for post in site.categories[{{section.id}}] reversed %}
             <li>

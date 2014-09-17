@@ -44,9 +44,14 @@
   display: block;
   color: #ff6600;
   background: #fff;
+}
+#cssmenu > ul > li .top-a {
   border-radius: 4px 4px 0 0;
   -webkit-border-radius: 4px 4px 0 0;
   -moz-border-radius: 4px 4px 0 0;
+}
+#cssmenu > ul > li .bottom-a {
+
 }
 #cssmenu > ul > li > a > span {
   display: block;
