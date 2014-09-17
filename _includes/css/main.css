@@ -670,17 +670,14 @@ footer .footer-below {
 }
 
 @media (max-width:992px){
-
-    #side-menu {
+    #side-menu,
+    #side-menu-sticky-wrapper,
+    .scroll-top  {
         display: none;
     }
 
     #mobile-menu {
         display: block;
-    }
-
-    .scroll-top {
-        display: none;
     }
 }
 
