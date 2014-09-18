@@ -190,7 +190,8 @@ pre code {
     white-space: inherit;
 }
 
-#api h3 {
+#api h3,
+#home h3 {
     font-size: 30px;
     margin-top: 2px;
 }
