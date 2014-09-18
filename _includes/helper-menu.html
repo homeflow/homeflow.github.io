@@ -1,10 +1,15 @@
 <div class="helper-menu">
   <ul>
+    <li>
+      <a href="/" class="top-a section-anchor" data-id="home">
+        <span>Home</span>
+      </a>
+    </li>
     <!-- find sections in config.yml -->
     {% for section in site.sections %}
       <li {% if section.sub == true %}class="has-sub"{% endif %}>
         <!-- section id == post folder name/category -->
-        <a href="/{{section.id}}" data-id="{{section.id}}" class="section-anchor {% if forloop.first %}top-a{% endif %}{% if forloop.last %}bottom-a{% endif %}">
+        <a href="/{{section.id}}" data-id="{{section.id}}" class="section-anchor{% if forloop.last %} bottom-a{% endif %}">
           <span>{{section.title}}</span>
         </a>
         {% if section.sub == true %}

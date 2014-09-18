@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Overview
+category: home
 ---
 Hi there and welcome to the Homeflow API documentation.
 
