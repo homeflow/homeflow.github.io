@@ -15,11 +15,8 @@
     <!-- Custom Theme JavaScript -->
     <script src="{{ "/js/freelancer.js" | prepend: site.baseurl }}"></script>
 
-    <script src="{{ "/js/jquery.sticky.js" | prepend: site.baseurl }}"></script>
-
     <script>
         $(document).ready(function(){
-            $("#side-menu").sticky({topSpacing:0}); 
     
             $( ".section-anchor" ).each(function( index ) {
                 var page_cat = '{{page.category}}';
