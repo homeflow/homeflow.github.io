@@ -32,21 +32,28 @@ address:
 sections:
   - title: Getting started
     id: getting-started
+    sub: true
   - title: Application &amp; homepage
     id: application-and-homepage
+    sub: true
   - title: Property searching
     id: property-searching
+    sub: true
   - title: Draw a map
     id: draw-a-map
-    nosub: true
+    sub: false
   - title: Property show page
     id: property-show-page
+    sub: true
   - title: Working with agencies
     id: working-with-agencies
+    sub: true
   - title: Working with branches
     id: working-with-branches
+    sub: true
   - title: Appendix
     id: appendix
+    sub: true
 
 # Build settings
 markdown: kramdown

@@ -1,48 +1,38 @@
 <!DOCTYPE html>
 <html>
-
   	{% include head.html %}
-
     <body id="page-top" class="index">
-
     	{% include header.html %}
-
 	    <div class="full-width" id="content-span">
 			<div id="content-inner">
-		        <!--<div class="content fixed-width">-->
-		        	
-				    <div class="container content fixed-width">
-				    	<div class="row">
-						    <div class="col-lg-9 col-md-9">
-						    	<div id="mobile-menu">
-						    		{% include helper-menu.html %}
-						    	</div>
-						    	<section id="api">
-						    		<h3>{{page.title}}</h3>
-						    		{% for post in site.categories[{{page.category}}] reversed %}
-								    	<div class="api-item" id="{{post.modal-id}}">
-								    		{% if post.title %} 
-								    			<h3>{{ post.title }}</h3>
-								    		{% endif %}
-								        	{{ post.content }}
-								        </div>
-								    {% endfor %}
-						    	</section>
-						    </div>
-						    <div class="col-lg-3 col-md-3">
-						    	<div id="side-menu">
-						     		{% include sidebar.html %}
-						     	</div>
-						    </div>
-						</div>
-					</div>	        	
-			        		
-				<!--</div>-->
+			    <div class="container content fixed-width">
+			    	<div class="row">
+					    <div class="col-lg-9 col-md-9">
+					    	<div id="mobile-menu">
+					    		{% include helper-menu.html %}
+					    	</div>
+					    	<section id="api">
+					    		<h3>{{page.title}}</h3>
+					    		{% for post in site.categories[{{page.category}}] reversed %}
+							    	<div class="api-item" id="{{post.modal-id}}">
+							    		{% if post.title %} 
+							    			<h3>{{ post.title }}</h3>
+							    		{% endif %}
+							        	{{ post.content }}
+							        </div>
+							    {% endfor %}
+					    	</section>
+					    </div>
+					    <div class="col-lg-3 col-md-3">
+					    	<div id="side-menu">
+					     		{% include sidebar.html %}
+					     	</div>
+					    </div>
+					</div>
+				</div>	        	 		
 			</div>
 		</div>
-	    	
 	    {% include footer.html %}
 	    {% include js.html %}
-
     </body>
 </html>
