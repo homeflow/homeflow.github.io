@@ -20,15 +20,15 @@ container.
 
 ## Adding posts
 
-1) Add a new Markdown file to the appropriate category in the posts folder
+1) Add a new Markdown file to the appropriate category in the posts folder<br>
 2) Jekyll enforces post dates so we just spoof the date in the order we want
 
 ## Adding new sections
 
 To add a new section:
 
-1) Add a section to the _config.yml where you want it to appear in the documentation menu tree
-2) Add a page folder, using the named ID you specified in the YAML
-3) Add an index.html in the folder and add the Markdown (use another page for an example)
-4) Add the posts directory, using the same name used for the page folder
+1) Add a section to the _config.yml where you want it to appear in the documentation menu tree<br>
+2) Add a page folder, using the named ID you specified in the YAML<br>
+3) Add an index.html in the folder and add the Markdown (use another page for an example)<br>
+4) Add the posts directory, using the same name used for the page folder<br>
 5) Add your post (see above)
