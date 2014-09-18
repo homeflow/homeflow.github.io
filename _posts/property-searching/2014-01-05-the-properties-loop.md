@@ -2,7 +2,7 @@
 layout: default
 title: The properties loop
 modal-id: properties-loop
-categories: property-searching
+category: property-searching
 ---
 Since Liquid for loops can include a partial for each property it makes sense to include a tried, tested and mananageble partial of code for each property. We refer to this partial as ``_property_small.liquid``.
 

@@ -2,7 +2,7 @@
 layout: default
 title: Other property drops
 modal-id: other-property-drops
-categories: appendix
+category: appendix
 ---
 ``{% raw %}{{property.available_on}}{% endraw %}``
 

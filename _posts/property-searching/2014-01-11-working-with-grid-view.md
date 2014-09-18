@@ -2,7 +2,7 @@
 layout: default
 title: Working with grid views
 modal-id: working-with-grid-views
-categories: property-searching
+category: property-searching
 ---
 At the time of writing many agencies are integrating grid views into their property results. Grid views can sometimes produce a better visual offering than traditional list views plus they offer the user a degree of presentation flexibility. The easiest way to get up and running with a grid view is to have a ``properties_grid`` partial. Within this partial there is a second properties loop:
 

@@ -2,7 +2,7 @@
 layout: default
 title: The header
 modal-id: header
-categories: application-and-homepage
+category: application-and-homepage
 ---
 A header would probably consist of the agency or portal logo, so let's take a first foray into the Agency or Portal admin, add the logo, then pull it out and plug it into the source using Liquid. Note that if you'd rather just add or keep your logo in ``/assets/images`` that's absolutely fine.
 

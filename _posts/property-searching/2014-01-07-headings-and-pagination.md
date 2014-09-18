@@ -2,7 +2,7 @@
 layout: default
 title: Headings and pagination
 modal-id: headings-and-pagination
-categories: property-searching
+category: property-searching
 ---
 Headings need to reflect the search the user has carried out or it should output a very general statement if it's an index search. There's other considerations here; for instance if it is a county or postcode seach and so on. Some developers choose to add pagination statistics and pagination navigation together with search and location information, whereas others choose to seperate the two - you are free to find whatever suits you/your client. Note that the code below could be in  ``search/_results.liquid`` - another logical place would be ``properties/_results.liquid``. Here's an example heading:
 

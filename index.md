@@ -1,8 +1,6 @@
 ---
 layout: default
 title: Overview
-modal-id: overview
-categories: overview
 ---
 Hi there and welcome to the Homeflow API documentation.
 
@@ -22,4 +20,4 @@ You can consider The Agency and Portal Admin as the repository of all the inform
 
 All themes are developed using mostly HTML, CSS and JavaScript, but they also make use of the Liquid templating system, made popular by Shopify. Liquid sits in places of your code where dynamic content is required, such as property, agency, staff or user information.
 
-We will explore all of the technologies mentioned above in much more detail later in the guide. In the meantime you can head straight over to the section you require using the menu on the right or move on to Getting Started below.
+We will explore all of the technologies mentioned above in much more detail later in the guide. In the meantime you can head straight over to the section you require using the menu on the right.

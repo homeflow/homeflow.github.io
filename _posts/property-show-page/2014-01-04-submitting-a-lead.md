@@ -2,7 +2,7 @@
 layout: default
 title: Submitting a lead
 modal-id: submitting-a-lead
-categories: property-show-page
+category: property-show-page
 ---
 Email type leads are submitted to Homeflow and then on to the agent by ubiquitous web forms. Here's a simplified version:
 

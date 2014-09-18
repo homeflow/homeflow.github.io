@@ -2,7 +2,7 @@
 layout: default
 title: The agency show page
 modal-id: agency-show-page
-categories: working-with-agencies
+category: working-with-agencies
 ---
 Anything agency related will reside in the ``agencies`` folder in your Rails directory structure and your show page will follow the normal format of ``show.liquid``. Let's start to build the page using the agency name, agency description and the agency's portal logo with a fallback to their default logo:
 

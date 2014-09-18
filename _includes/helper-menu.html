@@ -2,17 +2,22 @@
   <ul>
     <!-- find sections in config.yml -->
     {% for section in site.sections %}
-      <li class="has-sub">
+      <li {% unless section.nosub %}class="has-sub"{% endunless %}>
         <!-- section id == post folder name/category -->
-        <a href="#{{section.id}}" {% if forloop.first %}class="top-a"{% endif %} {% if forloop.last %}class="bottom-a"{% endif %}><span>{{section.title}}</span></a>
-        <ul>
-          {% for post in site.categories[{{section.id}}] reversed %}
-            <li>
-              <a href="#{{post.modal-id}}"><span>{{post.title}}</span></a>
-            </li>
-          {% endfor %}
-        </ul>
+        <a href="/{{section.id}}" data-id="{{section.id}}" class="section-anchor {% if forloop.first %}top-a{% endif %}{% if forloop.last %}bottom-a{% endif %}"><span>{{section.title}}</span></a>
+        {% unless section.nosub %}
+          <ul>
+            {% for post in site.categories[{{section.id}}] reversed %}
+              {% if post.title %}
+                <li>
+                  <a href="#{{post.modal-id}}"><span>{{post.title}}</span></a>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        {% endunless %}
       </li>
     {% endfor %}
   </ul>
 </div>
+

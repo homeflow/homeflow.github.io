@@ -2,7 +2,7 @@
 layout: default
 title: All branch properties
 modal-id: all-branch-properties
-categories: working-with-branches
+category: working-with-branches
 ---
 If you would like to display all properties that belong to a branch with pagination, we'll need a ``properties.liquid`` file within the branches folder. Once you have this you can start to build up the layout. This will most likely be a hybrid of your properties result page and your branch show page so use partials where possible and reuse what you've already written.
 

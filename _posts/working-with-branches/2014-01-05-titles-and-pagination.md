@@ -2,7 +2,7 @@
 layout: default
 title: Branch titles and pagination
 modal-id: branch-titles-and-pagination
-categories: working-with-branches
+category: working-with-branches
 ---
 Much like we saw earlier in the documentation with property results, it's useful to output some titles and especially useful to output pagination if the branch results are on several pages. There's a number of ways that you can deal with titles - here's one such example:
 

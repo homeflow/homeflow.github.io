@@ -2,7 +2,7 @@
 layout: default
 title: Working with maps
 modal-id: working-with-maps
-categories: property-show-page
+category: property-show-page
 ---
 Many developers employ the tabbing system for property maps so the user can cycle through the different types: road, streetview and satellite. The first requirement is some events:
 

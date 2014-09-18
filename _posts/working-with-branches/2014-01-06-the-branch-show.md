@@ -2,7 +2,7 @@
 layout: default
 title: The branch show page
 modal-id: the-branch-show
-categories: working-with-branches
+category: working-with-branches
 ---
 Wherever we have a Liquid tag that looks like ``{% raw %}{{ branch | url_for_branch}}{% endraw %}`` or if the branch URL is called, the branch show page will get called into action. As with all of the subjects, the branch show page is simply titled ``show.liquid`` and lives in the branches folder.
 

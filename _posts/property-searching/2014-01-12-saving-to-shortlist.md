@@ -2,7 +2,7 @@
 layout: default
 title: Saving to a shortlist
 modal-id: saving-to-a-shortlist
-categories: property-searching
+category: property-searching
 ---
 A common feature on property websites is saving properties to a semi or permanent storage with the appropriate widgets to link to or add/remove properties as the user sees fit. This kind of function is extremely useful on portals, but is also a nice feature for agencies to have.
 

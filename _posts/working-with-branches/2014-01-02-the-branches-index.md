@@ -2,7 +2,7 @@
 layout: default
 title: The branches index
 modal-id: branches-index
-categories: working-with-branches
+category: working-with-branches
 ---
 As we saw with the ``properties index``, our index pages are called when no seach criteria is given and we just want a flat list of all properties, branches, etc. A branches index route would simply be: ``http://www.agency_domain.com/branches``. On our index page we can add the following code:
 

@@ -30,8 +30,6 @@ address:
   - line: SW18 1TW
 
 sections:
-  - title: Overview
-    id: overview
   - title: Getting started
     id: getting-started
   - title: Application &amp; homepage
@@ -40,6 +38,7 @@ sections:
     id: property-searching
   - title: Draw a map
     id: draw-a-map
+    nosub: true
   - title: Property show page
     id: property-show-page
   - title: Working with agencies
@@ -51,4 +50,4 @@ sections:
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: none

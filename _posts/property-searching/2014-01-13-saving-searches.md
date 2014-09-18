@@ -2,7 +2,7 @@
 layout: default
 title: Saving searches
 modal-id: saving-searches
-categories: property-searching
+category: property-searching
 ---
 Saving searches is a tad quicker and easier to set up than the saved properties and they save in much the same way as the saved properties. They also make use of the events system to give the user some feedback. Here's the first bit of code you will need to add where you would like the link/button:
 

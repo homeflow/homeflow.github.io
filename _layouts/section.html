@@ -17,12 +17,16 @@
 						    	<div id="mobile-menu">
 						    		{% include helper-menu.html %}
 						    	</div>
-						    	<section>
-						    		<h3>Homeflow API</h3>
-						    		<div class="api-item" id="overview">
-							    		<h3>{{page.title}}</h3>
-							    		{{ content }}
-							    	</div>
+						    	<section id="api">
+						    		<h3>{{page.title}}</h3>
+						    		{% for post in site.categories[{{page.category}}] reversed %}
+								    	<div class="api-item" id="{{post.modal-id}}">
+								    		{% if post.title %} 
+								    			<h3>{{ post.title }}</h3>
+								    		{% endif %}
+								        	{{ post.content }}
+								        </div>
+								    {% endfor %}
 						    	</section>
 						    </div>
 						    <div class="col-lg-3 col-md-3">

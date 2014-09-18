@@ -2,7 +2,7 @@
 layout: default
 title: Page titles and descriptions
 modal-id: page-titles-and-descriptions
-categories: application-and-homepage
+category: application-and-homepage
 ---
 The Homeflow API allows you to fully customise your page titles and descriptions; not only for the home page but for other categories of page as well.
 

@@ -2,7 +2,7 @@
 layout: default
 title: The navigation menu
 modal-id: navigation-menu
-categories: application-and-homepage
+category: application-and-homepage
 ---
 The navigation is another area where you have complete freedom of development - if you wanted to hardcode your menu and add/remove new or old items as they come along, that's absolutely fine. If however, you'd prefer to add the navigation tree to the agency admin and extract them using Liquid, that's fine too. Generally speaking portals add their menu to their source whereas theme designers or agency sites will tend to code the menu using Liquid, as their theme can then be deployed for multiple agencies.
 

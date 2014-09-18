@@ -2,7 +2,7 @@
 layout: default
 title: Working with map views
 modal-id: working-with-the-map-view
-categories: property-searching
+category: property-searching
 ---
 Ctesius comes loaded with maps for property results, individual properties, branches and so on. A draggable map is at your disposal for property results. The draggable map view can be placed on the map tab outlined above and can also update the property results on the fly based on the user dragging or zooming. To get the map up and running, all you need to do is add the ``draggable_map_view`` div to your tab and supply it with a height and a width in your CSS:
 

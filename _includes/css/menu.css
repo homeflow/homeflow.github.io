@@ -18,6 +18,7 @@
 }
 .helper-menu a {
   outline: 0;
+  cursor: pointer;
 }
 .helper-menu a:hover,
 .helper-menu a:active {

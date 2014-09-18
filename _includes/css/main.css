@@ -195,6 +195,12 @@ pre code {
     margin-top: 2px;
 }
 
+#api h3:first-child {
+    border-bottom: 1px solid #e2e2e2;
+    padding-bottom: 24px;
+    margin-bottom: 25px;
+}
+
 .api-item h3 {
     margin: 25px 0 25px 0;
     padding: 10px 0 24px 0;

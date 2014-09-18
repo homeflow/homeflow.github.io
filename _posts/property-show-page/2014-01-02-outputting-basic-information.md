@@ -2,7 +2,7 @@
 layout: default
 title: Outputting basic information
 modal-id: outputting-basic-information
-categories: property-show-page
+category: property-show-page
 ---
 Your first requirement is likely to be an output of the property's address, or at least part of it, and its price in a title:
 
