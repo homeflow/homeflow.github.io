@@ -45,6 +45,9 @@ sections:
   - title: Property show page
     id: property-show-page
     sub: true
+  - title: Property functions
+    id: property-functions
+    sub: true
   - title: Working with agencies
     id: working-with-agencies
     sub: true
