@@ -6,7 +6,7 @@ category: property-functions
 ---
 For an agency, featured properties can play one of two roles depending on what has been set. In your backend admin system, you or the agent can manually feature up to five properties by clicking into the property record, selecting either sales or lettings and selecting the checkbox ``Feature on the home page``, which is under the ``Status and visibility`` section. You can then loop through the properties on your page using the following code construct:
 
-{% highlight html %}
+{% highlight liquid %}
 {% raw %}
 {% for property in agency.featured_properties limit:2 %}
  <a href="{{ property | url_for_property }}">
