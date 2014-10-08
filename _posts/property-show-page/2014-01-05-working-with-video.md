@@ -16,7 +16,7 @@ If you just want the video URL that's supplied in the feed, you can simply use:
 
 As it stands this will fish out a YouTube or Vimeo like URL for you. This output can be wrapped in an if statement should you want to check it's there before outputting.
 
-Going a step further, if you would like to embed the video into the page, you can make use of one of our helper methods. These methods have an added benefit in that they can take non typical emebed URLs like a YouTube 'watch' link or similar Vimeo link and turn it to an embed type link. The method below will create the iframe code for you and insert the video embed link:
+Going a step further, if you would like to embed the video into the page, you can make use of one of our helper methods. These methods have an added benefit in that they can take non typical embed URLs like a YouTube 'watch' link or similar Vimeo link and turn it to an embed type link. The method below will create the iframe code for you and insert the video embed link:
 
 {% highlight liquid %}
 {% raw %}
