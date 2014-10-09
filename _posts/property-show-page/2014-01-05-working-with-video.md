@@ -20,7 +20,7 @@ Going a step further, if you would like to embed the video into the page, you ca
 
 {% highlight liquid %}
 {% raw %}
-{{ property.video_url | video_embed height: '390' width: '640' mode: 'iframe' }}
+{{ property.video_url | video_embed : 640, 390, 'iframe' }}
 {% endraw %}
 {% endhighlight %}
 
@@ -28,8 +28,8 @@ If you would rather just the link, but you'd like it to be the embed style for a
 
 {% highlight liquid %}
 {% raw %}
-{{ property.video_url | video_embed height: '390' width: '640' mode: 'lightbox' }}
+{{ property.video_url | video_embed : 640, 390, 'lightbox' }}
 {% endraw %}
 {% endhighlight %}
 
-The method always expects some dimensions, even though they're not actually used for the lightbox style URL output - just add some arbitrary dimensions or some empty quotes.
+The method always expects some dimensions, even though they're not actually used for the lightbox style URL output - just add some arbitrary dimensions.
