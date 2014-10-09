@@ -6,7 +6,7 @@ category: property-show-page
 ---
 Many developers employ the tabbing system for property maps so the user can cycle through the different types: road, streetview and satellite. The first requirement is some events:
 
-{% highlight html %}
+{% highlight javascript %}
 {% raw %}
 <script>
  Ctesius.addConfig('small_map_element', 'contact_map')
