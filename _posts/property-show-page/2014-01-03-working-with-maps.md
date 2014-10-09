@@ -12,11 +12,14 @@ Many developers employ the tabbing system for property maps so the user can cycl
  Ctesius.addConfig('small_map_element', 'contact_map')
  Ctesius.registerEvent('render_tab', function(tab_name){
   switch(tab_name){
+   case 'map':
+    {% gmap_for property as roadmap in single_map %}
+    break;
    case 'streetview':
-    {{ gmap_for property as streetview in streetview }}
+    {% gmap_for property as streetview in streetview %}
     break;
    case 'satellite':
-    {{ gmap_for property as satellite in satellite }}
+    {% gmap_for property as satellite in satellite %}
     break;
    }
  });
