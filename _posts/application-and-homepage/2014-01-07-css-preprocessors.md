@@ -1,6 +1,6 @@
 ---
 layout: default
-title: CSS Pre-processors
+title: CSS pre-processors
 modal-id: css-preprocessors
 category: application-and-homepage
 ---
