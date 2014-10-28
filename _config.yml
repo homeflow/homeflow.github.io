@@ -54,6 +54,9 @@ sections:
   - title: Working with branches
     id: working-with-branches
     sub: true
+  - title: Events
+    id: events
+    sub: true
   - title: Appendix
     id: appendix
     sub: true
