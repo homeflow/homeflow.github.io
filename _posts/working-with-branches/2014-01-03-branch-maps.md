@@ -23,6 +23,6 @@ Don't forget to give your map ID or class and height and/or width to get it to s
 
 If you would prefer a Google style map you still need the ``addConfig branches`` code seen before, but this time, instead of your ``addConfig branch_map``, we need:
 
-``{% raw %}{{ gmap_for agency.branches as roadmap in branch_map }}{% endraw %}``
+``{% raw %}{% gmap_for agency.branches as roadmap in branch_map %}{% endraw %}``
 
 This should then populate your ``branch_map`` div with a Google style map. Note that we're using the ``agency.branches`` ``drop`` to access the branches belonging to an agency.
