@@ -56,7 +56,7 @@ sections:
     sub: true
   - title: Events
     id: events
-    sub: false
+    sub: true
   - title: Appendix
     id: appendix
     sub: true
