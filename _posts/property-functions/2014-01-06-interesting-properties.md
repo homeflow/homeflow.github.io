@@ -33,7 +33,7 @@ Now consider a typical home page presentation:
     <a href="{{property | url_for_property}}">
      <h3>New Listings</h3>
      <h4>{{property.primary_address_display}}</h4>
-     <img src="{{property.photos.first | url_for_property_asset : 'thumb_large' }}" />
+     <img src="{{property.photo | url_for_property_asset}}" />
     </a>
    {% endfor %}
   </div>
@@ -45,23 +45,63 @@ Now consider a typical home page presentation:
 There's nothing special about this - if we had another three you'd have a nice row of recent property boxes. Now, somewhere convenient, we would then add:
 
 {% highlight html %}
+{% raw %}{%{% endraw %} raw {% raw %}%}{% endraw %}
 {% raw %}
-<script id="interesting_properties_template" type="text/liquid">
- <div class="span3">
-  <div class="homePanel box">
-   {% for property in agency.recent_sales_properties limit:1 %}
-    <a href="{{property | url_for_property}}">
-     <h3>New Listings</h3>
-     <h4>{{property.primary_address_display}}</h4>
-     <img src="{{property.photos.first | url_for_property_asset : 'thumb_large' }}" />
-    </a>
-   {% endfor %}
-  </div>
- </div>
-</script>
+  <script id="interesting_properties_template" type="text/liquid">
+   <div class="span3">
+    <div class="homePanel box">
+     {% for property in properties limit:1 %}
+      <a href="{{property.property_url | url_for_property}}">
+       <h3>New Listings</h3>
+       <h4>{{property.primary_address_display}}</h4>
+       <img src="{{property.photo | url_for_property_asset}}" />
+      </a>
+     {% endfor %}
+    </div>
+   </div>
+  </script>
+{% endraw %}
+{% raw %}{%{% endraw %} endraw {% raw %}%}{% endraw %}
+{% endhighlight %}
+
+Essentially this is just a copy of the original structure, but with some raw tags (the Liquid serverside parser ignores code incased in raw tags) and some script tags with the matching ID as seen wrapping the previous code segment: interesting_properties_view. When the app builds up user history, and if it has at least one result, it will replace the block within the ID with the content brought back within the interesting properties template. Also note that a couple of fields are different - we use ``for property in properties`` in the for loop and ``property.property_url`` to get the property's URL.
+
+###Working with statuses and property fields
+
+At the time of writing, the property status Liquid that finds and outputs the appropriate sash is not available for use on the Interesting Properties output. Instead, the solution is to add the property's channel to the ``properties_list.ljson``, then run some Liquid checks to output the appropriate sash.
+
+``status: "{{property.status}}"`` - add to the LJSON
+``primary_channel: "{{property.primary_channel}}"`` - also worth adding to get the channel
+
+{% highlight liquid %}
+{% raw %}
+{% if property.primary_channel == 'sales' %}
+ {% if property.status == 'SSTC' }
+  <img src="{{ 'sstc.jpg' | theme_image_url }}" class="property-status" />
+ {% endif %}
+{% endif %}
 {% endraw %}
 {% endhighlight %}
 
-Essentially this is just a copy of the original structure, but within some script tags with the matching ID as seen wrapping the previous code segment: interesting_properties_view. When the app builds up user history, and if it has at least one result, it will replace the block within the ID with the content brought back within the interesting properties template. 
+Most fields can be added to the JSON, so if you wanted to output ``property.town`` for example, you could add it to the JSON then check and output put it to the Interesting Properties view.
 
-**Important point**: The interesting properties script must be wrapped in raw tags: {% raw %}{%{% endraw %} raw {% raw %}%}{% endraw %} and {% raw %}{%{% endraw %} endraw {% raw %}%}{% endraw %}.
+###Working with User History
+
+A handy event and callback is available to you as and when the user history for the Interesting Properties output is built up. This can be used to add a custom title, background or anything else you please.
+
+{% highlight javascript %}
+{% raw %}
+Ctesius.registerEvent('user_history_ready', function(collection){
+ var last_search = collection.last()
+
+ if (last_search != undefined && last_search.get('place') != undefined){
+  var place = last_search.get('place').get('name')
+ }
+
+ console.log(last_search)
+ console.log(place)
+});  
+{% endraw %}
+{% endhighlight %}
+
+In this code sample you could run a test on place, then use a jQuery attribute change on an element.
