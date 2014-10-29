@@ -70,8 +70,8 @@ Essentially this is just a copy of the original structure, but with some raw tag
 
 At the time of writing, the property status Liquid that finds and outputs the appropriate sash is not available for use on the Interesting Properties output. Instead, the solution is to add the property's channel to the ``properties_list.ljson``, then run some Liquid checks to output the appropriate sash.
 
-``status: "{{property.status}}"`` - add to the LJSON
-``primary_channel: "{{property.primary_channel}}"`` - also worth adding to get the channel
+``status: "{% raw %}{{property.status}}{% endraw %}"`` - add to the LJSON<br>
+``primary_channel: "{% raw %}{{property.primary_channel}}{% endraw %}"`` - also worth adding to get the channel
 
 {% highlight liquid %}
 {% raw %}
