@@ -26,7 +26,7 @@ Each time the content block tag is used it will yeild the following variabled
 - `content_block_image`
 - `content_block_title`
 
-####Multiple content blocks
+###Multiple content blocks
 
 In some cases it's useful to be able to define a content block multiple times
 
@@ -45,7 +45,7 @@ In some cases it's useful to be able to define a content block multiple times
 In this case, `content_block_found` will be true if more than 0 content blocks have been found. Additionally an array of
 content block objects will be returned.
 
-####Geo Content blocks
+###Geo Content blocks
 
 Geo content blocks are those containing a lat/lng pair. Any objects which respons to #lat or #lng can be used to query for
 content blocks near that area. For instance, to get all 'ad_unit' content blocks near a set location on a page like `brighton-and-hove/brighton/sales`
