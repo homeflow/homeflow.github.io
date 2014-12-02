@@ -54,6 +54,9 @@ sections:
   - title: Working with branches
     id: working-with-branches
     sub: true
+  - title: Working with staff
+    id: working-with-staff
+    sub: true
   - title: Events
     id: events
     sub: true
