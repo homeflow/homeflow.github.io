@@ -28,7 +28,22 @@ Basically any size dimensions or our nifty ``x`` function will see the image pas
 
 Our second good practice is to minify your JS and CSS where possible. Most jQuery plugins and CSS can be acquired in a minified state, so if that's an option, take it. If your own JS and CSS will rarely be modified after going live, we can minify it for you automatically. Here's how:
 
-- In your theme's ``config.yml`` file, you will need a construct such as this [sample YAML File](/img/yaml.jpg)
+- In your theme's ``config.yml`` file, you will need a construct such as this:
+
+{% highlight yaml %}
+  asset_packs:
+    javascript:
+      - respond
+      - vendor/jquery.mobile.custom.min
+      - vendor/bxslider/jquery.bxslider.min
+      - vendor/jquery.scrollTo.min
+      - vendor/jquery.tooltipster.min
+    stylesheet:
+      - normalize.min.css
+      - dropkick.css
+      - main.lcss
+      - tooltipster.css
+{% endhighlight %}
 
 - If your CSS does not run through Liquid, you will need to denote its CSS extension. If your file lives in a subfolder, you will need to denote this too as shown above.
 
