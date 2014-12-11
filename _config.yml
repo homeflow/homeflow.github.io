@@ -60,6 +60,9 @@ sections:
   - title: Events
     id: events
     sub: true
+  - title: Building a site
+    id: build-site
+    sub: true
   - title: Appendix
     id: appendix
     sub: true
