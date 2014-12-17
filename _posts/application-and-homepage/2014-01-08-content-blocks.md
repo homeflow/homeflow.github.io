@@ -30,7 +30,7 @@ A number of stock content blocks exist within the Homeflow system that you can o
 
 ###Theme content chunks
 
-When you want to define your own content blocks, this is where ``theme content chunks`` come in. Consider a scenario where an agency asks for a content area that they can be edited from time to time. Let's imagine that your site is also a theme for multiple agencies and that not all agencies will want or need to update the block, or even have the block outputted at all. This is where theme content chunks come into their own.
+When you want to define your own content blocks, this is where ``theme content chunks`` come in. Consider a scenario where an agency asks for a content area that they can be edit from time to time. Let's also imagine that your site is also a theme for multiple agencies and that not all agencies will want or need to update the block, or even have the block outputted at all. This is where theme content chunks come into their own.
 
 Your first step here is to make the Homeflow backend aware that there is a chunk available. To do this we use our trusty YAML file. In here, you might have something like:
 
