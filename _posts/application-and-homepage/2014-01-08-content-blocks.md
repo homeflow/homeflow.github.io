@@ -4,9 +4,9 @@ title: Content blocks
 modal-id: content-blocks
 category: application-and-homepage
 ---
-Content blocks allow dynamic insersion of images, text or html into the site on a agency by agency basis.
+Content blocks allow dynamic insertion of images, text or html into the site on an agency by agency basis.
 
-Content blocks are called by name, and in their most basic from, rendered out like this
+Content blocks are called by name and in their most basic form are rendered out like this:
 
 {% highlight liquid %}
 {% raw %}
@@ -20,8 +20,8 @@ Content blocks are called by name, and in their most basic from, rendered out li
 
 Each time the content block tag is used it will yeild the following variabled
 
-- `content_block` : prerendered content. If the content block includes an image that will be placed in an <img> tag.
-- `content_block_found` :  A boolean usable for testing if the content block should be showed
+- `content_block` - a prerendered content. If the content block includes an image that will be placed in an <img> tag.
+- `content_block_found` - a boolean usable for testing if the content block should be showed
 - `content_block_url`
 - `content_block_image`
 - `content_block_title`
@@ -46,8 +46,7 @@ content block objects will be returned.
 
 ###Geo Content blocks
 
-Geo content blocks are those containing a lat/lng pair. Any objects which respond to #lat or #lng can be used to query for
-content blocks near that area. For instance, to get all 'ad_unit' content blocks near a set location on a page like `brighton-and-hove/brighton/sales`:
+Geo content blocks are those containing a lat/lng pair. Any objects which respond to #lat or #lng can be used to query for content blocks near that area. For instance, to get all 'ad_unit' content blocks near a set location on a page like `brighton-and-hove/brighton/sales`:
 
 {% highlight liquid %}
 {% raw %}
