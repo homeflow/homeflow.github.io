@@ -729,3 +729,12 @@ footer .footer-below {
         padding: 10px 12px;
     }
 }
+
+#agency-drop h4, #branch-drop h4, #article-drop h4, #property-drop h4, #carousel-item-drop h4 {
+    margin-top: 25.5px;
+    margin-bottom: 4.5px;
+}
+
+#agency-drop p, #branch-drop p, #article-drop p,  #property-drop p, #carousel-item-drop p {
+    font-size: 14px;
+}
