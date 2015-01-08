@@ -48,6 +48,9 @@ sections:
   - title: Property functions
     id: property-functions
     sub: true
+  - title: User profile system
+    id: user-profile-system
+    sub: true
   - title: Working with agencies
     id: working-with-agencies
     sub: true
