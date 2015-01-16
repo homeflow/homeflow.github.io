@@ -733,7 +733,7 @@ footer .footer-below {
 #agency-drop h4, #branch-drop h4, #article-drop h4, 
 #property-drop h4, #carousel-item-drop h4, #page-drop h4,
 #location-drop h4, #menu-drop h4, #menu-item-drop h4,
-#portal-drop h4, #staff-member-drop h4,#pagination-drop h4 {
+#portal-drop h4, #staff-member-drop h4,#pagination-drop h4, #search-drop h4 {
     margin-top: 25.5px;
     margin-bottom: 4.5px;
 }
@@ -741,6 +741,6 @@ footer .footer-below {
 #agency-drop p, #branch-drop p, #article-drop p,  
 #property-drop p, #carousel-item-drop p, #page-drop p,
 #location-drop p, #menu-drop p, #menu-item-drop p,
-#portal-drop p, #staff-member-drop p, #pagination-drop p {
+#portal-drop p, #staff-member-drop p, #pagination-drop p, #search-drop p {
     font-size: 14px;
 }
