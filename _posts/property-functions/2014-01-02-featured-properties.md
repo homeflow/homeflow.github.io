@@ -16,6 +16,7 @@ If no featured properties have been manually set, the application will call the 
 Sometimes it is a requirement to have the featured properties on other pages in the site. As the featured properties relies on properties being inluded in the Ctesius Javascript config if is necessary to do this manually.
 
 {% highlight javascript %}
+{% raw %}
 <script>
   $(document).ready(function(){
     {% assign properties = agency.featured_properties %}
@@ -24,4 +25,5 @@ Sometimes it is a requirement to have the featured properties on other pages in 
     Ctesius.bootPropertiesCollection(Ctesius.getConfig('properties'));
   )};
 </script>
+{% endraw %}
 {% endhighlight %}
