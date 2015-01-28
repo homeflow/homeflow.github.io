@@ -15,15 +15,18 @@ If no featured properties have been manually set, the application will call the 
 
 Sometimes it is a requirement to have the featured properties on other pages in the site. As the featured properties relies on properties being inluded in the Ctesius Javascript config if is necessary to do this manually.
 
+{% highlight javascript %} {% raw %}<script> $(document).ready(function(){ {% assign properties = agency.featured_properties %} var agency_featured_properties = {% include_as_json properties/properties_list %}.properties Ctesius.addConfig('properties', agency_featured_properties); Ctesius.bootPropertiesCollection(Ctesius.getConfig('properties')); )};</script> {% endraw %} {% endhighlight %}
+
+If you want to 'Add to shortlist' or 'Favourite' these properties then they will need to be added to the
+Ctesius config 'properties'. This can be achieved by the placing the following snippet on the page.
+
 {% highlight javascript %}
 {% raw %}
 <script>
-  $(document).ready(function(){
-    {% assign properties = agency.featured_properties %}
-    var agency_featured_properties = {% include_as_json properties/properties_list %}.properties
-    Ctesius.addConfig('properties', agency_featured_properties);
-    Ctesius.bootPropertiesCollection(Ctesius.getConfig('properties'));
-  )};
+$(window).load(function(){
+  Ctesius.appendConfig('properties', {% include_as_json properties/properties_list data: similar_properties target: properties %}.properties);
+  Ctesius.bootPropertiesCollection(Ctesius.getConfig('properties'));
+  });
 </script>
 {% endraw %}
 {% endhighlight %}
