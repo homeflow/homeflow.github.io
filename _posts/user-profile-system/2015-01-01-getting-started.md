@@ -3,11 +3,8 @@ layout: default
 title: Getting started
 modal-id: getting-started
 category: user-profile-system
+unpublished: true
 ---
-
-The Homeflow user profile system is mainly javascript based and is fully customizable and highly configurable for themes.
-Getting started with the default profile system is relatively easy. 
-
 ####Saved Properties
 
 To render the saved properties block in a particular place, simply create a div with an ID of `saved_properties_view`. 
@@ -62,9 +59,7 @@ You can also override each of the views that the JS renders by default by creati
 - js_templates/_profile_saved_properties.liquid
 - js_templates/_profile_saved_searches.liquid
 
-
 Events can also be registered in javascript using the Ctesius event system to give visual feedback or other front end calls when saving a property, as detailed below.
-
 
 ####Associated Events
 There are a bunch of callbacks that are fired when events take place in Ctesius system. This enabled you to wrap any scripts or HTML within these to provide feedback for these events. Below is a list of these events:

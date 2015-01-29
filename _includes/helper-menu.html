@@ -15,11 +15,13 @@
         {% if section.sub == true %}
           <ul>
             {% for post in site.categories[{{section.id}}] reversed %}
-              {% if post.title %}
-                <li>
-                  <a href="#{{post.modal-id}}"><span>{{post.title}}</span></a>
-                </li>
-              {% endif %}
+              {% unless post.unpublished == true %}
+                {% if post.title %}
+                  <li>
+                    <a href="#{{post.modal-id}}"><span>{{post.title}}</span></a>
+                  </li>
+                {% endif %}
+              {% endunless %}
             {% endfor %}
           </ul>
         {% endif %}

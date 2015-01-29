@@ -50,7 +50,7 @@ sections:
     sub: true
   - title: User profile system
     id: user-profile-system
-    sub: true
+    sub: false
   - title: Working with agencies
     id: working-with-agencies
     sub: true
