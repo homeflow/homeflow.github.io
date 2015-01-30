@@ -1,23 +1,16 @@
  <!-- jQuery Version 1.11.0 -->
     <script src="{{ "/js/jquery-1.11.0.js" | prepend: site.baseurl }}"></script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
-
     <!-- Plugin JavaScript -->
     <script src="{{ "/js/jquery.easing.min.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "/js/classie.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "/js/cbpAnimatedHeader.js" | prepend: site.baseurl }}"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="{{ "/js/jqBootstrapValidation.js" | prepend: site.baseurl }}"></script>
-
     <!-- Custom Theme JavaScript -->
-    <script src="{{ "/js/freelancer.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
 
     <script>
+
         $(document).ready(function(){
-    
+
             $( ".section-anchor" ).each(function( index ) {
                 var page_cat = '{{page.category}}';
                 var checkElement = $(this).next();
@@ -31,16 +24,4 @@
                 }
             });
         }); 
-    </script>
-
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-1603257-2']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
     </script>
