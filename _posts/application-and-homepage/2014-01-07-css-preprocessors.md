@@ -11,3 +11,5 @@ At the time of writing, the Ctesius app supports the [LESS CSS pre-processor](ht
 {{ "stylesheet_name" | theme_less_stylesheet_link_tag }}
 {% endraw %}
 {% endhighlight %}
+
+If you would like to use SASS or another compiler, there is nothing to stop you running your compiler of choice locally, whilst configuring it to generate an LCSS file which is then pushed to the repo and referenced in your theme.

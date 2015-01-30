@@ -63,8 +63,8 @@ sections:
   - title: Events
     id: events
     sub: true
-  - title: Building a site
-    id: build-site
+  - title: Theme configuration options
+    id: theme-config-options
     sub: true
   - title: Appendix
     id: appendix
