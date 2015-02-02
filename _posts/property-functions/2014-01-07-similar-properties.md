@@ -23,7 +23,8 @@ Similar to the featured properties seen before, if you would like to utilise the
 {% highlight javascript %}
 {% raw %}
 $(document).ready(function(){
- Ctesius.appendConfig('properties', {% include_as_json properties/properties_list data: similar_properties target: properties %}.properties);
+ Ctesius.appendConfig('properties', {% include_as_json properties/properties_list
+ data: similar_properties target: properties %}.properties);
  Ctesius.bootPropertiesCollection(Ctesius.getConfig('properties'));
 });
 {% endraw %}
