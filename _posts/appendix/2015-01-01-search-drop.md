@@ -14,8 +14,8 @@ category: appendix
 ####description
 **Returns:** A string of the price description and bedrooms combined
 
-####distance_in_miles
-**Returns:** The distance in miles from the location searched
+####geospacial_description
+**Returns:** The geospacial description from the location searched<br/>
 **Requires** The search to have a location
 
 ####min_bedrooms
