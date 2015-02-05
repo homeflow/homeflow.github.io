@@ -14,6 +14,10 @@ category: appendix
 ####description
 **Returns:** A string of the price description and bedrooms combined
 
+####distance_in_miles
+**Returns:** The distance in miles from the location searched
+**Requires** The search to have a location
+
 ####min_bedrooms
 **Returns:** The min bedrooms with the price qualifier as a String
 
@@ -40,3 +44,6 @@ category: appendix
 
 ####price_description
 **Returns:** The price as a String in a more titled format. i.e 'between £150,000 and £200,000'
+
+####tags
+**Returns:** A String representation of the tags used for the search. These are often used for property type filtering.
