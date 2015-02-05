@@ -45,6 +45,9 @@ sections:
   - title: Property show page
     id: property-show-page
     sub: true
+  - title: Lead forms
+    id: lead-forms
+    sub: true
   - title: Property functions
     id: property-functions
     sub: true
