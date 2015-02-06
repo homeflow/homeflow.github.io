@@ -2,7 +2,7 @@
 layout: default
 title: Branch searching
 modal-id: branch-searching
-category: working-with-branches
+category: branches
 ---
 If you're building a portal or larger agency theme, you will pleased to know that users can search for your branches using our geo location database. This comes complete with a handy AJAX style auto suggest location based on the town or city the user enters. To get up and running, first we need to add our form:
 

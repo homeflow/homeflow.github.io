@@ -2,7 +2,7 @@
 layout: default
 title: Properties from tag
 modal-id: properties-from-tag
-category: property-functions
+category: agencies
 unpublished: true
 ---
 Properties by tag allows you to manually tag properties and then pull out the properties belonging to that tag in your view:

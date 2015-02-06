@@ -1,8 +1,8 @@
 ---
 layout: default 
-title: Featured properties 
-modal-id: featured-properties
-category: property-functions
+title: Agency featured properties 
+modal-id: agency-featured-properties
+category: agencies
 ---
 For an agency, featured properties can play one of two roles depending on what has been set. In your backend admin system, you or the agent can manually feature up to five properties by clicking into the property record, selecting either sales or lettings and selecting the checkbox `Feature on the home page`, which is under the `Status and visibility` section. You can then loop through the properties on your page using the following code construct:
 

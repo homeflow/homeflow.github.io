@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Recent sales and lettings
-modal-id: recent-sales-lettings
-category: property-functions
+title: Agency recent sales and lettings
+modal-id: agency-recent-sales-lettings
+category: agencies
 ---
 There are three recent property related functions to be aware of:
 

@@ -21,7 +21,7 @@
 
 #hero-span {
     background-position: center top;
-    height: 200px;
+    height: 255px;
 }
 
 #content-span {
@@ -32,6 +32,67 @@
 .full-width {
     min-width: 100%;
     width: 100%;
+}
+
+#search {
+  margin: 55px 0 0;
+  text-align: center;
+}
+
+#search h3 {
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 24px;
+    font-family: "ProximaNovaLight",Helvetica,Arial,sans-serif;
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+
+#search #search-query {
+  width: 70%;
+  border: none;
+  box-shadow: none;
+  line-height: 20px;
+  padding: 13px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+#search #search-query:focus {
+  border: 1px solid #ff6600;
+  box-shadow: 0 0 3px #90c4e4 inset;
+}
+
+#search-results {
+    padding-bottom: 0;
+}
+
+.entries article h3 {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+::-webkit-input-placeholder {
+   color: #8f949b;
+   opacity: 0.8;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #8f949b;
+   opacity: 0.8;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #8f949b;
+   opacity: 0.8;
+}
+
+:-ms-input-placeholder {  
+   color: #8f949b;
+   opacity: 0.8;
+}
+
+#hero-span {
+    background-image:url(../img/bg_grey.png);
 }
 
 #content-inner {
@@ -190,24 +251,34 @@ pre code {
     white-space: inherit;
 }
 
-#api h3,
-#home h3 {
+#api h3 {
     font-size: 30px;
     margin-top: 15px;
+}
+
+#home h3 {
+    font-size: 30px;
 }
 
 #api h3:first-child {
     border-bottom: 1px solid #e2e2e2;
     padding-bottom: 24px;
     margin-bottom: 25px;
+    margin-top: 0;
 }
 
-.api-item h3 {
+.api-item h3,
+#search-results > h3 {
     margin: 25px 0 25px 0;
     padding: 10px 0 24px 0;
     color: #8f949b;
     font-size: 20px !important;
     border-bottom: 1px solid #e2e2e2;
+}
+
+#search-results > h3 {
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .api-item h3:first-child {

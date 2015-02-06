@@ -2,7 +2,7 @@
 layout: default
 title: Similar properties
 modal-id: similar-properties
-category: property-functions
+category: property-show-page
 ---
 At the time of writing the similar properties function is generally used on a property show page. It takes the current property as an argument and calls a helper method called ``similar properties`` which fetches nearby properties that are in a similar price bracket. It is a useful function to pique the user's interest and achieve more property hits in a given session.
 

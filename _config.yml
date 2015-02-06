@@ -1,3 +1,5 @@
+gems: ['jekyll-lunr-js-search']
+
 # Site settings
 
 title: Homeflow API Documentation
@@ -39,27 +41,24 @@ sections:
   - title: Property searching
     id: property-searching
     sub: true
-  - title: Draw a map
-    id: draw-a-map
-    sub: false
   - title: Property show page
     id: property-show-page
     sub: true
-  - title: Property functions
-    id: property-functions
+  - title: Agencies
+    id: agencies
     sub: true
+  - title: Branches
+    id: branches
+    sub: true
+  - title: Staff
+    id: staff
+    sub: true
+  - title: Draw a map
+    id: draw-a-map
+    sub: false
   - title: User profile system
     id: user-profile-system
     sub: false
-  - title: Working with agencies
-    id: working-with-agencies
-    sub: true
-  - title: Working with branches
-    id: working-with-branches
-    sub: true
-  - title: Working with staff
-    id: working-with-staff
-    sub: true
   - title: Events
     id: events
     sub: true

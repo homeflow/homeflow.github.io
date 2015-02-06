@@ -2,7 +2,7 @@
 layout: default
 title: Interesting properties
 modal-id: interesting-properties
-category: property-functions
+category: agencies
 ---
 Our interesting properties algorithm attempts to find properties similar to the ones a user has searched for and/or viewed, then display them in a location such as the home page. Many agency sites have a default output that is replaced if a certain number of interesting properties are returned. The great thing about the interesting properties output is that it works with your normal presentation, so you shouldn't need to rework any of your code.
 

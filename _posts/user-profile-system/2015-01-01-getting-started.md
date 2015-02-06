@@ -4,6 +4,7 @@ title: Getting started
 modal-id: getting-started
 category: user-profile-system
 unpublished: true
+exclude_from_search: true
 ---
 ####Saved Properties
 

@@ -2,7 +2,7 @@
 layout: default
 title: Send to Friend
 modal-id: send-to-friend
-category: property-functions
+category: property-show-page
 ---
 Properties can be shared on the Homeflow platform. All you have to do is include the following snippet:
 

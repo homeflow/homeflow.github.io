@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Recent sales and lettings
-modal-id: recent-sales-and-lettings
-category: working-with-branches
+title: Branch recent sales and lettings
+modal-id: branch-recent-sales-and-lettings
+category: branches
 ---
 Now we have our tabs, we can add the area that will be toggled on a click. Here's what a togglable sales tab and recent branch sales function looks like:
 

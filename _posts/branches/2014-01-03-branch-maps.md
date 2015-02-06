@@ -2,7 +2,7 @@
 layout: default
 title: Working with branch maps
 modal-id: branch-maps
-category: working-with-branches
+category: branches
 ---
 Homeflow supports a variety of map types which you can extend with custom pins, overlays and so on. The first and easiest map to set-up is the Leafleft.js map type. To get this up and running on the branches index page, start by adding:
 
