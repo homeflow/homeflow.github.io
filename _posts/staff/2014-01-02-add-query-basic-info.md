@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Add/query basic information
-modal-id: add-query-basic-info
-category: working-with-staff
+modal-id: query-basic-info
+category: staff
 ---
 Your first port of call before we can query any of the staff information is to add some. The Homeflow platform has hundreds if not thousands of profiles already loaded, so you might find we already have staff on record. That aside, log on to your agency admin and navigate to: ``/configure/business/staff``. From here follow the links to add/modify/remove staff as required.
 

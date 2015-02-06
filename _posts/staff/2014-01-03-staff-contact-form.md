@@ -2,7 +2,7 @@
 layout: default
 title: Staff contact form
 modal-id: staff-contact-form
-category: working-with-staff
+category: staff
 ---
 As mentioned in the opening section to this staff section, the Homeflow platform allows users to contact staff directly. Typically this contact is also copied to the overall agency email address, so you needn't worry about missing the lead. Here's a sample form construct:
 
