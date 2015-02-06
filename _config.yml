@@ -52,6 +52,8 @@ sections:
     sub: true
   - title: Staff
     id: staff
+  - title: Lead forms
+    id: lead-forms
     sub: true
   - title: Draw a map
     id: draw-a-map
