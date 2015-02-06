@@ -52,6 +52,7 @@ sections:
     sub: true
   - title: Staff
     id: staff
+    sub: true
   - title: Lead forms
     id: lead-forms
     sub: true
