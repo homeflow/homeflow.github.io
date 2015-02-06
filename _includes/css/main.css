@@ -69,6 +69,7 @@
 }
 
 #search-results {
+    padding-top: 0;
     padding-bottom: 0;
 }
 
@@ -81,6 +82,10 @@
     color: #8f949b;
     outline: none;
     padding: 10px 7px 0 0;
+}
+
+.entries {
+  padding-left: 162px;
 }
 
 .entries article h3 {
