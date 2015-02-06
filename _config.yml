@@ -61,7 +61,7 @@ sections:
     sub: false
   - title: User profile system
     id: user-profile-system
-    sub: false
+    sub: true
   - title: Events
     id: events
     sub: true
