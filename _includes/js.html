@@ -1,12 +1,9 @@
- <!-- jQuery Version 1.11.0 -->
-<!--<script src="{{ "/js/jquery-1.11.0.js" | prepend: site.baseurl }}"></script>-->
+ <!-- Search min, includes jQuery -->
 <script src="/js/search.min.js" type="text/javascript" charset="utf-8"></script>
 <!-- Bootstrap Core JavaScript -->
 <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
 <!-- Plugin JavaScript -->
 <script src="{{ "/js/jquery.easing.min.js" | prepend: site.baseurl }}"></script>
-<!-- Custom Theme JavaScript -->
-<script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
 <script>
     $(document).ready(function(){
         $( ".section-anchor" ).each(function( index ) {
@@ -45,4 +42,32 @@
           template: '#search-results-template'  // selector for Mustache.js template
         });
     });
+
+    $(window).keydown(function(event){
+      if(event.keyCode == 13) {
+        event.preventDefault();
+        return false;
+      }
+    });
+
+    $(function() {
+      $('.page-scroll a').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1000, 'easeInOutExpo');
+        event.preventDefault();
+      });
+    });
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1603257-2']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
 </script>
+
