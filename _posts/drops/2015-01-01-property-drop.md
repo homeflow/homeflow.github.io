@@ -2,7 +2,7 @@
 layout: default
 title: Property Drop
 modal-id: property-drop
-category: appendix
+category: drops
 ---
 ####available_on
 **Returns:** If supplied, the date the property is available.

@@ -2,7 +2,7 @@
 layout: default
 title: Location Drop
 modal-id: location-drop
-category: appendix
+category: drops
 ---
 
 ####best_location_condition

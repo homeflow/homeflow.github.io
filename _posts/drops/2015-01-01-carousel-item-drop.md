@@ -2,7 +2,7 @@
 layout: default
 title: Carousel Item Drop
 modal-id: carousel-item-drop
-category: appendix
+category: drops
 ---
 
 ####image

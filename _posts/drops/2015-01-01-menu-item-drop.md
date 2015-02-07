@@ -2,7 +2,7 @@
 layout: default
 title: Menu Item Drop
 modal-id: menu-item-drop
-category: appendix
+category: drops
 ---
 
 ####category

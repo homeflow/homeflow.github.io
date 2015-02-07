@@ -2,7 +2,7 @@
 layout: default
 title: Search Drop
 modal-id: search-drop
-category: appendix
+category: drops
 ---
 
 ####bedrooms_description

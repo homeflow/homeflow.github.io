@@ -2,7 +2,7 @@
 layout: default
 title: Staff Member Drop
 modal-id: staff-member-drop
-category: appendix
+category: drops
 ---
 ####agency
 **Returns:** The AgencyDrop associated with the StaffMember

@@ -2,7 +2,7 @@
 layout: default 
 title: Branch Drop 
 modal-id: branch-drop
-category: appendix
+category: drops
 ---
 
 Below are the methods available on the BranchDrop, what they return and also what they expect to be passed when calling the method.

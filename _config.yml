@@ -62,6 +62,9 @@ sections:
   - title: User profile system
     id: user-profile-system
     sub: true
+  - title: Drops
+    id: drops
+    sub: true
   - title: Events
     id: events
     sub: true

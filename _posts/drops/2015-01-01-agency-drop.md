@@ -2,7 +2,7 @@
 layout: default 
 title: Agency Drop 
 modal-id: agency-drop
-category: appendix
+category: drops
 ---
 
 Below are the methods available on the AgencyDrop, what they return and also what they expect to be passed when calling the method.

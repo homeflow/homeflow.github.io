@@ -2,7 +2,7 @@
 layout: default
 title: Pagination Drop
 modal-id: pagination-drop
-category: appendix
+category: drops
 ---
 ####current_page
 **Returns:** An integer value for the current page number

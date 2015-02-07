@@ -2,7 +2,7 @@
 layout: default
 title: Portal Drop
 modal-id: portal-drop
-category: appendix
+category: drops
 ---
 
 ####article(article_id)

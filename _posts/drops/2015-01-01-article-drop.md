@@ -2,7 +2,7 @@
 layout: default 
 title: Article Drop 
 modal-id: article-drop
-category: appendix
+category: drops
 ---
 
 Below are the methods available on the ArticleDrop, what they return and also what they expect to be passed when calling the method.
