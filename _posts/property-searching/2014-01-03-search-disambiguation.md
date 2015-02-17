@@ -4,9 +4,9 @@ title: Search Disambiguation
 modal-id: search-disambiguation
 category: property-searching
 ---
-Above we touched upon the geo location database - to the user this is an AJAX style dropdown of known locations they can select. If the user does not select a particular result from the auto suggest, Ctesius will send to the user to the page as if they selected the top result. Whilst this may be fine most of the time, you might want to ask your user to 'fine tune' their results by picking one of the alternative locations that were found.
+If the user does not select a particular result from the auto suggest, Ctesius will send to the user to the page as if they selected the top result. Whilst this may be fine most of the time, you might want to ask your user to 'fine tune' their results by picking one of the alternative locations that were found.
 
-To add this functionality, we first add a 'disambiguation' line to your theme's YAML file. A YAML file is a human readable data serialisation standard that's used for many programming languages and can be found in the root of your theme's repository. Note that the YAML file is case and space sensitive.
+To add this functionality, we first add a 'disambiguation' line to your theme's YAML file:
 
 {% highlight yaml %}
   enabled:

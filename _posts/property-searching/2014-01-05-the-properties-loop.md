@@ -35,14 +35,14 @@ As you can see we loop through the properties array and include the ``_property_
 {% endraw %}
 {% endhighlight %}
 
-Let's step through this. As you can see, we need to wrap each set of results in an ID or class container and we'll need to style up the elements so it renders nicely on a row. We'll assume you are okay with that and explain the Liquid.
+- ``{% raw %}property_{{property.property_id}}{% endraw %}`` - outputs the unique ID of the property
 
-Firstly, the ID of the div is ``{% raw %}property_{{property.property_id}}{% endraw %}``. As you can imagine, every property in our system gets assigned a numerical ID, and it's this ID that's used in URL and for other functions on the theme and in the backend. For now, we've outputted the ID so we can use our ``Save to shortlist`` function - more on that later.
+- ``{% raw %}{{ property | photo_overlay }}{% endraw %}`` - outputs the property status in the form of an image banner. You can customise this in your agency or portal admin with the following link: ``/configure/website/appearance/custom_images``.
 
-The next tag ``{% raw %}{{ property | photo_overlay }}{% endraw %}`` outputs the property status in the form of a sash image banner, or a custom banner of your choice. You can get to this custom images section via your agency or portal admin with the following link: ``/configure/website/appearance/custom_images``.
+- ``{% raw %}{{ property.photos.first | url_for_property_asset: "176x133" }}{% endraw %}`` - gets the first photo from the property.photos array and resizes to the specified dimensions.
 
-The next piece of Liquid is: ``{% raw %}{{ property.photos.first | url_for_property_asset: "176x133" }}{% endraw %}``. As you might imagine, this looks at the photos array and gets the link of the first one for use in the image source. We then use the ``url_for_property_asset`` key and we pass in a size in pixels. As mentioned before, Liquid will resize the image on the server and send it to the browser.
+-  {% raw %}``{{property | url_for_property}}{% endraw %}`` - outputs the relative address to the property
 
-A tag that's used numerous times in this code, as well as on many of the property related pages; ``{% raw %}{{property | url_for_property}}{% endraw %}`` outputs the relative address to the property in question.
+- ``{% raw %}{{property.display_address | truncate : 60}}{% endraw %}`` - this tag outputs the display address of the property.
 
-The next tag is ``{% raw %}{{property.display_address | truncate : 60}}{% endraw %}``. This tag outputs the display address of the property, which is the address as it comes in from the agency or portal feeds. A new arguement seen here is ``truncate``. This is a very useful Liquid function, which is particularly useful when curtailing long addresses, descriptions and so on - just pass in the number of characters you want to keep. Another useful truncate function is ``truncatewords: 20``. This does what it says on the tin.
+- ``truncate : 60`` - truncates the output to 60 characters. Another useful truncate function is ``truncatewords: 20``.
