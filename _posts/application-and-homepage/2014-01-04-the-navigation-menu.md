@@ -4,8 +4,6 @@ title: The navigation menu
 modal-id: navigation-menu
 category: application-and-homepage
 ---
-The navigation is another area where you have complete freedom of development - if you wanted to hardcode your menu and add/remove new or old items as they come along, that's absolutely fine. If however, you'd prefer to add the navigation tree to the agency admin and extract them using Liquid, that's fine too. Generally speaking portals add their menu to their source whereas theme designers or agency sites will tend to code the menu using Liquid, as their theme can then be deployed for multiple agencies.
-
 Let's assume for now you would like to query the agency admin and therefore Hestia for the menu and, if it has been added, its sub-menu counterpart.
 
 To start head over to your agency admin. Reminder: ``http://agency_homeflow_domain.homeflow.co.uk/admin``
@@ -26,12 +24,6 @@ Here's a code construct that would retrieve the primary menu items:
 </ul>
 {% endraw %}
 {% endhighlight %}
-
-Here we can see two new things: an ``assign`` statement and a Liquid ``for loop ``.
-
-The ``assign`` statement allows you to assign something to a Liquid variable. This can be as simple as a string or result of some evaluation. Also, as seen above, you can assign Liquid objects to a variable for looping and other purposes.
-
-And the good old ``for loop``. You'll probably be familiar with the ``for loop`` from other programming languages and Liquid's variant is very simple to use - loop through an object and you can write out its attributes as required.
 
 So what about a nested menu to support dropdrowns? Here's a code construct that will satisfy this requirement:
 
@@ -57,10 +49,6 @@ So what about a nested menu to support dropdrowns? Here's a code construct that 
 {% endraw %}
 {% endhighlight %}
 
-There's nothing new here but let's step through what's going on. Firstly we do our ``assign`` then we loop through the ``primary menu items`` and output an ``li`` and ``anchor`` for each. Next we check whether the menu item we're looping over has any items within it by doing an ``if not empty`` test - ``empty`` is a handy Liquid check to see if a variable has been initialised. If so, we output another unordered list and then we loop through the sub menu items of that menu item. We then output an ``li`` and ``anchor`` for each.
-
-Finally we close off the ``if`` and ``for loop`` using the appropriate end Liquid statements.
-
 ###Highlighting the active link
 
 The typical way to achieve this is to assign a category to your menu items and pages via the agency admin. Within your navigation loop, if the page category matches the menu item's category, then you can add the active:
@@ -70,4 +58,3 @@ The typical way to achieve this is to assign a category to your menu items and p
 <a href="{{menu_item.url}}" {% if menu_item.category == page.category %}class="active"{% endif %}>
 {% endraw %}
 {% endhighlight %}
-
