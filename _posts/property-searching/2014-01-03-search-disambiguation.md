@@ -32,6 +32,5 @@ Ctesius will automatically render the contents of template into the view but wil
 {% endraw %}{% raw %}{{% endraw %}% endraw %{% raw %}}{% endraw %}
 
 <div id='disambiguation_view'></div>
-{% endraw %}
 
 {% endhighlight %}
