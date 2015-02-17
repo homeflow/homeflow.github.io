@@ -21,7 +21,7 @@
 
 #hero-span {
     background-position: center top;
-    height: 250px;
+    height: 220px;
 }
 
 #content-span {
@@ -35,7 +35,7 @@
 }
 
 #search {
-  margin: 55px 0 0;
+  margin: 43px 0 0;
   text-align: center;
 }
 
@@ -59,7 +59,7 @@
     border: none;
     box-shadow: none;
     line-height: 20px;
-    padding: 13px;
+    padding: 10px;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
 }
 
