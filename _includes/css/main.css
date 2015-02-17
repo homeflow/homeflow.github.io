@@ -76,7 +76,7 @@
 #cancel {
     position: absolute;
     right: 0;
-    top: 0;
+    top: -1px;
     height: 30px;
     width: 30px;
     color: #8f949b;
