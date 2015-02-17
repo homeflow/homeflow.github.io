@@ -22,13 +22,14 @@ Ctesius will automatically render the contents of template into the view but wil
 
 {% highlight html %}
 
-{% raw %}
-<script id='disambiguation_template' type='text/liquid'>
-  <p>Did you mean:</p>
-  {% for place in places limit: 3 %}
-    <p><a href='{{place.url}}'>{{place.name}}</a></p>
-  {% endfor %}
-</script>
+{% raw %}{{% endraw %}% raw %{% raw %}}{% endraw %}{% raw %}
+ <script id='disambiguation_template' type='text/liquid'>
+   <p>Did you mean:</p>
+   {% for place in places limit: 3 %}
+     <p><a href='{{place.url}}'>{{place.name}}</a></p>
+   {% endfor %}
+ </script>
+{% endraw %}{% raw %}{{% endraw %}% endraw %{% raw %}}{% endraw %}
 
 <div id='disambiguation_view'></div>
 {% endraw %}
