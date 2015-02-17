@@ -53,7 +53,7 @@ So what about a nested menu to support dropdrowns? Here's a code construct that 
 
 The typical way to achieve this is to assign a category to your menu items and pages via the agency admin. Within your navigation loop, if the page category matches the menu item's category, then you can add the active:
 
-{% highlight html %}
+{% highlight liquid %}
 {% raw %}
 <a href="{{menu_item.url}}" {% if menu_item.category == page.category %}class="active"{% endif %}>
 {% endraw %}
