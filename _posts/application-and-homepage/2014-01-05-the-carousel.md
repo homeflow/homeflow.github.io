@@ -33,7 +33,6 @@ Now return to you theme and the ``home/home.liquid`` file. This is one place, an
 {% endraw %}
 {% endhighlight %}
 
-
 Whilst we're covering the carousel and ``home.liquid`` it's worth pointing out that your carousel doesn't have to reside in ``home.liquid``. Sometimes it doesn't make sense for everything that is featured on the home page to be in home.liquid. On occasions where we want to include content on the home page but you'd rather add it to ``application.liquid``, you can use the following statement:
 
 {% highlight html %}
