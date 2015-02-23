@@ -11,7 +11,8 @@ Let's start with the staff index - the entry point that lists all staff members.
 {% highlight html %}
 {% raw %}
 {% for profile in agency.staff_profiles %}
- <img src="{{ profile.avatar | url_for_staff_profile_avatar : "x97" }}" alt="{{ profile.name }}" width="97">
+ <img src="{{ profile.avatar | url_for_staff_profile_avatar : "x97" }}" 
+ alt="{{ profile.name }}" width="97">
  <div>
   <h1>{{ profile.name }}, {{ profile.job_title }}</h1>
   <p>{{ profile.short_bio }}</p>
@@ -66,6 +67,4 @@ The next page you will want to create is the staff show page - ``show.liquid``. 
 {% endraw %}
 {% endhighlight %}
 
-Notice here we've introduced the ``long_bio``, social icons and links such as ``staff_member.linkedin_uri``, and an avatar drop with a backup silhouette output should we not have an avatar for the staff member. Checkout the [Other staff drops](/appendix/#other-staff-drops) section in the appendix for more available fields.
-
-
+Checkout the [staff drop](/drops/#staff-member-drop) section for more available methods.

@@ -4,7 +4,7 @@ title: Staff contact form
 modal-id: staff-contact-form
 category: staff
 ---
-As mentioned in the opening section to this staff section, the Homeflow platform allows users to contact staff directly. Typically this contact is also copied to the overall agency email address, so you needn't worry about missing the lead. Here's a sample form construct:
+The Homeflow platform allows users to contact staff directly and leads are copied to the agency email address. Here's a sample form construct:
 
 {% highlight html %}
 {% raw %}
