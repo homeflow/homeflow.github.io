@@ -35,3 +35,10 @@ Ctesius.registerEvent('saved_search_removed', function(search, collection){
 });
 {% endraw %}
 {% endhighlight %}
+
+###Associated Events
+
+To override any default callabacks simply override the following Ctesius events:
+
+ - **saved_search_added**
+ - **saved_search_removed**

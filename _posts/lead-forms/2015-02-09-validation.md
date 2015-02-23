@@ -6,7 +6,6 @@ category: lead-forms
 ---
 Validation is super easy on the forms. Included in the application.js bundle is jquery.validate. You can add basic validation with the following snippet.
 
-
 {% highlight javascript %} 
 {% raw %}
 $().ready(function() {

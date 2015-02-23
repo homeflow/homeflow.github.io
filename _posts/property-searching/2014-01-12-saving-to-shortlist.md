@@ -4,8 +4,6 @@ title: Saving to a shortlist
 modal-id: saving-to-a-shortlist
 category: property-searching
 ---
-Our first port of call is to use our first ``override`` partial so far. An override is simply a partial well-known to Ctesius that's in the ``core`` app ready for use. Sometimes core files can be used without needing to override them but in this instance we'll assume you want to modify the layout or at least have a degree of control over the partial.
-
 In your ``js_templates`` folder, add the partial ``_saved_properties.liquid``. In it we need a couple of constructs, the first is:
 
 {% highlight html %}
@@ -76,3 +74,11 @@ Ctesius.registerEvent('saved_property_view_rendered', function(saved_property){
 });
 {% endraw %}
 {% endhighlight %}
+
+###Associated Events
+There are a bunch of [event callbacks](/events) that are fired when events take place in Ctesius system. This enables you to write custom functions to provide feedback for these events. Below is a list of shortlist events:
+
+- **saved_property_view_rendered** - Fired when a saved property has been added.
+- **saved_property_removed** - Fired when a saved property has been removed.
+- **saved_search_added** - Fired when a search is saved to the users favourites.
+- **saved_search_removed** - Fired when a saved search is removed.
