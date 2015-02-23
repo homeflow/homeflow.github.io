@@ -64,7 +64,7 @@ There's nothing special about this - if we had another three you'd have a nice r
 {% raw %}{%{% endraw %} endraw {% raw %}%}{% endraw %}
 {% endhighlight %}
 
-Essentially this is just a copy of the original structure, but with some raw tags (the Liquid serverside parser ignores code incased in raw tags) and some script tags with the matching ID as seen wrapping the previous code segment: interesting_properties_view. When the app builds up user history, and if it has at least one result, it will replace the block within the ID with the content brought back within the interesting properties template. Also note that a couple of fields are different - we use ``for property in properties`` in the for loop and ``property.property_url`` to get the property's URL.
+This template will be used to render our results.
 
 ###Working with statuses and property fields
 
