@@ -20,6 +20,8 @@ Say you want to extract some or all sales staff on sales properties and the same
 {% endraw %}
 {% endhighlight %}
 
+Then to test and output our newly created staff array:
+
 {% highlight html %}
 {% raw %}
 {% if staff_profiles %}
