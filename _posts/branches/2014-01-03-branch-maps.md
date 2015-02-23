@@ -25,4 +25,4 @@ If you would prefer a Google style map you still need the ``addConfig branches``
 
 ``{% raw %}{% gmap_for agency.branches as roadmap in branch_map %}{% endraw %}``
 
-This should then populate your ``branch_map`` div with a Google style map. Note that we're using the ``agency.branches`` ``drop`` to access the branches belonging to an agency.
+This should then populate your ``branch_map`` div with a Google style map. Note that we're using the ``agency.branches`` ``drop`` to access the branches belonging to an agency. Please note that Google maps do not have pin popups and the customisation capabilites of Leaflet maps.
