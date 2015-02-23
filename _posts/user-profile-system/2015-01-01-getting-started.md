@@ -24,4 +24,4 @@ The list of views are below. You can override each of the views that the JS rend
 - js_templates/_branch_map_pin.liquid
 - js_templates/_map_bubble_popup.liquid
 
-If all as gone well you should be able to launch the user profile lightview by adding ``/#user`` on to your staging URL. The jQuery plugin Colorbox is used for the lightview based templates.
+If all as gone well you should be able to launch the user profile lightview by adding ``/#user`` on to your staging URL. The jQuery plugin Colorbox is used for the lightview based templates. If you would like access to the source of the templates as a basis for custom development, please see the Stabilisers theme. 
