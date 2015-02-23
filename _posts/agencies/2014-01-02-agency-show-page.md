@@ -19,10 +19,10 @@ Anything agency related will reside in the ``agencies`` folder in your Rails dir
 {% elsif agency.logo %}
  <img src="{{agency.logo | url_for_agency_logo : "200x_"}}" />
 {% endif %}
+
+{{agency.description}}
 {% endraw %}
 {% endhighlight %}
-
-``{% raw %}{{agency.description}}{% endraw %}``
 
 Next, let's add a Google style map to our show page - note that this will show the branches belonging to an agency:
 
