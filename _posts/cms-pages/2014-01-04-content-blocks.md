@@ -2,7 +2,7 @@
 layout: default
 title: Content blocks
 modal-id: content-blocks
-category: pages
+category: cms-pages
 ---
 Regularly used on content pages (but also elsewhere on a theme), content blocks allow dynamic insertion of content on an agency by agency basis. A number of stock content blocks exist (e.g the footer block), but you can also [create your own](/pages#theme-content-blocks) and output where required.
 

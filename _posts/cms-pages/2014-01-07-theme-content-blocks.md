@@ -2,7 +2,7 @@
 layout: default
 title: Theme content blocks
 modal-id: theme-content-blocks
-category: pages
+category: cms-pages
 ---
 When you want to define your own content blocks, this is where ``theme content chunks`` come in. Your first step here is to make the Homeflow backend aware that there is a chunk available. To do this we use the theme's YAML file:
 

@@ -54,7 +54,7 @@ sections:
     id: staff
     sub: true
   - title: Pages
-    id: pages
+    id: cms-pages
     sub: true
   - title: Lead forms
     id: lead-forms

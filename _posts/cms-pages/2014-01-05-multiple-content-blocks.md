@@ -2,7 +2,7 @@
 layout: default
 title: Multiple content blocks
 modal-id: multiple-content-blocks
-category: pages
+category: cms-pages
 ---
 In some cases it's useful to be able to define a content block multiple times:
 

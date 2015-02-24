@@ -2,7 +2,7 @@
 layout: default
 title: Geo Content blocks
 modal-id: geo-content-blocks
-category: pages
+category: cms-pages
 ---
 Geo content blocks are those containing a lat/lng pair. Any objects which respond to #lat or #lng can be used to query for content blocks near that area. For instance, to get all 'ad_unit' content blocks near a set location on a page like `brighton-and-hove/brighton/sales`:
 

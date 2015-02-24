@@ -2,7 +2,7 @@
 layout: default
 title: Related pages
 modal-id: related-pages
-category: pages
+category: cms-pages
 ---
 Pages that share a category can be extracted and looped through using the related pages function:
 
