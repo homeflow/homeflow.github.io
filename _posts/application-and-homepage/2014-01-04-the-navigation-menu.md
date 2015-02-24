@@ -4,8 +4,6 @@ title: The navigation menu
 modal-id: navigation-menu
 category: application-and-homepage
 ---
-Let's assume for now you would like to query the agency admin and therefore Hestia for the menu and, if it has been added, its sub-menu counterpart.
-
 To start head over to your agency admin. Reminder: ``http://agency_homeflow_domain.homeflow.co.uk/admin``
 
 Then go to ``Website/Navigation``. From here you can drag in menu items for existing pages or create custom links, e.g. to the ``/branches`` page for example. Once you've got your primary menu items, you can then edit each one and add sub-menu items.
@@ -25,7 +23,7 @@ Here's a code construct that would retrieve the primary menu items:
 {% endraw %}
 {% endhighlight %}
 
-So what about a nested menu to support dropdrowns? Here's a code construct that will satisfy this requirement:
+Here's a code construct that will satisfy a menu dropdown requirement:
 
 {% highlight html %}
 {% raw %}

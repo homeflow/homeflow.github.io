@@ -26,7 +26,7 @@ To publish the titles and keywords to your theme, all you need do is add the fol
 {% endraw %}
 {% endhighlight %}
 
-Homeflow has a general fallback for each category of page should you not opt to customise the wording. Should you want to customise your titles and descriptions, head to: ``/configure/website/content/content/list``. If you scroll down you will see the various chunks available for the different categories of page. We tend to add a mixture of Liquid and plain text to give the user or indeed the search engine some useful information. For example, a typical ``property details`` page title could be:
+Homeflow has a general fallback for each category of page should you not opt to customise the wording. Should you want to customise your titles and descriptions, head to: ``/configure/website/content/content/list``. If you scroll down you will see the various chunks available for the different categories of page. A typical ``property details`` page title could be:
 
 {% highlight html %}
 {% raw %}
@@ -37,9 +37,7 @@ property {{current_channel.dictionary.preposition}} in {{property.display_addres
 {% endraw %}
 {% endhighlight %}
 
-This might output something like: ``3 bedroom property for sale in Temple Street, Brighton``.
-
-This is the first ``unless`` tag we've seen - like PHP and many other languages, the output is always true ``unless`` a condition is met. In this instance we're checking whether bedrooms is not zero before outputting. A couple of other tags are:
+This might output something like: ``3 bedroom property for sale in Temple Street, Brighton``. A couple of other tags are:
 
 {% highlight html %}
 {% raw %}

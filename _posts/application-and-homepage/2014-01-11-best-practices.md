@@ -4,7 +4,7 @@ title: Best Practices
 modal-id: best-practices
 category: application-and-homepage
 ---
-The Homeflow system uses various levels of caching amongst other techniques to deliver content super fast to the user's browser. That being said, there is no substitute for coding your theme in the most efficient way possible. This section will explore how to do that and will introduce some functions we have created to help you in your quest for speed. Google has an excellent tool called [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) that you can use to review your site.
+The Homeflow system uses various levels of caching amongst other techniques to deliver content super fast to the user's browser. That being said, there is no substitute for coding your theme in the most efficient way possible. Google has an excellent tool called [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) that you can use to review your site.
 
 ### Working with Images
 
@@ -59,7 +59,7 @@ Our second good practice is to minify your JS and CSS where possible. Most jQuer
 {% endraw %}
 {% endhighlight %}
 
-### Deferring JS and CSS Declarations
+### Deferring JS Declarations
 
 Whilst developing your theme, have a think: do all JS declarations have to be in the head of your source? Can they be deferred before the closing body tag? The Google PageSpeed analysis will demote points from you for block levelling JS and CSS.
 
