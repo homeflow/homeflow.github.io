@@ -61,7 +61,7 @@ Our second good practice is to minify your JS and CSS where possible. Most jQuer
 
 ### Deferring JS and CSS Declarations
 
-Whilst developing your theme, have a think: does certain JS and CSS file declarations have to be in the head of your source? Can they be deferred before the closing body tag? The Google PageSpeed analysis will demote points from you for block levelling JS and CSS.
+Whilst developing your theme, have a think: do all JS declarations have to be in the head of your source? Can they be deferred before the closing body tag? The Google PageSpeed analysis will demote points from you for block levelling JS and CSS.
 
 In addition, is there code that is only used on certain pages, e.g. property pages? Could you defer the scripts on the results or show page for example? Whilst not forgetting to minify them if that's an option.
 
