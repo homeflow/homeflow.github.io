@@ -10,7 +10,7 @@ Content blocks are called by name and in their most basic form are rendered out 
 
 {% highlight liquid %}
 {% raw %}
-{% content_block 'a_nice_content_block' %}
+{% content_block a_nice_content_block %}
  {% if content_block %}
   {{content_block}}
  {% endif %}
