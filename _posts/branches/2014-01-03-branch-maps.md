@@ -21,6 +21,8 @@ Next we need to declare our ``div`` to apply the map to:
 
 Don't forget to give your map ID or class and height and/or width to get it to show up. This should be enough to get your Leaflet branch map showing with a pin for each branch. The map bubbles have a fairly basic presentation that's fine for most, but if you would like to customise your pin, you can override ``_branch_map_pin.liquid`` in your ``js_templates`` folder and customise the layout and styles as necessary. 
 
+###Google maps
+
 If you would prefer a Google style map you still need the ``addConfig branches`` code seen before, but this time, instead of your ``addConfig branch_map``, we need:
 
 ``{% raw %}{% gmap_for agency.branches as roadmap in branch_map %}{% endraw %}``

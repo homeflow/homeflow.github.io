@@ -20,8 +20,6 @@ Much like we saw earlier in the documentation with property results, it's useful
 {% endraw %}
 {% endhighlight %}
 
-As you can see, the IF statement checks for the location or location type and outputs the appropriate heading between a heading tag. Remember that if you use the construct multiple times, you can add it to a partial if you wish.
-
 The branches index results comes loaded with the same pagination figures and options we saw in the property results earlier. Here's an example construct:
 
 {% highlight html %}

@@ -4,7 +4,7 @@ title: The carousel
 modal-id: carousel
 category: application-and-homepage
 ---
-Your first port of call is to head to the carousel section within the agency or portal admin. You can find that under ``Website/carousel``. Don't worry about the settings for now but instead go straight to ``Add item``. Keep the standard option selected and upload your background image, add a title, a standfirst (the chunk of accompanying text) and a link if required. The minimum you'll want is an image and standfirst.
+Your first port of call is to head to the carousel section within the agency or portal admin. You can find that under ``Website/carousel``.
 
 Now return to you theme and the ``home/home.liquid`` file. This is one place, and a logical one, where we can add our carousel code:
 
@@ -33,7 +33,7 @@ Now return to you theme and the ``home/home.liquid`` file. This is one place, an
 {% endraw %}
 {% endhighlight %}
 
-Whilst we're covering the carousel and ``home.liquid`` it's worth pointing out that your carousel doesn't have to reside in ``home.liquid``. Sometimes it doesn't make sense for everything that is featured on the home page to be in home.liquid. On occasions where we want to include content on the home page but you'd rather add it to ``application.liquid``, you can use the following statement:
+Sometimes it doesn't make sense for everything that is featured on the home page to be in home.liquid. On occasions where we want to include content on the home page but you'd rather add it to ``application.liquid``, you can use the following statement:
 
 {% highlight html %}
 {% raw %}
