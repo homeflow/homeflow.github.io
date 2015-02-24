@@ -26,7 +26,7 @@ Each time the content block tag is used it will yield the following variables:
 - `content_block_image`
 - `content_block_title`
 
-. Log on to your agency admin and navigate to ``/configure/website/content/content/list`` to see the full list.
+Log on to your agency admin and navigate to ``/configure/website/content/content/list`` to see the full list.
 
 Another useful function is to test for the chunk and output some kind of alternative:
 
