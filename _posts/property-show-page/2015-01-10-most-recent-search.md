@@ -8,9 +8,9 @@ The most recent search template lives in the same template as the next and previ
 
 {% highlight html %}
 {% raw %}{{% endraw %}% raw %{% raw %}}{% endraw %}{% raw %}
-<script id="most_recent_search_template" type="text/liquid">
- <div class="col-8"><a class="back" href="{{search.link}}">Back to search results </a></div>
-</script>
+ <script id="most_recent_search_template" type="text/liquid">
+  <div class="col-8"><a class="back" href="{{search.link}}">Back to search results </a></div>
+ </script>
 {% endraw %}{% raw %}{{% endraw %}% endraw %{% raw %}}{% endraw %}
 {% endhighlight %}
 

@@ -10,16 +10,16 @@ To get up and running, add a partial template under ``js_templates`` called ``_n
 
 {% highlight html %}
 {% raw %}{{% endraw %}% raw %{% raw %}}{% endraw %}{% raw %}
-<script id="next_and_previous_property_template" type="text/liquid">
- <div class="col-4">
-  {% if previous_property %}
-   <a class="previous-prop" href="{{ previous_property.property_url }}">Previous Property</a> 
-  {% endif %}
-  {% if next_property %}
-   <a class="next-prop" href="{{ next_property.property_url }}">Next property</a>
-  {% endif %}
- </div>
-</script>
+ <script id="next_and_previous_property_template" type="text/liquid">
+  <div class="col-4">
+   {% if previous_property %}
+    <a class="previous-prop" href="{{ previous_property.property_url }}">Previous Property</a> 
+   {% endif %}
+   {% if next_property %}
+    <a class="next-prop" href="{{ next_property.property_url }}">Next property</a>
+   {% endif %}
+  </div>
+ </script>
 {% endraw %}{% raw %}{{% endraw %}% endraw %{% raw %}}{% endraw %}
 {% endhighlight %}
 
