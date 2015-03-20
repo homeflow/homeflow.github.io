@@ -44,7 +44,7 @@ Essentially this is our widget container. Here's the next construct:
 
 This construct is the actual saved property record within the widget.
 
-Next we need to allow our widget to show up somewhere in your theme - typically a sidebar. Add the following code whereever you would like it to show:
+Next we need to allow our widget to show up somewhere in your theme - typically a sidebar. Add the following code wherever you would like it to show:
 
 ``<div id="saved_properties_view" class="hidden"></div>``.
 
