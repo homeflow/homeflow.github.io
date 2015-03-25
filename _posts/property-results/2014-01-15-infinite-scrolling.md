@@ -2,7 +2,7 @@
 layout: default
 title: Infinite scrolling
 modal-id: infinite-scrolling
-category: property-searching
+category: property-results
 ---
 The first step to get up and running is to add a Ctesius ``addConfig`` on your results page within some script tags.
 

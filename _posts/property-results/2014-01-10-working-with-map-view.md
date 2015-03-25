@@ -2,7 +2,7 @@
 layout: default
 title: Working with map views
 modal-id: working-with-the-map-view
-category: property-searching
+category: property-results
 ---
 To get the map up and running, all you need to do is add the ``draggable_map_view`` div to your tab and supply it with a height and a width in your CSS:
 

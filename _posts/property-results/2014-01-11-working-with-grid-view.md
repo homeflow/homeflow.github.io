@@ -2,7 +2,7 @@
 layout: default
 title: Working with grid views
 modal-id: working-with-grid-views
-category: property-searching
+category: property-results
 ---
 The easiest way to get up and running with a grid view is to have a ``properties_grid`` partial that sits in the togglable grid container. Within this partial there is a second properties loop:
 

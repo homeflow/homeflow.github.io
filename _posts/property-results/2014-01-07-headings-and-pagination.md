@@ -2,7 +2,7 @@
 layout: default
 title: Headings and pagination
 modal-id: headings-and-pagination
-category: property-searching
+category: property-results
 ---
 Headings need to reflect the search the user has carried out or it should output a very general statement if it's an index search.
 

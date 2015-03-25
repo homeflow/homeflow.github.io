@@ -2,7 +2,7 @@
 layout: default
 title: Search disambiguation
 modal-id: search-disambiguation
-category: property-searching
+category: property-results
 ---
 If the user does not select a particular result from the auto suggest, Ctesius will send to the user to the page as if they selected the top result. Whilst this may be fine most of the time, you might want to ask your user to 'fine tune' their results by picking one of the alternative locations that were found.
 

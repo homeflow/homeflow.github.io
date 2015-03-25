@@ -2,7 +2,7 @@
 layout: default
 title: Saving searches
 modal-id: saving-searches
-category: property-searching
+category: property-results
 ---
 Here's the first bit of code you will need to add where you would like the save search link/button:
 

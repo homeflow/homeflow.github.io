@@ -41,6 +41,9 @@ sections:
   - title: Property searching
     id: property-searching
     sub: true
+  - title: Property results
+    id: property-results
+    sub: true
   - title: Property show page
     id: property-show-page
     sub: true

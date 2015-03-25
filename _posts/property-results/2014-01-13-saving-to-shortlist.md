@@ -2,7 +2,7 @@
 layout: default
 title: Saving to a shortlist
 modal-id: saving-to-a-shortlist
-category: property-searching
+category: property-results
 ---
 In your ``js_templates`` folder, add the partial ``_saved_properties.liquid``. In it we need a couple of constructs, the first is:
 
