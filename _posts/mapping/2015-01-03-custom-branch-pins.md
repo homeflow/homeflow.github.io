@@ -13,6 +13,8 @@ If you only need one custom pin for all maps, please use the [custom map pins](/
 
 Ctesius.addConfig('custom_branch_pin', function(branch){
 
+ // set defaults if theme_preferences not set
+
  var markerIconImage = Ctesius.getConfig('root_url') + 'assets/leaflet/marker-icon.png';
  var markerIconSize = [25,41];
  var markerShadowUrl = Ctesius.getConfig('root_url') + 'assets/leaflet/marker-shadow.png';
