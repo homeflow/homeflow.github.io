@@ -42,12 +42,18 @@ Ctesius.addConfig('custom_property_pin', function(property) {
 {% endraw %}
 {% endhighlight %}
 
-Important point: if you choose this custom function and you are building a multi agency theme, you will need to code in a backup in case the theme preferences are not set. Here's what each Leaflet variable expects:
+Important point: if you choose this custom function and you are building a multi agency theme, you will need to code in a backup in case the theme preferences are not set. You may elect to assign the default values then override them if theme preferences are set:
 
-- ``iconUrl`` - the full URL to the pin - Ctesius.getConfig('root_url') + 'assets/leaflet/marker-icon.png';
-- ``iconSize`` - an array of width and height e.g: [25,41]
-- ``shadowUrl`` - Ctesius.getConfig('root_url') + 'assets/leaflet/marker-shadow.png';
-- ``shadowSize`` - an array e.g: [41,41]
+{% highlight javascript %}
+{% raw %}
+
+var markerIcon = Ctesius.getConfig('root_url') + 'assets/leaflet/marker-icon.png';
+var markerIconSize = [25,41];
+var markerShadowUrl = Ctesius.getConfig('root_url') + 'assets/leaflet/marker-shadow.png';
+var markerShadowSize = [41,41];
+
+{% endraw %}
+{% endhighlight %}
 
 Any and all fields are populated from the ``properties/_properties_list.ljson`` file in the core app, unless you have your own custom version in theme. Some attributes you might like to configure the pin on include:
 
