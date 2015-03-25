@@ -12,7 +12,15 @@ If you only need one custom pin for all maps, please use the [custom map pins](/
 {% raw %}
 
 Ctesius.addConfig('custom_property_pin', function(property) {
+
+ // set defaults if theme_preferences not set
+
+ var markerIcon = Ctesius.getConfig('root_url') + 'assets/leaflet/marker-icon.png';
+ var markerIconSize = [25,41];
+ var markerShadowUrl = Ctesius.getConfig('root_url') + 'assets/leaflet/marker-shadow.png';
+ var markerShadowSize = [41,41];
  var status;
+
  property.get('status') ? status = property.get('status') : status = '{{property.status}}';
 
  if (status == 'For sale' || status == "To let") {
@@ -30,7 +38,7 @@ Ctesius.addConfig('custom_property_pin', function(property) {
  {% endif %}
 
  {% if theme_preferences.map_pin_marker_shadow_size %}
-  var markerShadowSize = "{{theme_preferences.map_pin_marker_shadow_size}}".split(',');
+  var markerShadowSize = "{{ theme_preferences.map_pin_marker_shadow_size }}".split(',');
  {% endif %}
 
  return new L.Icon.Default({
@@ -40,19 +48,6 @@ Ctesius.addConfig('custom_property_pin', function(property) {
   shadowSize: markerShadowSize
  })
 });
-
-{% endraw %}
-{% endhighlight %}
-
-Important point: if you choose this custom function and you are building a multi agency theme, you will need to code in a backup in case the theme preferences are not set. You may elect to assign the default values then override them if theme preferences are set:
-
-{% highlight javascript %}
-{% raw %}
-
-var markerIcon = Ctesius.getConfig('root_url') + 'assets/leaflet/marker-icon.png';
-var markerIconSize = [25,41];
-var markerShadowUrl = Ctesius.getConfig('root_url') + 'assets/leaflet/marker-shadow.png';
-var markerShadowSize = [41,41];
 
 {% endraw %}
 {% endhighlight %}

@@ -28,11 +28,11 @@ Ctesius.addConfig('custom_branch_pin', function(branch){
  }
  
  {% if theme_preferences.map_pin_marker_shadow %}
-  markerShadowUrl = Ctesius.addConfig('custom_map_icon_shadow', '{{ theme_preferences.map_pin_marker_shadow  | url_for_site_asset }}');
+  markerShadowUrl = '{{ theme_preferences.map_pin_marker_shadow  | url_for_site_asset }}';
  {% endif %}
 
  {% if theme_preferences.map_pin_marker_shadow_size %}
-  markerShadowSize = Ctesius.addConfig('custom_map_shadow_icon_size', '{{ theme_preferences.map_pin_marker_shadow_size }}');
+  markerShadowSize = '{{ theme_preferences.map_pin_marker_shadow_size }}'.split(',');
  {% endif %}
 
  return new L.Icon.Default({
