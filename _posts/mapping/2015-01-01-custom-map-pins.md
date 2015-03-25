@@ -29,3 +29,5 @@ The Ctesius app allows you to customise your theme's map pins and shadows using 
 
 {% endraw %}
 {% endhighlight %}
+
+Note that if the theme preference has not been set, we will apply the default Leaflet pin a shadow configuration.
