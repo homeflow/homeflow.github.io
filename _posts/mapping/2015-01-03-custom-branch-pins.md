@@ -48,8 +48,8 @@ Ctesius.addConfig('custom_branch_pin', function(branch){
 Common fields to configure the pin on would be the branch channel settings:
 
 {% raw %}
-- sales_enabled: {{branch.sales_enabled}}
-- lettings_enabled: {{branch.lettings_enabled}}
-- name: {{branch.name}}
-- branch_id : {{branch.branch_id}}
+- ``sales_enabled: {{branch.sales_enabled}}``
+- ``lettings_enabled: {{branch.lettings_enabled}}``
+- ``name: {{branch.name}}``
+- ``branch_id : {{branch.branch_id}}``
 {% endraw %}
