@@ -57,7 +57,11 @@ var markerShadowSize = [41,41];
 
 Any and all fields are populated from the ``properties/_properties_list.ljson`` file in the core app, unless you have your own custom version in theme. Some attributes you might like to configure the pin on include:
 
-- ``property_channel`` - 'sales' or 'lettings'
-- ``status`` -  examples include: 'For sale', 'To let', 'Sold', 'SSTC', 'Let', Let agreed'
-- ``property_type`` - add to LJSON to retrieve
+{% raw %}
+
+- property_channel: {{property.primary_channel}} - 'sales' or 'lettings'
+- status: {{ property.status}} - examples include - 'For sale', 'To let', 'Sold', 'SSTC', 'Let', Let agreed'
+- property_type: {{property.property_type}}
+
+{% endraw %}
 
