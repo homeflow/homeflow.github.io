@@ -59,9 +59,9 @@ sections:
   - title: Lead forms
     id: lead-forms
     sub: true
-  - title: Draw a map
-    id: draw-a-map
-    sub: false
+  - title: Mapping
+    id: mapping
+    sub: true
   - title: User profile system
     id: user-profile-system
     sub: true
