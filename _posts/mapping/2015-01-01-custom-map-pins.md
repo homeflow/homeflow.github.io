@@ -24,7 +24,7 @@ The Ctesius app allows you to customise your theme's map pins and shadows using 
 
 {% if theme_preferences.map_pin_marker_shadow_size %}
  var shadow_dimensions = "{{theme_preferences.map_pin_marker_shadow_size}}".split(',');
- markerShadowSize = Ctesius.addConfig('custom_map_shadow_icon_size', shadow_dimensions);
+ Ctesius.addConfig('custom_map_shadow_icon_size', shadow_dimensions);
 {% endif %}
 
 {% endraw %}
