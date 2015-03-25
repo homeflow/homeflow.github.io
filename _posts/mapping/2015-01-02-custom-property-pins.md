@@ -62,6 +62,7 @@ Any and all fields are populated from the ``properties/_properties_list.ljson`` 
 - property_channel: {{property.primary_channel}} - 'sales' or 'lettings'
 - status: {{ property.status}} - examples include - 'For sale', 'To let', 'Sold', 'SSTC', 'Let', Let agreed'
 - property_type: {{property.property_type}}
+- branch_name: '{{property.agency.branch.branch_name}}'
 
 {% endraw %}
 
