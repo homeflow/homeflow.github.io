@@ -6,6 +6,8 @@ category: mapping
 ---
 If you would like complete control over the property pin, and to be able to create and return the Leaflet pin object yourself, you can use an ``addConfig`` with a callback function. Because this function takes the property object as an arguement, and because each property will run through this function, you can customise the pin based on things like whether the property is sales, lettings, for sale, to let, sold and so on.
 
+If you only need one custom pin for all maps, please use the [custom map pins](/mapping/#custom-map-pins) code instead. 
+
 {% highlight javascript %}
 {% raw %}
 
