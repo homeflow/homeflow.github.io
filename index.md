@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Homeflow API - Overview
+title: Homeflow API - Create powerful and beautiful estate agency websites
 category: home
 ---
 Hi there and welcome to the Homeflow API documentation.
