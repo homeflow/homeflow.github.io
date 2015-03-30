@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Articles loop
+title: Articles show
 modal-id: articles-show
 category: articles
 ---

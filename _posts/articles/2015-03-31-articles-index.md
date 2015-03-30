@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Articles loop
+title: Articles index
 modal-id: articles-index
 category: articles
 ---
