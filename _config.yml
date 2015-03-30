@@ -65,8 +65,8 @@ sections:
   - title: Lead forms
     id: lead-forms
     sub: true
-  - title: Mapping
-    id: mapping
+  - title: Maps
+    id: maps
     sub: true
   - title: User profile system
     id: user-profile-system

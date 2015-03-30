@@ -2,7 +2,7 @@
 layout: default
 title: Custom map pins
 modal-id: custom-map-pins
-category: mapping
+category: maps
 ---
 The Ctesius app allows you to customise your theme's map pins and shadows using the settings that can be found in the agency's admin preferences section. To pull out the pin and shadow in code and apply to all Leaflet maps, here's what you'll need:
 

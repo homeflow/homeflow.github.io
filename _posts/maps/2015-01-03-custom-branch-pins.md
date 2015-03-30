@@ -2,7 +2,7 @@
 layout: default
 title: Custom branch pins
 modal-id: custom-branch-pins
-category: mapping
+category: maps
 ---
 Similar to the custom property pin function, using the branch object you can change the pin depending on branch attributes. You can set any available branch attribute in ``branches/_branch.ljson`` for single branch pages, or ``branches/_branches_list.ljson`` for the index of branches. As with the property pin, you'll need to declare the default settings.
 
