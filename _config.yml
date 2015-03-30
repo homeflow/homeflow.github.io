@@ -59,6 +59,9 @@ sections:
   - title: Pages
     id: cms-pages
     sub: true
+  - title: Articles
+    id: articles
+    sub: true
   - title: Lead forms
     id: lead-forms
     sub: true
