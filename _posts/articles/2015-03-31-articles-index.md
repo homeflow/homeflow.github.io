@@ -31,5 +31,5 @@ The articles index is a static file that needs to reside in an ``articles`` fold
   </a>
 {% endfor %}
 
-{% endhighlight %}
 {% endraw %}
+{% endhighlight %}

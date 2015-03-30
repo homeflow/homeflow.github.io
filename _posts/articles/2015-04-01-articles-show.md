@@ -19,7 +19,8 @@ The article show page is simply a ``show.liquid`` file in your articles director
  </div>
 </div>
 
-{% endhighlight %}
 {% endraw %}
+{% endhighlight %}
+
 
 
