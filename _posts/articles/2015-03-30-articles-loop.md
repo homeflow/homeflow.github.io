@@ -4,7 +4,7 @@ title: Articles loop
 modal-id: articles-loop
 category: articles
 ---
-Articles can be queried anywhere on a theme using the agency articles loop. Here's an example construct:
+Articles are loaded via the agency admin link: ``/configure/website/content/articles``. They can then be queried anywhere on a theme using the agency articles loop. Here's an example construct:
 
 {% highlight html %}
 {% raw %}
