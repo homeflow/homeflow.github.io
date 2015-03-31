@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Register
-modal-id: register-page
+title: Register form
+modal-id: register-form
 category: cms-pages
 ---
 The Ctesius app allows you to register new users to an agency. The standard URL to get to the page is ``/register`` and the registration form needs to live in a ``new.liquid`` file within a ``user`` folder. There are many fields you can use to request information from the client, though name, email and password are absolutely required:
@@ -49,19 +49,19 @@ The Ctesius app allows you to register new users to an agency. The standard URL 
                        
  <h3>Your Requirements:</h3>
 
- <input id="client[is_sales_applicant_at]" name="client[is_sales_applicant_at]" type="checkbox" value="1" checked="checked">
+ <input id="client[is_sales_applicant_at]" name="client[is_sales_applicant_at]" type="checkbox" checked="checked">
   <label class="check" for="client[is_sales_applicant_at]">I am looking to buy</label>
 
- <input id="client[is_lettings_applicant_at]" name="client[is_lettings_applicant_at]" type="checkbox" value="1">
+ <input id="client[is_lettings_applicant_at]" name="client[is_lettings_applicant_at]" type="checkbox">
   <label class="check" for="client[is_lettings_applicant_at]">I am looking to rent</label>
 
- <input id="client[is_vendor_at]" name="client[is_vendor_at]" type="checkbox" value="1">
+ <input id="client[is_vendor_at]" name="client[is_vendor_at]" type="checkbox">
   <label class="check" for="client[is_vendor_at]">I have a property to sell</label>
 
- <input id="client[is_landlord_at]" name="client[is_landlord_at]" type="checkbox" value="1">
+ <input id="client[is_landlord_at]" name="client[is_landlord_at]" type="checkbox">
   <label class="check" for="client[is_landlord_at]">I have a property to let</label>
 
- <label for="lead[message]" style="margin-top:20px;">Comments</label>
+ <label for="lead[message]">Comments</label>
   <textarea id="message" name="lead[message]"></textarea>
 
  <button type="submit" id="contact_form_button">Send to {{agency.name}}</button>
