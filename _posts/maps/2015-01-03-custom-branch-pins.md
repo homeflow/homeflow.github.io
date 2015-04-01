@@ -49,7 +49,7 @@ Ctesius.addConfig('custom_branch_pin', function(branch){
 {% endraw %}
 {% endhighlight %}
 
-Common fields to configure the pin on would be the branch channel settings:
+Common fields to configure the pin on might include:
 
 {% raw %}
 - ``sales_enabled: {{branch.sales_enabled}}``
