@@ -2,7 +2,7 @@ gems: ['jekyll-lunr-js-search']
 
 # Site settings
 
-title: Homeflow API Documentation - Create beautiful and powerful estate agency websites 
+title: Homeflow - Create beautiful and powerful estate agency websites 
 email: support@homeflow.co.uk
 description: "Learn how to create beautiful and powerful estate agency websites using the Homeflow API"
 
