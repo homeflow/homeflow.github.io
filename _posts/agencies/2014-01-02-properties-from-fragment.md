@@ -6,7 +6,7 @@ category: agencies
 ---
 Properties from fragment is a function that effectively allows you to run a background search using any search criteria, then loop through the results anywhere on the site using a well defined content block.
 
-If you've been working with search results as well as filtering by price, type and so on, you will familiar with the URL 'fragments'. A typical fragment could be: ``from-3-bed/from-200000/up-to-300000``. This is exactly what we add to the block:
+If you've been working with search results as well as filtering by price, type and so on, you'll be familiar with the URL 'fragments'. A typical fragment could be: ``from-3-bed/from-200000/up-to-300000``. This is exactly what we can add to the block:
 
 {% highlight html %}
 {% raw %}
