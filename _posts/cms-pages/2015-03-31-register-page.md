@@ -9,7 +9,7 @@ The Ctesius app allows you to register new users to an agency. The standard URL 
 {% highlight html %}
 {% raw %}
 
-<form class="clearfix new" action="/user" method="post">
+<form action="/user" method="post">
 
  <input type="hidden" value="{{agency.agency_id}}" name="client[agency_id]">                    
  <div id='form_error'></div>
@@ -46,7 +46,15 @@ The Ctesius app allows you to register new users to an agency. The standard URL 
 
  <label class="text" for="client[tel_home]">Home Telephone</label>
   <input id="client[tel_home]" name="client[tel_home]" type="text">
-                       
+                   
+{% endraw %}           
+{% endhighlight %}      
+
+Optionally, you can grab their requirements:
+
+{% highlight html %}
+{% raw %}
+
  <h3>Your Requirements:</h3>
 
  <input id="client[is_sales_applicant_at]" name="client[is_sales_applicant_at]" type="checkbox" checked="checked">
@@ -64,7 +72,7 @@ The Ctesius app allows you to register new users to an agency. The standard URL 
  <label for="lead[message]">Comments</label>
   <textarea id="message" name="lead[message]"></textarea>
 
- <button type="submit" id="contact_form_button">Send to {{agency.name}}</button>
+ <button type="submit">Send to {{agency.name}}</button>
 
 </form>
              
