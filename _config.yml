@@ -53,6 +53,9 @@ sections:
   - title: Branches
     id: branches
     sub: true
+  - title: Maps
+    id: maps
+    sub: true
   - title: Staff
     id: staff
     sub: true
@@ -64,9 +67,6 @@ sections:
     sub: true
   - title: Lead forms
     id: lead-forms
-    sub: true
-  - title: Maps
-    id: maps
     sub: true
   - title: User profile system
     id: user-profile-system
