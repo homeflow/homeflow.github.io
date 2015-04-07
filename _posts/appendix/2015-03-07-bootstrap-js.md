@@ -1,6 +1,6 @@
 ---
 layout: default
-title: bootstrap JavaScript bundle
+title: Bootstrap JavaScript bundle
 modal-id: bootstrap-js
 category: appendix
 --- 
