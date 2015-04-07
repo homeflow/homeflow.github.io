@@ -8,7 +8,17 @@ To get the map up and running, all you need to do is add the ``draggable_map_vie
 
 ``<div id='draggable_map_view'></div>``
 
-Note that if the draggable map doesn't sit in the map container, be sure to call ``#map`` is the URL for it to display.
+Note that if the draggable map doesn't sit in the map container, be sure to call ``#map`` is the URL for it to display. If you do not want the map to be draggable, and for it to fetch new properties on drag, you can use a static map instead that will render the amount of results on each page:
+
+{% highlight javascript %}
+{% raw %}
+<script>
+ Ctesius.addConfig('small_map_element', 'map')
+</script>
+{% endraw %}
+{% endhighlight %}
+
+The 'map in quotes there refers to the div to assign the map to.
 
 Given that we're allowing the user to zoom and drag, it would be useful to have a dialogue of the current properties that are on display:
 
