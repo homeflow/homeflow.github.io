@@ -6,6 +6,8 @@ category: appendix
 --- 
 Without filtering out 'classic' Ctesius JavaScript components like Bootstrap, the 'application.js' bundle includes the following Bootstrap files:
 
+{% highlight html %}
+
 /bootstrap/affix.js
 /bootstrap/alert.js
 /bootstrap/button.js
@@ -20,5 +22,7 @@ Without filtering out 'classic' Ctesius JavaScript components like Bootstrap, th
 /bootstrap/transition.js
 /bootstrap/typeahead.js
 /bootstrap.js
+
+{% endhighlight %}
 
 Last modified: 04-Mar-15
