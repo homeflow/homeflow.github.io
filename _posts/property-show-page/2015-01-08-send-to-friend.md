@@ -29,7 +29,6 @@ This will include the default send to friend colorbox modal code. This will work
    <div class="control-group">
     <label class="text" for="mailer[from_name]">Your name</label>
     <input id="mailer[from_name]" name="mailer[from_name]" type="text">
-
     <label class="text" for="mailer[recipient_name]">Your friend's name</label>
     <input id="mailer[recipient_name]" name="mailer[recipient_name]" type="text">
    </div>
