@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Adding a node
-modal-id: logos
+modal-id: adding-a-node
 category: location-guides
 ---
 To set up a new node, log in to your logos admin panel using your agency login details at:
