@@ -42,16 +42,6 @@ This next assign statement gets all articles of a certain topic (in this case th
 {% endraw %}
 {% endhighlight %}
 
-Or to get a topic other than the one you are on:
-
-{% highlight liquid %}
-{% raw %}
-
-{% assign blog_articles = agency.articles | selected_by: 'topic', 'blog' %}
-
-{% endraw %}
-{% endhighlight %}
-
 You can then loop through the array as you would normally do. Each result is an article object with all its attrbutes:
 
 {% highlight liquid %}
