@@ -36,39 +36,42 @@ sections:
   - title: Application &amp; homepage
     id: application-and-homepage
     sub: true
-  - title: Property searching
-    id: property-searching
+  - title: Agencies
+    id: working-with-agencies
+    sub: true
+  - title: Branches
+    id: working-with-branches
     sub: true
   - title: Draw a map
     id: draw-a-map
     sub: false
-  - title: Property show page
-    id: property-show-page
+  - title: Events
+    id: events
     sub: true
   - title: Lead forms
     id: lead-forms
     sub: true
+  - title: Location guides
+    id: location-guides
+    sub: true
+  - title: Property searching
+    id: property-searching
+    sub: true
+  - title: Property show page
+    id: property-show-page
+    sub: true
   - title: Property functions
     id: property-functions
     sub: true
-  - title: User profile system
-    id: user-profile-system
-    sub: false
-  - title: Working with agencies
-    id: working-with-agencies
-    sub: true
-  - title: Working with branches
-    id: working-with-branches
-    sub: true
-  - title: Working with staff
+  - title: Staff
     id: working-with-staff
-    sub: true
-  - title: Events
-    id: events
     sub: true
   - title: Theme configuration options
     id: theme-config-options
     sub: true
+  - title: User profile system
+    id: user-profile-system
+    sub: false
   - title: Appendix
     id: appendix
     sub: true
