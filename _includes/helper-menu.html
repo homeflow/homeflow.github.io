@@ -1,7 +1,7 @@
 <div class="helper-menu">
   <ul>
     <li>
-      <a href="/#home" class="top-a section-anchor" data-id="home">
+      <a href="/" class="top-a section-anchor" data-id="home">
         <span>Home</span>
       </a>
     </li>
@@ -9,7 +9,7 @@
     {% for section in site.sections %}
       <li {% if section.sub == true %}class="has-sub"{% endif %}>
         <!-- section id == post folder name/category -->
-        <a href="/{{section.id}}#api" data-id="{{section.id}}" class="section-anchor{% if forloop.last %} bottom-a{% endif %}">
+        <a href="/{{section.id}}" data-id="{{section.id}}" class="section-anchor{% if forloop.last %} bottom-a{% endif %}">
           <span>{{section.title}}</span>
         </a>
         {% if section.sub == true %}
@@ -18,7 +18,7 @@
               {% unless post.unpublished == true %}
                 {% if post.title %}
                   <li>
-                    <a href="#{{post.modal-id}}"><span>{{post.title}}</span></a>
+                    <a href="/{{section.id}}/#{{post.modal-id}}"><span>{{post.title}}</span></a>
                   </li>
                 {% endif %}
               {% endunless %}

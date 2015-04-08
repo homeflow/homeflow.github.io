@@ -1,8 +1,10 @@
+gems: ['jekyll-lunr-js-search']
+
 # Site settings
 
-title: Homeflow API Documentation
+title: Homeflow - Create beautiful and powerful estate agency websites 
 email: support@homeflow.co.uk
-description: "Welcome to the Homeflow API Documentation. Learn how to create powerful and beautiful estate agency websites."
+description: "Learn how to create beautiful and powerful estate agency websites using the Homeflow API"
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
@@ -36,42 +38,48 @@ sections:
   - title: Application &amp; homepage
     id: application-and-homepage
     sub: true
-  - title: Agencies
-    id: working-with-agencies
-    sub: true
-  - title: Branches
-    id: working-with-branches
-    sub: true
-  - title: Draw a map
-    id: draw-a-map
-    sub: false
-  - title: Events
-    id: events
-    sub: true
-  - title: Lead forms
-    id: lead-forms
-    sub: true
-  - title: Location guides
-    id: location-guides
-    sub: true
   - title: Property searching
     id: property-searching
+    sub: true
+  - title: Property results
+    id: property-results
     sub: true
   - title: Property show page
     id: property-show-page
     sub: true
-  - title: Property functions
-    id: property-functions
+  - title: Agencies
+    id: agencies
+    sub: true
+  - title: Branches
+    id: branches
+    sub: true
+  - title: Maps
+    id: maps
     sub: true
   - title: Staff
-    id: working-with-staff
+    id: staff
+    sub: true
+  - title: Pages
+    id: cms-pages
+    sub: true
+  - title: Articles
+    id: articles
+    sub: true
+  - title: Lead forms
+    id: lead-forms
+    sub: true
+  - title: User profile system
+    id: user-profile-system
+    sub: true
+  - title: Drops
+    id: drops
+    sub: true
+  - title: Events
+    id: events
     sub: true
   - title: Theme configuration options
     id: theme-config-options
     sub: true
-  - title: User profile system
-    id: user-profile-system
-    sub: false
   - title: Appendix
     id: appendix
     sub: true

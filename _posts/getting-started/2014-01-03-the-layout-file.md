@@ -3,6 +3,7 @@ layout: default
 title: The layout file
 modal-id: layout-file
 category: getting-started
+category-title: Getting Started
 ---
 Every page render starts at the layout, which is always found in ``/layouts/application.liquid``. This file will contain the html, head, and body tags and will define the overall 'makeup' of your site.
 

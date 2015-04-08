@@ -1,44 +1,48 @@
-   <!-- Navigation -->
-    <nav class="navbar navbar-default">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>-->
-                <a class="navbar-brand" href="/" title="{{ site.title }}">
-                    <img src="../img/homeflow-retina.png" height="37" width="215" title="{{ site.title }}"/>
-                </a>
-            </div>
-            <div class="nav">
-                <a id="mobile-nav" href="#">Menu</a>
-                <ul class="">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="current-menu-item top-level" id="nav-top-01"><a href="http://www.homeflow.co.uk/">&lt; Back to site</a></li>    
-                    <li class="top-level" id="nav-top-02"><a href="/" class="top-level">API</a></li>
-                    <li class="top-level" id="nav-top-03"><a href="http://www.homeflow.co.uk/technology" class="top-level">Technical Blog</a></li>
-                    <!--<li class="top-level" id="nav-top-04"><a href="/about" >About</a></li>-->
-                </ul>
-            </div>
+<!-- Navigation -->
+<nav class="navbar navbar-default">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+<!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>-->
+            <a class="navbar-brand" href="/" title="{{ site.title }}">
+                <img src="../img/homeflow-retina.png" height="37" width="215" title="{{ site.title }}"/>
+            </a>
         </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <div style="background-image:url(../img/powerful.jpg);" class="full-width" id="hero-span">
-        <div id="hero"></div>
+        <div class="nav">
+            <a id="mobile-nav" href="#">Menu</a>
+            <ul class="">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li class="current-menu-item top-level" id="nav-top-01"><a href="http://www.homeflow.co.uk/">&lt; Back to site</a></li>    
+                <li class="top-level" id="nav-top-02"><a href="http://changelogs.homeflow.co.uk" class="top-level">Changelogs</a></li>
+                <li class="top-level" id="nav-top-03"><a href="http://www.homeflow.co.uk/technology" class="top-level">Technical Blog</a></li>
+                <!--<li class="top-level" id="nav-top-04"><a href="/about" >About</a></li>-->
+            </ul>
+        </div>
     </div>
-    
-    <!-- Header 
-    <header>
-       
-    </header> -->
+<!-- /.container-fluid -->
+</nav>
+
+<div class="full-width" id="hero-span">
+    <div id="hero">
+        <div class="container">
+            {% include search_template.html %}
+        </div>
+    </div>
+</div>
+
+<!-- Header 
+<header>
+
+</header> -->
 <!--
-        {% for page in site.pages %}
-          {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
-        {% endfor %}
- -->
+{% for page in site.pages %}
+{% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
+{% endfor %}
+-->

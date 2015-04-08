@@ -2,7 +2,7 @@
 layout: default
 title: Draw a Map base styles
 modal-id: dam-styles
-category: invisible
+category: appendix
 ---
 These styles can live in the custom CSS in the agency admin, or indeed in a LCSS file within the theme itself.
 

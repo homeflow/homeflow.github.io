@@ -8,11 +8,12 @@
 			    <div class="container content fixed-width">
 			    	<div class="row">
 					    <div class="col-lg-9 col-md-9">
+					    	{% include search_results_template.html %}
 					    	<div id="mobile-menu">
 					    		{% include helper-menu.html %}
 					    	</div>
 					    	<section id="api">
-					    		<h3>{{page.title}}</h3>
+					    		<!--<h3>{{page.title}}</h3>-->
 					    		{% for post in site.categories[{{page.category}}] reversed %}
 					    			{% unless post.unpublished == true %}
 								    	<div class="api-item" id="{{post.modal-id}}">
