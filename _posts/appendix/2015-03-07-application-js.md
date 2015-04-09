@@ -10,6 +10,7 @@ JavaScript:
 
 {% highlight html %}
 
+bootstrap
 jQuery - v1.9
 jquery_ujs
 jquery-ui
