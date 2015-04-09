@@ -12,8 +12,6 @@ JavaScript:
 
 bootstrap
 jQuery - v1.9
-jquery_ujs
-jquery-ui
 jquery.cycle - 3.0.3
 jquery.colorbox
 jquery.cookie
