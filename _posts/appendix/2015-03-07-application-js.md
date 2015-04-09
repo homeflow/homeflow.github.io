@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Application JavaScript bundle
-modal-id: bootstrap-js
+modal-id: application-js
 category: appendix
 --- 
 Without filtering out 'classic' Ctesius JavaScript components like Bootstrap, the 'application' bundle includes the following files:
