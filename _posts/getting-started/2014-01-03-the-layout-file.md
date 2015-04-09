@@ -16,17 +16,7 @@ Take a look at the source in the Stabilisers theme and you will see there's a fe
 {% endraw %}
 {% endhighlight %}
 
-This will bring in all the default styles and some JavaScript libraries which form the basis of every Ctesius theme. As of the latest revision to this documentation, they are:
-
-- Bootstrap
-- jQuery - v1.9
-- jQuery Cycle - 3.0.3 (11-JUL-2013)
-- jQuery Nivo Slider
-- Backbone.js -  1.0.0
-- Underscore.js - 1.4.3
-- leaflet.js
-- Font Awesome
-- the Homeflow search and profile system
+This will bring in all the default styles and some JavaScript libraries which form the basis of every Ctesius theme.
 
 You'll also notice that we make another call:
 

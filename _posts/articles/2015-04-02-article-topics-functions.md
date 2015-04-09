@@ -47,7 +47,7 @@ You can then loop through the array as you would normally do. Each result is an 
 {% highlight liquid %}
 {% raw %}
 
-{% for article in other_atricles limit: 5 %}
+{% for article in other_articles limit: 5 %}
  <div class="promo-panel grey similar-article">
    <a href="/articles/{{ article.slug }}"><h3>{{ article.title }}</h3></a>
  </div>

@@ -7,9 +7,9 @@ category: cms-pages
 When you want to define your own content blocks, this is where ``theme content chunks`` come in. Your first step here is to make the Homeflow backend aware that there is a chunk available. To do this we use the theme's YAML file:
 
 {% highlight yaml %}
-  site_content_chunks:
-    - name: 'cms_sidebar_content'
-      description: 'A custom sidebar content section for CMS pages.'
+ site_content_chunks:
+  - name: 'cms_sidebar_content'
+    description: 'A custom sidebar content section for CMS pages.'
 {% endhighlight %}
 
 Once your theme gets publised, you can then navigate to your agency admin, visit ``/configure/website/content/site_content_chunks``, and add your content chunk for the agency with any associated HTML/content etc.
@@ -19,9 +19,9 @@ To marry any page to one or more of the blocks you have created and populated wi
 {% highlight liquid %}
 {% raw %}
 {% for content_item in cms_page.content_items %}
-    {% content_block content_item %}
-        {{ content_block }}
-    {% endcontent_block %}
+ {% content_block content_item %}
+  {{ content_block }}
+ {% endcontent_block %}
 {% endfor %}
 {% endraw %}
 {% endhighlight %}
