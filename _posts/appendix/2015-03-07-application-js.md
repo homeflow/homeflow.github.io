@@ -15,13 +15,13 @@ jquery_ujs
 jquery-ui
 jquery.cycle - 3.0.3
 jquery.colorbox
+jquery.cookie
+jquery.validate
 underscore
 leaflet
 split
 tooltip
 less
-jquery.cookie
-jquery.validate
 nivo
 photoStack
 background-position
