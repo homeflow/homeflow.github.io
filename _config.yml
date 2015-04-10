@@ -38,33 +38,6 @@ sections:
   - title: Application &amp; homepage
     id: application-and-homepage
     sub: true
-  - title: Agencies
-    id: agencies
-    sub: true
-  - title: Articles
-    id: articles
-    sub: true
-  - title: Branches
-    id: branches
-    sub: true
-  - title: Drops
-    id: drops
-    sub: true
-  - title: Events
-    id: events
-    sub: true
-  - title: Lead forms
-    id: lead-forms
-    sub: true
-  - title: Location guides
-    id: location-guides
-    sub: true
-  - title: Maps
-    id: maps
-    sub: true
-  - title: Pages
-    id: cms-pages
-    sub: true
   - title: Property searching
     id: property-searching
     sub: true
@@ -74,8 +47,35 @@ sections:
   - title: Property show page
     id: property-show-page
     sub: true
+  - title: Lead forms
+    id: lead-forms
+    sub: true
+  - title: Agencies
+    id: agencies
+    sub: true
+  - title: Branches
+    id: branches
+    sub: true
   - title: Staff
     id: staff
+    sub: true
+  - title: Maps
+    id: maps
+    sub: true
+  - title: Pages
+    id: cms-pages
+    sub: true
+  - title: Articles
+    id: articles
+    sub: true
+  - title: Location guides
+    id: location-guides
+    sub: true
+  - title: Drops
+    id: drops
+    sub: true
+  - title: Events
+    id: events
     sub: true
   - title: Theme configuration options
     id: theme-config-options
