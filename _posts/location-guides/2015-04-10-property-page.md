@@ -13,7 +13,7 @@ Just use the property_node_by_slug assignment method before the with_node block 
 {% assign hf_node = 'slug-name' | property_node_by_slug %}
 <h2>Found node from location then link to branch</h2>
 <div class="node">
- {% with_node hf_node,  type: branch  %}
+ {% with_node hf_node, type: branch %}
   {% for node_item in node_items %}
    Branch name is: {{node_item.name}}</br>
   {% endfor %}
