@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Location pages
+title: Property results location pages
 modal-id: location-pages
 category: location-guides
 ---
