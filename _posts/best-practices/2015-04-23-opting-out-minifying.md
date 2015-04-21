@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Opting out and Minifying
-modal-id: minifying-js-css
+modal-id: opting-out-minifying
 category: best-practices
 ---
 The Ctesius app is bundled with a bunch of JS and CSS, such as Bootstrap and Nivo Slider that many of our 'classic' themes still use (you can see a complete list [here](/appendix/application-js)). Many newer themes will call for updated versions of certain plugins that we might include, or they might not need them at all. Here's how to minify and filter out what you don't need.
