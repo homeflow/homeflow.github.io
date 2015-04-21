@@ -6,7 +6,7 @@ category: location-guides
 ---
 In this example we can search the nodes for the location page and return all of the node items for that node. So this means for a location page we can return content such as local branch information, content_chunks, properties and more for the area guide. 
 
-You need only assign the node once to URL if using multiple blocks on a page:
+You need only assign the node once to the slug if using multiple blocks on a page:
 
 {% highlight html %}
 {% raw %}
@@ -56,5 +56,7 @@ Property node:
 </div>
 {% endraw %}
 {% endhighlight %}
+
+Don't forget that node items have access to the node type's drop methods. For example, the property drop methods can be found [here](/drops/#property-drop).
 
 
