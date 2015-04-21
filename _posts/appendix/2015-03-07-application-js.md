@@ -10,7 +10,7 @@ JavaScript:
 
 {% highlight html %}
 
-bootstrap
+bootstrap - 2.x
 jQuery - v1.9
 jquery.cycle - 3.0.3
 jquery.colorbox

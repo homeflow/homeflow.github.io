@@ -77,6 +77,9 @@ sections:
   - title: Events
     id: events
     sub: true
+  - title: Best practices
+    id: best-practices
+    sub: true
   - title: Theme configuration options
     id: theme-config-options
     sub: true
