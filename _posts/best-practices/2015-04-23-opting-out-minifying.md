@@ -9,23 +9,23 @@ The Ctesius app is bundled with a bunch of JS and CSS, such as Bootstrap and Niv
 In your theme's ``config.yml`` file, you will need a construct such as this:
 
 {% highlight yaml %}
-  asset_packs:
-    javascript:
-      - vendor/bootstrap/transition.js
-      - vendor/bootstrap/collapse.js
-      - vendor/bootstrap/tab.js
-      - main.js
-    stylesheet:
-      - styles.lcss
-      - profile.lcss
-      - photoswipe.lcss
-      - custom.lcss
-  vendor_assets:
-    javascripts:
-      - ctesius
-      - asset_pack
-    stylesheets:
-      - asset_pack
+asset_packs:
+ javascript:
+  - vendor/bootstrap/transition.js
+  - vendor/bootstrap/collapse.js
+  - vendor/bootstrap/tab.js
+  - main.js
+ stylesheet:
+  - styles.lcss
+  - profile.lcss
+  - photoswipe.lcss
+  - custom.lcss
+vendor_assets:
+ javascripts:
+  - ctesius
+  - asset_pack
+ stylesheets:
+  - asset_pack
 {% endhighlight %}
 
 Asset packs are your included stylesheets and JavaScripts. Vendor assets are includes for both core files and the asset packs you declared prior. The Ctesius vendor asset includes the bare minimum you need to build a theme on Homeflow, with no excess.
