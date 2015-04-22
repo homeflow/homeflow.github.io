@@ -4,9 +4,21 @@ title: Application JavaScript bundle
 modal-id: application-js
 category: appendix
 --- 
-Without filtering out 'classic' Ctesius JavaScript components like Bootstrap, the 'application' bundle includes the following files:
+The 'application' bundle includes the following files and versions. See the [opting out](/best-practices#opting-out-minifying) section for more on opting out of Ctesius components.
 
-JavaScript:
+JavaScript
+
+Ctesius:
+
+{% highlight html %}
+
+jQuery - v1.9
+jquery.colorbox
+Leaflet
+
+{% endhighlight %}
+
+'Classic' Ctesius:
 
 {% highlight html %}
 
