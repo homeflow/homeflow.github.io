@@ -39,7 +39,7 @@ background-position
 
 {% endhighlight %}
 
-Boostrap includes:
+Bootstrap includes:
 
 {% highlight html %}
 
