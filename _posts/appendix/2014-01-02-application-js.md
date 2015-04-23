@@ -13,8 +13,9 @@ Ctesius:
 {% highlight html %}
 
 jQuery - v1.9
-jquery.colorbox
-Leaflet
+placeholder
+colorbox
+leaflet
 
 {% endhighlight %}
 
@@ -28,6 +29,7 @@ jquery.cycle - 3.0.3
 jquery.colorbox
 jquery.cookie
 jquery.validate
+placeholder
 underscore
 leaflet
 split
