@@ -19,7 +19,7 @@ To get up and running, firstly you need to set up your asset packs and vendor as
 
 {% highlight javascript %}
 {% raw %}
-  {% include 'js_templates/async_foot_function' %} 
+   {% include 'js_templates/async_foot_function' %} 
   <script src='/vendor_assets/blob.js' type='text/javascript' async onload="async_foot();" ></script>
  </body>
 </html>

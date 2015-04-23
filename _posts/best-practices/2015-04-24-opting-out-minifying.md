@@ -42,7 +42,7 @@ To output your minified JS and CSS in your theme, add the following two lines:
 
 {% highlight javascript %}
 {% raw %}
-  <script src='/vendor_assets/blob.js' type='text/javascript'></script>
+    <script src='/vendor_assets/blob.js' type='text/javascript'></script>
  </body>
 </html>
 {% endraw %}
