@@ -34,8 +34,16 @@ To output your minified JS and CSS in your theme, add the following two lines:
 
 {% highlight html %}
 {% raw %}
-<script src="/liquid_assets/javascript_pack.js"></script>
+<head>
+ <link href="/vendor_assets/blob.css" rel="stylesheet" type="text/css" />
+</head>
+{% endraw %}
+{% endhighlight %}
 
-<link href="/liquid_assets/stylesheet_pack.css" rel="stylesheet" type="text/css" />
+{% highlight javascript %}
+{% raw %}
+  <script src='/vendor_assets/blob.js' type='text/javascript'></script>
+ </body>
+</html>
 {% endraw %}
 {% endhighlight %}
