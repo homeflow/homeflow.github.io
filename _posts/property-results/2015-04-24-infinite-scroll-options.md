@@ -16,7 +16,7 @@ $('.loading').css('left', '9999px')
 <br>
 **Load more on click**
 
-If you would prefer to load results on a button press, as the config below:
+If you would prefer to load results on a button press, add the config below:
 
 {% highlight javascript %}
 {% raw %}
@@ -24,7 +24,7 @@ Ctesius.addConfig('autoscroll_infinite_scroll', false);
 {% endraw %}
 {% endhighlight %}
 
-Next, add your anchor or button and provide it with an on click kick event:
+Next, add your anchor or button and provide it with an onclick kick event:
 
 {% highlight html %}
 {% raw %}
