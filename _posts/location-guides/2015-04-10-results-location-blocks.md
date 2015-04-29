@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Property results location pages
-modal-id: location-pages
+title: Property results location blocks
+modal-id: results-location-blocks
 category: location-guides
 ---
-In this example we can search the nodes for the location page and return all of the node items for that node. So this means for a location page we can return content such as local branch information, content_chunks, properties and more for the area guide. 
+In this example we can search the nodes for the location page and return all of the node items for that node. So this means for a results location page we can return content such as local branch information, content_chunks, properties and more for the area guide.
 
 You need only assign the node once to the slug if using multiple blocks on a page:
 
