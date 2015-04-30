@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Location guide pages
-modal-id: location guide pages
+modal-id: location-guide-pages
 category: location-guides
 ---
 A route exists in the Ctesius app to location guide pages, this means you can begin to build up content for individual locations. The route for this page is:
