@@ -26,6 +26,4 @@ To get up and running, firstly you need to set up your asset packs and vendor as
 {% endraw %}
 {% endhighlight %}
 
-Note: the includes are grabbed from our core app, so you don't need to create the files locally in your theme.
-
-That should in principle be all you need.
+We would strongly recommend integrating the async work (if you choose to use it) into your theme on inception, as re-engineering a theme to support async work can sometimes produce errors. More of often than not, this is because the deferred JavaScript isn't ready for when some of the functions are called. To get round this, simply put your functions in a document ready. 

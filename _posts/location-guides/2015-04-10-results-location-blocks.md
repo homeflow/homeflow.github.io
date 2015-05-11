@@ -4,15 +4,7 @@ title: Property results location blocks
 modal-id: results-location-blocks
 category: location-guides
 ---
-In this example we can search the nodes for the location page and return all of the node items for that node. So this means for a results location page we can return content such as local branch information, content_chunks, properties and more for the area guide.
-
-You need only assign the node once to the slug if using multiple blocks on a page:
-
-{% highlight html %}
-{% raw %}
-{% assign hf_node = 'slug-name' | location_node_by_slug %}
-{% endraw %}
-{% endhighlight %}
+In this example we can search the nodes for the location page and return all of the node items for that node. So this means for a results location page, we can return content such as local branch information, content_chunks, properties and more for the area guide. The location must be assigned to the node in the backend before the location node can be queried.
 
 Branch node:
 
@@ -54,6 +46,16 @@ Property node:
   {% endfor %}
  {% endwith_node %}
 </div>
+{% endraw %}
+{% endhighlight %}
+
+If you want to you want grab a specific node by slug, you can use the following assign statement, then use the blocks above:
+
+You need only assign the node once to the slug if using multiple blocks on a page:
+
+{% highlight html %}
+{% raw %}
+{% assign hf_node = 'slug-name' | location_node_by_slug %}
 {% endraw %}
 {% endhighlight %}
 
