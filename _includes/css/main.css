@@ -826,7 +826,7 @@ footer .footer-below {
 #agency-drop h4, #branch-drop h4, #article-drop h4, 
 #property-drop h4, #carousel-item-drop h4, #page-drop h4,
 #location-drop h4, #menu-drop h4, #menu-item-drop h4,
-#portal-drop h4, #staff-member-drop h4,#pagination-drop h4, #search-drop h4, #config-yaml h4 {
+#portal-drop h4, #staff-member-drop h4,#pagination-drop h4, #search-drop h4, #config-yaml h4, #drops h4 {
     margin-top: 25.5px;
     margin-bottom: 4.5px;
     font-size: 18px;
@@ -835,6 +835,6 @@ footer .footer-below {
 #agency-drop h4 + p, #branch-drop h4 + p, #article-drop h4 + p, 
 #property-drop h4 + p, #carousel-item-drop h4 + p, #page-drop h4 + p,
 #location-drop h4 + p, #menu-drop h4 + p, #menu-item-drop h4 + p,
-#portal-drop h4 + p, #staff-member-drop h4 + p,#pagination-drop h4 + p, #search-drop h4 + p, #config-yaml h4 + p {
+#portal-drop h4 + p, #staff-member-drop h4 + p,#pagination-drop h4 + p, #search-drop h4 + p, #config-yaml h4 + p, #drops h4 + p {
     font-size: 15px;
 }
