@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Submitting a branch enquiry lead
-modal-id: submitting-a-branch-enquiry-lead
+title: Branch enquiry lead
+modal-id: branch-enquiry-lead
 category: lead-forms
 ---
 Branch enquiry leads are submitted using the following set of form elements. The HTML can be customised as needed:
