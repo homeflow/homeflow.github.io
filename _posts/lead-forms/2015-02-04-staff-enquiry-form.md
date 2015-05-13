@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Staff contact form
-modal-id: staff-contact-form
-category: staff
+title: Staff enquiry form
+modal-id: staff-enquiry-form
+category: lead-forms
 ---
 The Homeflow platform allows users to contact staff directly and leads are copied to the agency email address. Here's a sample form construct:
 
