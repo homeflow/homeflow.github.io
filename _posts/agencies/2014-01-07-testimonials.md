@@ -46,3 +46,13 @@ Need to slice the testimonials array to get the latest five and then shuffle the
 {% endfor %}
 {% endraw %}
 {% endhighlight %}
+
+Need testimonials by channel? No problem:
+
+{% highlight liquid %}
+{% raw %}
+{% assign testimonial = agency.testimonials | selected_by : 'channel', 'lettings' 
+
+{% assign testimonial = agency.testimonials | selected_by : 'channel', 'sales'
+{% endraw %}
+{% endhighlight %}
