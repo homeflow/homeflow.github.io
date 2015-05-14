@@ -6,6 +6,7 @@ category: appendix
 published: true
 ---
 
+
 Hestia serves up information to the Ctesius app in JSON format. There are a number of well defined URLs you can use to access this data via the browser:
 
 ####Properties
@@ -23,4 +24,4 @@ http://index1.homeflow.co.uk/sites/401/pages/about-us?api_key=36889c41708a5a2038
 ####Places/locations
 http://index1.homeflow.co.uk/places?api_key=77467477edfd2689cd77796a2c4b019f&search[name]=elstead
 
-For staff, see the agencies Hestia URL. Test.
+For staff, see the agencies Hestia URL.
