@@ -39,9 +39,10 @@ Need to slice the testimonials array to get the latest five and then shuffle the
 {% raw %}
 {% assign testimonials = agency.testimonials | slice_array : 0, 4 %}
 {% assign shuffled_testimonials = testimonials | shuffle %}
+
 {% for testimonial in shuffled_testimonials limit: 1 %}
-	<p>{{testimonial.content}}</p>
- 	<span class="author">{{testimonial.name}}</span>
+ <p>{{testimonial.content}}</p>
+ <span class="author">{{testimonial.name}}</span>
 {% endfor %}
 {% endraw %}
 {% endhighlight %}
