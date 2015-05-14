@@ -6,7 +6,6 @@ category: agencies
 published: true
 ---
 
-
 Agency testimonials can be added via the CMS link: ``/configure/website/testimonials``. You can then loop over and output the testimonials as follows:
 
 {% highlight liquid %}
