@@ -51,8 +51,8 @@ Need testimonials by channel? No problem:
 
 {% highlight liquid %}
 {% raw %}
-{% assign testimonial = agency.testimonials | selected_by : 'channel', 'lettings' 
+{% assign testimonial = agency.testimonials | selected_by : 'channel', 'lettings' %}
 
-{% assign testimonial = agency.testimonials | selected_by : 'channel', 'sales'
+{% assign testimonial = agency.testimonials | selected_by : 'channel', 'sales' %}
 {% endraw %}
 {% endhighlight %}
