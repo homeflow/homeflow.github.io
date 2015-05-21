@@ -6,7 +6,7 @@ category: user-profile-system
 ---
 As mentioned before, Colorbox is used by default. For rapid development, the default templates and Colorbox do just fine. If however, you wish to use alternative tech like Bootstrap modal, or some other responsive modal system, here's how:
 
-Firstly we need to define our modal container. If it was Bootstrap modal, if might look something like the code below (we've stripped some HTML for simplicity):
+Firstly we need to define our modal container. If it was Bootstrap modal, it might look something like the code below (we've stripped some HTML for simplicity):
 
 {% highlight html %}
 {% raw %}
