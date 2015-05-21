@@ -77,14 +77,14 @@ sections:
   - title: Events
     id: events
     sub: true
+  - title: User profile system
+    id: user-profile-system
+    sub: true
   - title: Best practices
     id: best-practices
     sub: true
   - title: Theme configuration options
     id: theme-config-options
-    sub: true
-  - title: User profile system
-    id: user-profile-system
     sub: true
   - title: Appendix
     id: appendix
