@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Alternatives user profile tech
+title: Alternative user profile tech
 modal-id: alternative-profile-tech
 category: user-profile-system
 ---
