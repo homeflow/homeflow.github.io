@@ -12,6 +12,7 @@ To get up and running, firstly you need to set up your asset packs and vendor as
 {% raw %}
 <head>
  <link href="/vendor_assets/blob.css" rel="stylesheet" type="text/css" />
+ <script src='/vendor_assets/blob.js' type='text/javascript' async onload="async_foot();" ></script>
  {% include 'js_templates/async_head' %}
 </head>
 {% endraw %}
@@ -20,7 +21,6 @@ To get up and running, firstly you need to set up your asset packs and vendor as
 {% highlight javascript %}
 {% raw %}
    {% include 'js_templates/async_foot_function' %} 
-  <script src='/vendor_assets/blob.js' type='text/javascript' async onload="async_foot();" ></script>
  </body>
 </html>
 {% endraw %}
