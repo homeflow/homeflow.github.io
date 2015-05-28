@@ -8,7 +8,7 @@ Sometimes theme content managed pages are vastly different to one another. This 
 
 Your first port of call is to add some directives to the YML file:
 
-{% highlight yml %}
+{% highlight yaml %}
  additional_layouts:
   - name: 'Tabbed'
   - name: 'Sell_Let'
