@@ -21,10 +21,8 @@ Many developers employ the tabbing system so the user can toggle through the dif
 </div>
 
 <div id="togglable_map" class="togglable_area hidden">
- <div id='single_map'></div>
 </div>
   
 <div id="togglable_satellite" class="togglable_area hidden">
- <div id='satellite' class="google_map_container"></div>
 </div>
 {% endhighlight %}
