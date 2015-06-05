@@ -18,7 +18,6 @@ Many developers employ the tabbing system so the user can toggle through the dif
 </div>
 
 <div id="togglable_details" class="togglable_area hidden">
- {{property.description}}
 </div>
 
 <div id="togglable_map" class="togglable_area hidden">
