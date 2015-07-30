@@ -37,7 +37,7 @@ Now consider a typical home page presentation:
     </a>
    {% endfor %}
   </div>
-</div>
+ </div>
 </div>
 {% endraw %}
 {% endhighlight %}
@@ -45,8 +45,7 @@ Now consider a typical home page presentation:
 There's nothing special about this - if we had another three you'd have a nice row of recent property boxes. Now, somewhere convenient, we would then add:
 
 {% highlight html %}
-{% raw %}{%{% endraw %} raw {% raw %}%}{% endraw %}
-{% raw %}
+{% raw %}{%{% endraw %} raw {% raw %}%}{% endraw %}{% raw %}
   <script id="interesting_properties_template" type="text/liquid">
    <div class="span3">
     <div class="homePanel box">
@@ -59,8 +58,7 @@ There's nothing special about this - if we had another three you'd have a nice r
      {% endfor %}
     </div>
    </div>
-  </script>
-{% endraw %}
+  </script>{% endraw %}
 {% raw %}{%{% endraw %} endraw {% raw %}%}{% endraw %}
 {% endhighlight %}
 
@@ -86,7 +84,9 @@ At the time of writing, the property status Liquid that finds and outputs the ap
 If you wanted to exclude Sold, Let, etc from the output altogether, you can add this to the JSON within the for loop:
 
 {% raw %}
-``exclude_from_implied: {% if property.status == 'SSTC' %}true{% endif %}{% if property.status == 'Let agreed' %}true{% endif %}{% if property.status == 'Let' %}true{% endif %}{% if property.status == 'Sold' %}true{% endif %}``
+{% highlight liquid %}
+exclude_from_implied: {% if property.status == 'SSTC' %}true{% endif %}{% if property.status == 'Let agreed' %}true{% endif %}{% if property.status == 'Let' %}true{% endif %}{% if property.status == 'Sold' %}true{% endif %}
+{% endhighlight %}
 {% endraw %}
 
 This if statement looks a bit ugly but the value must follow the field.

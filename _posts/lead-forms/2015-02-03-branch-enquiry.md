@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Submitting a branch enquiry lead
-modal-id: submitting-a-branch-enquiry-lead
+title: Branch enquiry lead
+modal-id: branch-enquiry-lead
 category: lead-forms
 ---
-Branch enquiry leads are submitted using the following form set of form elements. The HTML can be customised 
+Branch enquiry leads are submitted using the following set of form elements. The HTML can be customised as needed:
 
 {% highlight html %}
 {% raw %}
@@ -19,5 +19,17 @@ Branch enquiry leads are submitted using the following form set of form elements
  <textarea id="message" name="lead[message]" rows="3"></textarea>
  <button id="contact_form_button" type="submit">Send message</button>
 </form>
+{% endraw %}
+{% endhighlight %}
+
+If you're constructing a form on a branch index page, or elsewhere, you can use a branch selector dropdown:
+
+{% highlight html %}
+{% raw %}
+<select name="lead[branch_id]" tabindex="1">
+ {% for branch in agency.branches %}
+  <option value="{{ branch.branch_id }}">{{branch.name}}</option>
+ {% endfor %}
+</select>
 {% endraw %}
 {% endhighlight %}

@@ -50,7 +50,3 @@ The next step is define the template and what will be loaded in a new. Note it i
 {% endhighlight %}
 
 This in principle should be enough for you to get an output of some description. As always, you might need to tweak the containing elements and CSS as required to get it to format well.
-
-The function also ships with a loading overlay should you want to use it. It is a simple fullscreen fade in and out whilst the properties are being fetched. If you'd rather not have it displayed, you can simply place it far off screen so even when it's triggered it cannot be seen:
-
-``$('.loading').css('left', '9999px')``

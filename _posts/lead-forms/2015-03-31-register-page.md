@@ -2,7 +2,7 @@
 layout: default
 title: Register form
 modal-id: register-form
-category: cms-pages
+category: lead-forms
 ---
 The Ctesius app allows you to register new users to an agency. The standard URL to get to the page is ``/register`` and the registration form needs to live in a ``new.liquid`` file within a ``user`` folder. There are many fields you can use to request information from the client, though name, email and password are absolutely required:
 
