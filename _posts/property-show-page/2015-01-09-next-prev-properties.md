@@ -29,4 +29,8 @@ Then on your property show page, wherever you want the template to render, add:
 <div id="next_and_previous_property_view"></div>
 {% endhighlight %}
 
-That should enough for it to work.
+You will need to turn the supporting functionality in your theme by adding the following Ctesius config setting (as with other features).
+
+{% highlight html %}
+Ctesius.addConfig('enable_user_history', true);
+{% endhighlight %}
