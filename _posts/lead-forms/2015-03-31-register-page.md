@@ -50,6 +50,17 @@ The Ctesius app allows you to register new users to an agency. The standard URL 
 {% endraw %}           
 {% endhighlight %}      
 
+Note: You will always need to have the message either visible or hidden on the form so that the registration lead is submitted properly. 
+
+{% highlight html %}
+{% raw %}
+
+ <label for="lead[message]">Comments</label>
+  <textarea id="message" name="lead[message]"></textarea>
+
+  {% endraw %}           
+{% endhighlight %}      
+
 Optionally, you can grab their requirements:
 
 {% highlight html %}
@@ -68,9 +79,6 @@ Optionally, you can grab their requirements:
 
  <input id="client[is_landlord_at]" name="client[is_landlord_at]" type="checkbox">
   <label class="check" for="client[is_landlord_at]">I have a property to let</label>
-
- <label for="lead[message]">Comments</label>
-  <textarea id="message" name="lead[message]"></textarea>
 
  <button type="submit">Send to {{agency.name}}</button>
 
