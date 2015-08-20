@@ -89,6 +89,9 @@ sections:
   - title: Appendix
     id: appendix
     sub: true
+  - title: Homeflow API gem
+    id: homeflow-api-gem
+    sub: true
 
 # Build settings
 markdown: kramdown
