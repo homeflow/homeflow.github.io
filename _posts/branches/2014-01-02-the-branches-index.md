@@ -49,3 +49,12 @@ If you need to manually set the zoom level of the branch map you can do so with 
     Ctesius.addConfig('custom_map_zoom', {% if agency.preferences.google_maps_branch_zoom_level %}{{agency.preferences.google_maps_branch_zoom_level}}{% else %}15{% endif %});
 {% endraw %}
 {% endhighlight %}
+
+Note: You will also need to specify the map pan co-ordinates for the custom zoom level to work
+
+{% highlight html %}
+{% raw %}
+    Ctesius.addConfig('custom_map_pan_coords', [ 50.739, -4.0]);
+    Ctesius.addConfig('custom_map_zoom' ...
+{% endraw %}
+{% endhighlight %}
