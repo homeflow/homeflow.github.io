@@ -92,6 +92,9 @@ sections:
   - title: Homeflow API gem
     id: homeflow-api-gem
     sub: true
+  - title: 404s
+    id: 404s
+    sub: true
 
 # Build settings
 markdown: kramdown
