@@ -40,3 +40,12 @@ This construct is exactly the same as a properties loop seen before except we ar
 </div>
 {% endraw %}
 {% endhighlight %}
+
+####Map Zoom levels
+If you need to manually set the zoom level of the branch map you can do so with the following snippet (replace 15 with any fallback zoom level you wish):
+
+{% highlight html %}
+{% raw %}
+    Ctesius.addConfig('custom_map_zoom', {% if agency.preferences.google_maps_branch_zoom_level %}{{agency.preferences.google_maps_branch_zoom_level}}{% else %}15{% endif %});
+{% endraw %}
+{% endhighlight %}
