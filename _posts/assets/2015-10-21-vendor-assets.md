@@ -13,7 +13,7 @@ These are the javascript and css files which you have included in the {% highlig
 
 Here is an example configuration:
 
-{% hightlight html %}
+{% highlight html %}
 
 asset_packs:
  javascript:
