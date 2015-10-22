@@ -28,7 +28,7 @@ asset_packs:
 
 **Vendor Assets**
 
-The {% highlight html %} vendor_assets {% endhighlight %} configuration defines the asset packs which are bundled with your theme, you should include {% asset_pack %} in both the Javascript and css configurations to include your theme assets which you defined previously. You can choose which assets you would like to require from the Ctesius asset packs.
+The {% highlight html %} vendor_assets {% endhighlight %} configuration defines the asset packs which are bundled with your theme, you should include {% highlight html %} asset_pack{% endhighlight %} in both the Javascript and css configurations to include your theme assets which you defined previously. You can choose which assets you would like to require from the Ctesius asset packs.
 
 You can see a full reference of the assets which are bundled with Ctesius [here](/appendix#application-assets).
 
