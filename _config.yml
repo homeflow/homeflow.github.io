@@ -89,6 +89,9 @@ sections:
   - title: Theme configuration options
     id: theme-config-options
     sub: true
+  - title: Assets
+    id: assets
+    sub: true
   - title: Appendix
     id: appendix
     sub: true
