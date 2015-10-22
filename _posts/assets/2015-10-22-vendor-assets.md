@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Vendor Assets
-modal-id: application-assets
+modal-id: assets
 category: assets
 ---
 
