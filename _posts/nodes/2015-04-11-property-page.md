@@ -2,9 +2,9 @@
 layout: default
 title: Property pages
 modal-id: property-pages
-category: location-guides
+category: nodes
 ---
-Any properties that are associated with nodes can be extracted; either directly by using the slug of the node, or by looping through all the nodes that have the property attached. This means that property detail pages can find attached Location Guides and pull out any other node item associated with that Location Guide, such as a SiteContentChunk, a Branch and more. 
+Any properties that are associated with nodes can be extracted; either directly by using the slug of the node, or by looping through all the nodes that have the property attached. This means that property detail pages can find attached Location Guides and pull out any other node item associated with that Location Guide, such as a SiteContentChunk, a Branch and more.
 
 To directly grab a node by slug name, you would do the following:
 
@@ -37,4 +37,3 @@ Or to loop through all nodes that are attached to a property:
 {% endfor %}
 {% endraw %}
 {% endhighlight %}
-

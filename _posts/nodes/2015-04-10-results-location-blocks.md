@@ -2,7 +2,7 @@
 layout: default
 title: Property results location blocks
 modal-id: results-location-blocks
-category: location-guides
+category: nodes
 ---
 In this example we can search the nodes for the location page and return all of the node items for that node. So this means for a results location page, we can return content such as local branch information, content_chunks, properties and more for the area guide. The location must be assigned to the node in the backend before the location node can be queried.
 
@@ -60,5 +60,3 @@ You need only assign the node once to the slug if using multiple blocks on a pag
 {% endhighlight %}
 
 Don't forget that node items have access to the node type's drop methods. For example, the property drop methods can be found [here](/drops/#property-drop).
-
-

@@ -71,6 +71,9 @@ sections:
   - title: Articles
     id: articles
     sub: true
+  - title: Nodes
+    id: nodes
+    sub: true
   - title: Location guides
     id: location-guides
     sub: true
