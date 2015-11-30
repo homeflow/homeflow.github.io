@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Opting out and Minifying
-modal-id: opting-out-minifying
-category: best-practices
+title: Package and Minify
+modal-id: package-and-minify
+category: assets
 ---
-The Ctesius app is bundled with a bunch of JS and CSS, such as Bootstrap and Nivo Slider that many of our 'classic' themes still use (you can see a complete list [here](/appendix/application-assets)). Many newer themes will call for updated versions of certain plugins that we might include, or they might not need them at all. Here's how to minify and filter out what you don't need.
+The Ctesius app comes bundled with certain JS and CSS plugins, you can configure which are included or include your own in the ``config.yml`` file in your theme. These will then be bundled into the ``blob.js`` and ``blob.css`` files and included in the site. (you can see a list of available assets [here](/appendix/application-assets)).
 
 In your theme's ``config.yml`` file, you will need a construct such as this:
 
@@ -28,7 +28,7 @@ vendor_assets:
   - asset_pack
 {% endhighlight %}
 
-Asset packs are your included stylesheets and JavaScripts. Vendor assets are includes for both core files and the asset packs you declared prior. The Ctesius vendor asset includes the bare minimum you need to build a theme on Homeflow, with no excess.
+Asset packs are the stylesheets and JavaScript files which you wish to include in your theme. The Vendor assets are the core asset packs you wish to include, ``asset_pack`` should be included here as these are the assets defined prior. The ``Ctesius`` vendor asset pack includes the bare minimum you need to build a theme on Homeflow, with no excess.
 
 To output your minified JS and CSS in your theme, add the following two lines:
 
