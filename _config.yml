@@ -35,6 +35,9 @@ sections:
   - title: Getting started
     id: getting-started
     sub: true
+  - title: Best practices
+    id: best-practices
+    sub: true
   - title: Application &amp; homepage
     id: application-and-homepage
     sub: true
@@ -85,9 +88,6 @@ sections:
     sub: true
   - title: User profile system
     id: user-profile-system
-    sub: true
-  - title: Best practices
-    id: best-practices
     sub: true
   - title: Theme configuration options
     id: theme-config-options
