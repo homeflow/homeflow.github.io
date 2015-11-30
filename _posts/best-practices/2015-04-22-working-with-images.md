@@ -11,13 +11,13 @@ It may seem obvious but choosing the right images are important for the efficien
 
 It is advisable to pick the right type of image for the job.
 
-**BMP** files shoud never be used. Ever.
+**BMP** files should never be used. Ever.
 
 **PNG** The Portable Network Graphics format was designed to be a lossless format for use on the WEB (among other things). It does reduce the size of your files. However since it preserves all the detail and all the colors the size reduction is not as much as GIF or JPG. This format is recommended for icons and small images and not large background images.
 
 **JPG**. JPG stands for Joint Photographic Group, which is the name of the organization which created this format. JPG was designed for the storage of photographs and is in fact used in most digital cameras. It is lossy, so you do lose detail, but you can choose how much detail you lose.
 
-**Flexable Image Size**
+**Flexible Image Size**
 
 Images must be the number one culprit in terms of slow downloads from the server. Any image that runs through our Liquid filters will get compressed. Here's some ways you can achieve this:
 

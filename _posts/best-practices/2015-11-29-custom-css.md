@@ -8,7 +8,7 @@ It is best to use CSS that can be easily adapted for multiple site configuration
 
 These can be used in the css files in your theme as shown here:
 
-{% highlight html %}
+{% highlight css %}
 header {
   background-color: {{ theme_preferences.header_background_colour }};
 }

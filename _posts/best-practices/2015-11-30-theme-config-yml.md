@@ -36,4 +36,4 @@ theme:
     - asset_pack
    stylesheets:
     - asset_pack
-{% end highlight %}    
+{% endhighlight %}    
