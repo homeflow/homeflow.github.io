@@ -6,7 +6,7 @@ category: appendix
 ---
 Here is a list of the configurable colours which are available, these can all be used in your themes css to allow colours to be customizable.
 
-find out how to configure your theme to use these colours [here](/best-practices/custom-css).
+Find out how to configure your theme to use these colours [here](/best-practices/custom-css).
 
 ####Main Colours
 **Primary colour:** The main colour used by your agency. It is generally a bold colour, and probably the most dominant in your logo. It will most often be used for large areas of colour and text headings.
