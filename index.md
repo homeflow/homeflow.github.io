@@ -7,6 +7,8 @@ Hi there and welcome to the Homeflow API documentation.
 
 Homeflow provides developers with everything they need to build exceptional property based websites. Within this documentation we hope you will find all the information you need to get your agency or portal theme up and running.
 
+Before you get stuck in and coding - please read our [best practices](/best-practices) section which will help both us and you when working on our platform. 
+
 You'll use the IDE you're familiar with plus all the developer tools you know and love such as: HTML, CSS, JavaScript and jQuery. You will make your own decisions on the plugins you or your customer requires and have complete design control over your new website from the word go.
 
 As alluded to above, we're making the assumption that you're familiar with HTML, CSS etc. You will also need a basic working knowledge of Git and Liquid, though both are relatively simple to pick up as you go along.

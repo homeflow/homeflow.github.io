@@ -81,5 +81,8 @@ category: drops
 ####road_name
 **Returns:** The Property's road name
 
+####tags
+**Returns:** An array of the tags set for the property
+
 ####vox_number
 **Returns:** Homeflow is able to generate recorded telephone numbers for properties. Doing a check on this drop can see whether one is available.
