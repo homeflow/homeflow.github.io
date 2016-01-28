@@ -6,12 +6,14 @@ category: staff
 ---
 Your first port of call before we can query any of the staff information is to add some. The Homeflow platform has hundreds if not thousands of profiles already loaded, so you might find we already have staff on record. That aside, log on to your agency admin and navigate to: ``/configure/business/staff``. From here follow the links to add/modify/remove staff as required.
 
+note: Staff members will not appear in the live data until they have both and avatar and either sales/lettings enabled.
+
 Let's start with the staff index - the entry point that lists all staff members. This ``index.liquid`` file should live within a ``staff`` folder in your repository. A simple loop to retrieve all staff could be:
 
 {% highlight html %}
 {% raw %}
 {% for profile in agency.staff_profiles %}
- <img src="{{ profile.avatar | url_for_staff_profile_avatar : "x97" }}" 
+ <img src="{{ profile.avatar | url_for_staff_profile_avatar : "x97" }}"
  alt="{{ profile.name }}" width="97">
  <div>
   <h1>{{ profile.name }}, {{ profile.job_title }}</h1>
@@ -59,7 +61,7 @@ The next page you will want to create is the staff show page - ``show.liquid``. 
 </div>
 <div class="span6">
  {% if staff_member.avatar %}
-  <img src="{{ staff_member.avatar | url_for_staff_profile_avatar : "300x_" }}" /> 
+  <img src="{{ staff_member.avatar | url_for_staff_profile_avatar : "300x_" }}" />
  {% else %}
   <img src="{{ 'silhouette.png' | theme_image_url}}">
  {% endif %}
