@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/masterfix/jekyll-lunr-js-search.git
+  revision: 02b399dc01badb0ae72749c8339094630be73d32
+  specs:
+    jekyll-lunr-js-search (0.2.1)
+      json (~> 1.8)
+      nokogiri (~> 1.6)
+      therubyracer (~> 0.12)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -66,10 +75,6 @@ GEM
     jekyll-coffeescript (1.0.1)
       coffee-script (~> 2.2)
     jekyll-gist (1.1.0)
-    jekyll-lunr-js-search (0.2.1)
-      json (~> 1.8)
-      nokogiri (~> 1.6)
-      therubyracer (~> 0.12)
     jekyll-mentions (0.2.1)
       html-pipeline (~> 1.9.0)
       jekyll (~> 2.0)
@@ -87,7 +92,7 @@ GEM
       jekyll (~> 2.0)
     json (1.8.2)
     kramdown (1.5.0)
-    libv8 (3.16.14.7)
+    libv8 (3.16.14.13)
     liquid (2.6.1)
     listen (2.8.5)
       celluloid (>= 0.15.2)
@@ -112,11 +117,11 @@ GEM
       ffi (>= 0.5.0)
     rdiscount (2.1.7)
     redcarpet (3.1.2)
-    ref (1.0.5)
+    ref (2.0.0)
     safe_yaml (1.0.4)
     sass (3.4.11)
     terminal-table (1.4.5)
-    therubyracer (0.12.1)
+    therubyracer (0.12.2)
       libv8 (~> 3.16.14.0)
       ref
     thread_safe (0.3.4)
@@ -133,4 +138,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll-lunr-js-search
+  jekyll-lunr-js-search!
+
+BUNDLED WITH
+   1.11.2
