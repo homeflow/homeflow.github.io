@@ -41,7 +41,7 @@ This construct is exactly the same as a properties loop seen before except we ar
 {% endraw %}
 {% endhighlight %}
 
-#####Map Zoom levels
+##### Map Zoom levels
 If you need to manually set the zoom level of the branch map you can do so with the following snippet (replace 15 with any fallback zoom level you wish):
 
 {% highlight html %}
