@@ -24,4 +24,8 @@ http://index1.homeflow.co.uk/sites/401/pages/about-us?api_key=36889c41708a5a2038
 #### Places/locations
 http://index1.homeflow.co.uk/places?api_key=77467477edfd2689cd77796a2c4b019f&search[name]=elstead
 
+#### Nodes
+http://index1.homeflow.co.uk/sites/{:site_id}/nodes/?api_key=77467477edfd2689cd77796a2c4b019f
+http://index1.homeflow.co.uk/sites/{:site_id}/nodes/{:node_id}?api_key=77467477edfd2689cd77796a2c4b019f
+
 For staff, see the agencies Hestia URL.
