@@ -9,9 +9,11 @@ It is best to use CSS that can be easily adapted for multiple site configuration
 These can be used in the css files in your theme as shown here:
 
 {% highlight html %}
+{% raw %}
 header {
   background-color: {{ theme_preferences.header_background_colour }};
 }
+{% endraw %}
 {% endhighlight %}
 
 You can see a full list of the available colour options [here](/appendix/theme-colours).

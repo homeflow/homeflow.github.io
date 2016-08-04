@@ -5,7 +5,7 @@ modal-id: application-assets
 category: appendix
 ---
 
-Asset packs can be included in your theme by defining them in the config.yml file, see [vendor assets](/assets#vendor-assets) for more details.
+Asset packs can be included in your theme by defining them in the config.yml file, see [assets and minify](/assets#assets-and-minify) for more details.
 
 **JavaScript Packs**
 
@@ -65,6 +65,5 @@ bootstrap.css
 nivo.css
 
 {% endhighlight %}
-
 
 Last modified: 09-Apr-15
