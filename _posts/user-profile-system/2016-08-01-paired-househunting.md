@@ -9,15 +9,16 @@ category: user-profile-system
 
 Users can belong to multiple groups of shared house hunters.
 
-#### users
+#### Users
 **Returns:** An array of users within the group along with: [ID, email, first_name, last_name, address]
 
-#### searches
+#### Searches
 **Returns:** An array of shared searches for the group along with: [ID, display_name]
 
-#### properties
+#### Properties
 **Returns:** An array of shared properties for the group along with: [ID, address, postcode, price, description]
 
-#### example_output
+#### Example Output
 An example JSON output for user groups can be found at the following URL:
+
 http://index1.test.homeflow.co.uk/sites/10497/groups/531134?api_key=77467477edfd2689cd77796a2c4b019f
