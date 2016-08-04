@@ -5,9 +5,21 @@ modal-id: paired-househunting
 category: user-profile-system
 ---
 
-**Please note paired househunting is in Alpha development. This functionality also needs to be enabled by Homeflow.**
+**Please note paired househunting is in Alpha development. This functionality is subject to change and also needs to be enabled by Homeflow.**
 
 Users can belong to multiple groups of shared house hunters.
+
+One could typically call the users groups with something like:
+
+{% highlight html %}
+{% raw %}
+{% for group in user.groups %}
+  {% for user in group.users %}
+    {{ user.first_name }}
+  {% endfor %}
+{% endfor %}
+{% endraw %}
+{% endhighlight %}
 
 #### Users
 **Returns:** An array of users within the group along with: [ID, email, first_name, last_name, address]
