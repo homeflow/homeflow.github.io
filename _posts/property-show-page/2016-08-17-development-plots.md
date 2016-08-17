@@ -11,11 +11,6 @@ You also have access to the properties child_properties. This returns an array
 with any child_properties that are associated with that development. Each child has the following
 attributes:
 
-primary_photo_url:
-property_id:
-property_type:
-bathrooms:
-
 #### price
 **Returns:** The price of the property as an Integer
 
@@ -33,3 +28,17 @@ bathrooms:
 
 #### property_type
 **Returns:** The name of the type of the property as a String
+
+### examples
+
+You can loop through the child_properties like so:
+
+{% highlight liquid %}
+{% raw %}
+{% if property.child_properties.first %}
+  {% for child_property in property.child_properties %}
+    Price is: £{{child_property.price}}
+  {% endfor %}
+{% endif %}
+{% endraw %}
+{% endhighlight %}
