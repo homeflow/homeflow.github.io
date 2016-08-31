@@ -4,16 +4,16 @@ title: Property Drop
 modal-id: property-drop
 category: drops
 ---
-####available_on
+#### available_on
 **Returns:** If supplied, the date the property is available.
 
-####bathrooms
+#### bathrooms
 **Returns:** An integer for number of bathrooms that sometimes comes in as zero or empty so needs to be checked.
 
-####bedrooms
+#### bedrooms
 **Returns:** An integer for bedroom count that sometimes comes in as zero or empty so needs to be checked.
 
-####brochures
+#### brochures
 **Returns:** This for loop would output all the brochures supplied.<br/>
 **Example use:**
 {% highlight html %}
@@ -24,10 +24,10 @@ category: drops
 {% endraw %}
 {% endhighlight %}
 
-####description
+#### description
 **Returns:** The full Property description
 
-####epc_charts
+#### epc_charts
 **Returns:** This for loop would output all the EPC charts supplied.<br/>
 **Example use:**
 {% highlight html %}
@@ -48,10 +48,10 @@ category: drops
 {% endraw %}
 {% endhighlight %}
 
-####features
+#### features
 **Returns:** A list of property features that can be outputted to bullet points.
 
-####floorplans
+#### floorplans
 **Returns:** The collection of floor plans. This loop could output the floor plans to a light box e.g Fancybox, Colorbox, etc.<br/>
 **Example use:**
 {% highlight html %}
@@ -72,17 +72,17 @@ category: drops
 {% endraw %}
 {% endhighlight %}
 
-####property_ref
+#### property_ref
 **Returns:** The agent's supplied property reference.
 
-####reception_rooms
+#### reception_rooms
 **Returns:** A numerical figure that sometimes comes in as zero or empty so needs to be checked.
 
-####road_name
+#### road_name
 **Returns:** The Property's road name
 
-####tags
+#### tags
 **Returns:** An array of the tags set for the property
 
-####vox_number
+#### vox_number
 **Returns:** Homeflow is able to generate recorded telephone numbers for properties. Doing a check on this drop can see whether one is available.

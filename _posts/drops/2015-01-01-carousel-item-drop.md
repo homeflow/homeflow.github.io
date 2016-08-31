@@ -5,26 +5,26 @@ modal-id: carousel-item-drop
 category: drops
 ---
 
-####image
+#### image
 **Returns:** A MrRichardImage for the CarouselItem image
 
-####link_url
-**Returns:** A string link URL 
+#### link_url
+**Returns:** A string link URL
 
-####price
+#### price
 **Returns:** The price for the CarouselItem if it is a property type
 
-####primary_channel
+#### primary_channel
 **Returns:** The primary channel ['sales','lettings'] if the type is a property
 
-####standfirst
+#### standfirst
 **Returns:** The promo content text
 
-####status
+#### status
 **Returns:** The property status if CarouselItem type is property
 
-####title
+#### title
 **Returns:** The main title of the CarouselItem. If a property type then this is the address
 
-####type
+#### type
 **Returns:** Whether the CarouselItem is a property or CMS content
