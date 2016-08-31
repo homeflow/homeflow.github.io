@@ -8,7 +8,7 @@ category: drops
 Below are the methods available on the BannerMenuItemDrop, what they return and also what they expect to be passed when calling the method.
 
 #### url
-**Returns:** The StaffMemberDrop of the Article author
+**Returns:** The BannerMenuItemDrop url
 
 #### title
 **Returns:** The title as a String
@@ -17,10 +17,10 @@ Below are the methods available on the BannerMenuItemDrop, what they return and 
 **Returns:** The content as text
 
 #### image
-**Returns:**
+**Returns:** The image as a MrRichardImage
 
 #### description
 **Returns:**
 
 #### custom_css
-**Returns:**
+**Returns:** Custom CSS for the BannerMenuItem as Text 
