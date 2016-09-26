@@ -10,6 +10,9 @@ category: drops
 #### bathrooms
 **Returns:** An integer for number of bathrooms that sometimes comes in as zero or empty so needs to be checked.
 
+#### branch
+**Returns:** Return the associated branch for the property as a BranchDrop.
+
 #### bedrooms
 **Returns:** An integer for bedroom count that sometimes comes in as zero or empty so needs to be checked.
 
