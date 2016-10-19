@@ -9,13 +9,11 @@ Say you want to extract some or all sales staff on sales properties and the same
 {% highlight liquid %}
 {% raw %}
 {% if current_channel.name == 'sales' %}
-    {% assign staff_profiles = branch.staff_profiles
-    | selected_by : 'contactable_for_sales', true %}
+    {% assign staff_profiles = branch.sales_staff_profiles %}
 {% endif %}
 
 {% if current_channel.name == 'lettings' %}
-    {% assign staff_profiles = branch.staff_profiles
-    | selected_by : 'contactable_for_lettings', true %}
+    {% assign staff_profiles = branch.lettings_staff_profiles %}
 {% endif %}
 {% endraw %}
 {% endhighlight %}
@@ -37,7 +35,7 @@ Then to test and output our newly created staff array:
     <a href="{{ staff | url_for_staff_member }}">Full profile</a>
    </li>
   {% endfor %}
- </ul> 
+ </ul>
  <a href="/staff" class="button">Meet the whole team</a>
 {% endif %}
 {% endraw %}
