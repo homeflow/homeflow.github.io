@@ -6,7 +6,7 @@ category: location-guides
 ---
 On the location guide show page you can access all the node items for that node (which remember is what a location guide is).
 
-You can call a node with either {{node}} or {{hf_node}} as they are one in the same thing, however note that the with_node block (mentioned below) expects hf_node to be passed into it - this is dude to liquid markup also using the variable 'node' so things get confused and sad in our rendering engine.
+You can call a node with either {{node}} or {{hf_node}} as they are one in the same thing, however note that the with_node block (mentioned below) expects hf_node to be passed into it - this is due to liquid markup also using the variable 'node' so things get confused and sad in our rendering engine.
 
 You can access the node items of a specific type by using the with_node block helper like so:
 
