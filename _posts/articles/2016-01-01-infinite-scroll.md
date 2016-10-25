@@ -16,6 +16,8 @@ In order to enable infinite scroll for articles you need to specify the initial 
 {% endraw %}
 {% endhighlight %}
 
+Below is an example of defining the infinite scroll template which is used to render the subsequent blocks of article results at the end of the infinite_pages element.
+
 {% highlight html %}
 {% raw %}
  <script id="infinite_scroll_articles_template" type="text/liquid">
@@ -51,3 +53,5 @@ Auto scrolling can be turned on or off with the following:
   Ctesius.addConfig('autoscroll_infinite_scroll', false);
 {% endraw %}
 {% endhighlight %}
+
+### Article JSON
