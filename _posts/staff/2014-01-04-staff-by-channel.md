@@ -41,7 +41,7 @@ Then to test and output our newly created staff array:
 {% endraw %}
 {% endhighlight %}
 
-## Tip
+#### Tip
 The ``selected_by`` code seen above can be used to filter an array based on an attribute of an object. ``contactable_for_sales`` is a true or false attribute we can use to filter staff, depending on the property's channel.
 
 {% highlight html %}
