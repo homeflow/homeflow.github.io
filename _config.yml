@@ -35,11 +35,47 @@ sections:
   - title: Getting started
     id: getting-started
     sub: true
-  - title: Best practices
-    id: best-practices
+  - title: Agencies
+    id: agencies
     sub: true
   - title: Application &amp; homepage
     id: application-and-homepage
+    sub: true
+  - title: Articles
+    id: articles
+    sub: true
+  - title: Assets
+    id: assets
+    sub: true
+  - title: Best practices
+    id: best-practices
+    sub: true
+  - title: Branches
+    id: branches
+    sub: true
+  - title: Drops
+    id: drops
+    sub: true
+  - title: Events
+    id: events
+    sub: true
+  - title: Forms (Custom)
+    id: custom-forms
+    sub: true
+  - title: Lead forms
+    id: lead-forms
+    sub: true
+  - title: Location guides
+    id: location-guides
+    sub: true
+  - title: Maps
+    id: maps
+    sub: true
+  - title: Nodes
+    id: nodes
+    sub: true
+  - title: Pages
+    id: cms-pages
     sub: true
   - title: Property searching
     id: property-searching
@@ -50,50 +86,14 @@ sections:
   - title: Property show page
     id: property-show-page
     sub: true
-  - title: Lead forms
-    id: lead-forms
-    sub: true
-  - title: Custom forms
-    id: custom-forms
-    sub: true
-  - title: Agencies
-    id: agencies
-    sub: true
-  - title: Branches
-    id: branches
-    sub: true
   - title: Staff
     id: staff
-    sub: true
-  - title: Maps
-    id: maps
-    sub: true
-  - title: Pages
-    id: cms-pages
-    sub: true
-  - title: Articles
-    id: articles
-    sub: true
-  - title: Nodes
-    id: nodes
-    sub: true
-  - title: Location guides
-    id: location-guides
-    sub: true
-  - title: Drops
-    id: drops
-    sub: true
-  - title: Events
-    id: events
-    sub: true
-  - title: User profile system
-    id: user-profile-system
     sub: true
   - title: Theme configuration options
     id: theme-config-options
     sub: true
-  - title: Assets
-    id: assets
+  - title: User profile system
+    id: user-profile-system
     sub: true
   - title: Appendix
     id: appendix
