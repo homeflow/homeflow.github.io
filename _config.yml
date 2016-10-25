@@ -41,6 +41,9 @@ sections:
   - title: Application &amp; homepage
     id: application-and-homepage
     sub: true
+  - title: Array helpers
+    id: array-helpers
+    sub: true
   - title: Articles
     id: articles
     sub: true
