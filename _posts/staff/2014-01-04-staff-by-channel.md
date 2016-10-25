@@ -41,4 +41,11 @@ Then to test and output our newly created staff array:
 {% endraw %}
 {% endhighlight %}
 
-Tip: the ``selected_by`` code seen above can be used to filter an array based on an attribute of an object. ``contactable_for_sales`` is a true or false attribute we can use to filter staff, depending on the property's channel.
+## Tip
+The ``selected_by`` code seen above can be used to filter an array based on an attribute of an object. ``contactable_for_sales`` is a true or false attribute we can use to filter staff, depending on the property's channel.
+
+{% highlight html %}
+{% raw %}
+  {% assign staff_by_team = branch.staff_profiles | selected_by: 'team', 'My funky team' %}
+{% endraw %}
+{% endhighlight %}
