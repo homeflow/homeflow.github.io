@@ -38,12 +38,16 @@ In order to enable infinite scroll for articles you need to specify the initial 
 
 You also need to enable infinite scroll like so:
 
+{% highlight html %}
 {% raw %}
   Ctesius.addConfig('enable_article_infinite_scroll', true);
 {% endraw %}
+{% endhighlight %}
 
 Auto scrolling can be turned on or off with the following:
 
+{% highlight html %}
 {% raw %}
   Ctesius.addConfig('autoscroll_infinite_scroll', false);
 {% endraw %}
+{% endhighlight %}
