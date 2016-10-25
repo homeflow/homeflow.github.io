@@ -1,6 +1,6 @@
 ---
 layout: default
-title:
+title: Admin CMS
 modal-id: introduction to Logos
 category: admin-cms
 ---

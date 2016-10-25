@@ -1,6 +1,6 @@
 ---
 layout: default
-title:
+title: Array helpers
 modal-id: introduction
 category: array-helpers
 ---
