@@ -52,6 +52,8 @@ In other words, all other template parts are like partials that get evaluated an
 
 Finally we need to boot the Ctesius system to handle searches, user profiles and so on. To do that we add the following function:  
 
+### Ctesius.init
+
 {% highlight javascript %}
 {% raw %}
 <script type="text/javascript">
