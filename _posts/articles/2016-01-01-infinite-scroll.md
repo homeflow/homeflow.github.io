@@ -54,7 +54,16 @@ Auto scrolling can be turned on or off with the following:
 {% endraw %}
 {% endhighlight %}
 
+If you are planning on using infinite scroll on pages where you have articles for a specific topic you will need to call the following variation on button click to pass in the selected topic:
+
+{% highlight html %}
+{% raw %}
+  Ctesius.Models.ArticleInfiniteScroll.loadNextByTopic('{{articles.first.topic}}')
+{% endraw %}
+{% endhighlight %}
+
+
 ### Article JSON
 The articles infinite scroll uses a liquid JSON (LJSON) partial named ``_articles_list.ljson`` an example of this file can be found in the stabilisers theme [here](https://github.com/homeflow/stabilisers/blob/master/articles/_articles_list.ljson).
 
-If you want to override this file for any variations or if you need any missing article methods then you can make your own file in the articles folder in your theme. 
+If you want to override this file for any variations or if you need any missing article methods then you can make your own file in the articles folder in your theme.
