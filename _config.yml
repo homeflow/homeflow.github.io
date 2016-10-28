@@ -101,6 +101,8 @@ sections:
   - title: User profile system
     id: user-profile-system
     sub: true
+  - title: Valuations (Instant)
+    id: valuations
   - title: Appendix
     id: appendix
     sub: true
