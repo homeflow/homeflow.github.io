@@ -24,7 +24,34 @@ The second step is to wrap your properties results loop in an ``infinite_pages``
 {% endraw %}
 {% endhighlight %}
 
-The next step is define the template and what will be loaded in a new. Note it is wrapped in ``raw`` tags, so the serverside parser will ignore it. Also note that this structure will be a direct copy of the structure within your properties for loop but with the addition of the for loop code and overall structural elements (in this case the unordered list).
+Next, we'll add a `properties/_properties_list.ljson` file to the project. This file is used by the server to render the properties as liquid objects, along with any variables we define:
+
+{% highlight html %}
+{% raw %}
+properties :
+{% for property in properties %}
+  -
+    photo : {{ property.main_photo | url_for_property_photo : "300x185" }}
+    property_url : {{ property | url_for_property }}
+    short_description : {{ property.short_description | truncate : 150 | capitalize | yaml_safe}}
+    display_address : {{property.display_address | truncate: 90 | yaml_safe}}
+    price : {{ property.price }}
+    bedrooms: {{property.bedrooms | yaml_safe }}
+    property_id: {{property.property_id}}
+    status: {{ property.status }}
+    primary_channel: {{property.primary_channel}}
+{% endfor %}
+pagination :
+    current_page : {{ pagination.current_page }}
+    has_prev_page : {{ pagination.has_prev_page }}
+    total_count : {{ pagination.total_count }}
+    has_next_page : {{ pagination.has_next_page }}
+    from_record : {{ pagination.from_record }}
+    to_record : {{ pagination.to_record}}
+{% endraw %}
+{% endhighlight %}
+
+Now we can define a template that will be used by each infinite scroll page. This template can make use of the variables we defined inside the `_properties_list.ljson` file: 
 
 {% highlight html %}
 {% raw %}{{% endraw %}% raw %{% raw %}}{% endraw %}{% raw %}
@@ -48,5 +75,7 @@ The next step is define the template and what will be loaded in a new. Note it i
  </script>
 {% endraw %}{% raw %}{{% endraw %}% endraw %{% raw %}}{% endraw %}
 {% endhighlight %}
+
+Note that the template is wrapped in ``raw`` tags, so the serverside parser will ignore it. The consequence of this is that **you cannot use complex liquid statements or includes for partials inside it**. This means that things like liquid filters should be used inside the ljson file, where variables are defined. Also note that this structure will be a direct copy of the structure within your properties for loop but with the addition of the for loop code and overall structural elements (in this case the unordered list).
 
 This in principle should be enough for you to get an output of some description. As always, you might need to tweak the containing elements and CSS as required to get it to format well.
