@@ -26,7 +26,7 @@ The second step is to wrap your properties results loop in an ``infinite_pages``
 
 Next, we'll add a `properties/_properties_list.ljson` file to the project. This file is used by the server to render the properties as liquid objects, along with any variables we define:
 
-{% highlight html %}
+{% highlight liquid %}
 {% raw %}
 properties :
 {% for property in properties %}
@@ -66,7 +66,6 @@ Now we can define a template that will be used by each infinite scroll page. Thi
      <a href="{{ property.property_url }}">
       {{ property.price }}
       {{ property.bedrooms }} bedrooms
-      {{ property.road_name }}
      </a>       
      <a class="btn-primary" href="{{ property.property_url }}">Full Details</a>
     </li>
@@ -76,6 +75,6 @@ Now we can define a template that will be used by each infinite scroll page. Thi
 {% endraw %}{% raw %}{{% endraw %}% endraw %{% raw %}}{% endraw %}
 {% endhighlight %}
 
-Note that the template is wrapped in ``raw`` tags, so the serverside parser will ignore it. The consequence of this is that **you cannot use complex liquid statements or includes for partials inside it**. This means that things like liquid filters should be used inside the ljson file, where variables are defined. Also note that this structure will be a direct copy of the structure within your properties for loop but with the addition of the for loop code and overall structural elements (in this case the unordered list).
+Note that the template is wrapped in ``raw`` tags, so the serverside parser will ignore it. The consequence of this is that **you cannot use complex liquid statements, includes for partials or JavaScript inside it**. This means that things like liquid filters should be used inside the ljson file, where variables are defined. Also note that this structure will be a direct copy of the structure within your properties for loop.
 
-This in principle should be enough for you to get an output of some description. As always, you might need to tweak the containing elements and CSS as required to get it to format well.
+This should be enough to get the infinite scroll working on your property index page. As always, you might need to tweak the containing elements and CSS as required to get it to format well.
