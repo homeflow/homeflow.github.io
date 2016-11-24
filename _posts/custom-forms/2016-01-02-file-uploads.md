@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Form fields
+title: File uploads
 modal-id: custom-forms
 category: custom-forms
 ---
