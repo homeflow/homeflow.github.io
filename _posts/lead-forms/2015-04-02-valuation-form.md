@@ -20,4 +20,32 @@ Review the [register form](/cms-pages/#register-form) for the form fields and am
 </form>
 
 {% endraw %}           
-{% endhighlight %} 
+{% endhighlight %}
+
+You can also add client bookings to your valuation lead forms,
+
+{% highlight html %}
+{% raw %}
+
+<label>Would you like to book a viewing?</label>
+
+<label for="lead_booking[book_viewing]">Yes</label>
+<input id="book_viweing" type="radio" value="yes" name="lead_booking[book_viewing]">
+
+<label for="lead_booking[book_viewing]">No</label>
+<input id="book_viweing" type="radio" value="no" name="lead_booking[book_viewing]">
+
+<label class="text" for="lead_booking[booking_time]">Time</label>
+<input id="lead_booking[booking_time]" name="lead_booking[booking_time]" type="text">
+
+<label class="text" for="lead_booking[booking_day]">Day</label>
+<input id="lead_booking[booking_day]" name="lead_booking[booking_day]" type="text">
+
+<label class="text" for="lead[booking_month]">Month</label>
+<input id="lead_booking[booking_month]" name="lead_booking[booking_month]" type="text">
+
+<label class="text" for="lead[booking_year]">Year</label>
+<input id="lead_booking[booking_year]" name="lead_booking[booking_year]" type="text">
+{% endraw %}           
+
+{% endhighlight %}
