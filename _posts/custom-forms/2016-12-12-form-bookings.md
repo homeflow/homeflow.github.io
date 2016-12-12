@@ -1,6 +1,6 @@
 ---
 layout: default
-title: File uploads
+title: Client Bookings
 modal-id: custom-forms
 category: custom-forms
 ---
