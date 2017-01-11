@@ -11,4 +11,4 @@ In the form edit page you will note the "form elements" tab. This is used to def
 ### Field options
 Some form elements such as dropdown's can accept multiple values. You can define these with tab separation in the field options for that element. e.g. 'TV|Radio|Internet'
 
-More information on Logos [here](/admin-cms).
+[More information on Logos](/admin-cms).
