@@ -22,23 +22,13 @@ Topics are a useful way of grouping articles. You can loop through and query art
 {% endraw %}
 {% endhighlight %}
 
-Our standard array filters can be used on articles and are useful for building up arrays for asides and other article menus. This function gets all articles but filters out those with a topic of 'news':
+This next assign statement gets all articles of a certain topic, or in the example shown it actually returns articles for either 'Press Release' or 'News' topics using comma separated values.
+
+Note: These are case sensitive and also require no spaces between the words.
 
 {% highlight liquid %}
 {% raw %}
-
-{% assign other_articles = agency.articles | delete_by : 'topic', 'news' %}
- 
-{% endraw %}
-{% endhighlight %}
-
-This next assign statement gets all articles of a certain topic (in this case the same topic as the article the user is on) as well as excludes the active article using the 'slug' as the means to do it.
-
-{% highlight liquid %}
-{% raw %}
-
-{% assign other_articles = agency.articles | selected_by : 'topic', article.topic | excluding : article , 'slug' %}
-
+  {% assign other_articles = 'Press Release,News' | articles_by_topic %}
 {% endraw %}
 {% endhighlight %}
 
