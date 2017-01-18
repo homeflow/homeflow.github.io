@@ -5,6 +5,9 @@ modal-id: search-drop
 category: drops
 ---
 
+#### radius_in_miles_formatted
+**Returns:** The search radius in miles as a String, formatted. E.g. '1/2 mile' or '50' miles
+
 #### bedrooms_description
 **Returns:** The bedrooms as a String in a more titled format. i.e 'between 6 and 9 bedrooms'
 
