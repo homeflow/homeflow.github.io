@@ -13,14 +13,14 @@ a model:
 {% raw %}
 <script>
 $(document).ready(function(){
-  Ctesius.addConfig('name-of-the-flash-message-to-override', 'you_custom_message');
+  Ctesius.addConfig('name-of-the-flash-message-to-override', 'your_custom_message');
 });
 </script>
 {% endraw %}
 {% endhighlight %}
 
 This should typically be added to your 'js_event_registers.liquid' file, although
-can be added to the page where needed.
+they can be added to a specific page where needed. 
 
 If your theme is not bespoke, then 'your_custom_message' should be replaced with
 a content block so that future users of the theme can add custom content.
@@ -40,8 +40,12 @@ Ctesius.addConfig('flash-message-welcome-lead-sent', 'Thank you for applying for
 
 This would output:
 
+{% highlight html %}
+{% raw %}
 Thank you for applying for the generic office position. You will have received a
 confirmation of your application and will hear from us if successful.
+{% endraw %}
+{% endhighlight %}
 
 Here is a list of flash message types, and the default messages which can be overriden:
 
