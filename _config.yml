@@ -74,6 +74,9 @@ sections:
   - title: Location guides
     id: location-guides
     sub: true
+  - title: Local Business Data
+    id: local-business-data
+    sub: true
   - title: Maps
     id: maps
     sub: true
