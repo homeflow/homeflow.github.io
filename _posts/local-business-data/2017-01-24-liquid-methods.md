@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Liquid Methods and Available Data
-modal-id: local-business-data
+modal-id: liquid-methods
 category: local-business-data
 ---
 
