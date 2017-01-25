@@ -26,9 +26,9 @@ To get up and running, add a partial template under ``js_templates`` called ``_n
 Then include it in application.liquid:
 
 {% highlight html %}
-{% raw %}{{% endraw %}% raw %{% raw %}}{% endraw %}{% raw %}
+{% raw %}
 {% include 'js_templates/next_prev_recent_search' %}
-{% endraw %}{% raw %}{{% endraw %}% endraw %{% raw %}}{% endraw %}
+{% endraw %}
 {% endhighlight %}
 
 Then on your property show page, wherever you want the template to render, add:
