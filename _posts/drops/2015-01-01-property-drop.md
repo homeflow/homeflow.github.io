@@ -27,31 +27,31 @@ e.g.
 **Returns:** The total acreage of the property, as a float.
 
 #### address_with_commas
-*Returns:** The full property address as a string, with the lines separated by commas.
+**Returns:** The full property address as a string, with the lines separated by commas.
 
 #### associated_profile
-*Returns:** A random staff member from those associated with the property.
+**Returns:** A random staff member from those associated with the property.
 
 #### associated_profiles
-*Returns:** An array of staff members associated with the property.
+**Returns:** An array of staff members associated with the property.
 
 #### associated_profiles_with_avatar
-*Returns:** An array of staff members associated with the property who have avatar images.
+**Returns:** An array of staff members associated with the property who have avatar images.
 
 #### associated_profile_with_avatar
 **Returns:** A random staff member from those associated with the property who have avatar images.
 
 #### associated_sales_profile
-*Returns:** A random staff member from those associated with the property who are contactable for sales.
+**Returns:** A random staff member from those associated with the property who are contactable for sales.
 
 #### associated_sales_profiles
-*Returns:** An array of staff members associated with the property who are contactable for sales.
+**Returns:** An array of staff members associated with the property who are contactable for sales.
 
 #### associated_lettings_profile
-*Returns:** A random staff member from those associated with the property who are contactable for lettings.
+**Returns:** A random staff member from those associated with the property who are contactable for lettings.
 
 #### associated_lettings_profiles
-*Returns:** An array of staff members associated with the property who are contactable for lettings.
+**Returns:** An array of staff members associated with the property who are contactable for lettings.
 
 #### available_on
 **Returns:** If supplied, the date the property is available.
@@ -62,19 +62,19 @@ e.g.
 #### branch
 **Returns:** Return the associated branch for the property as a BranchDrop.
 
-### branch_name
+#### branch_name
 **Returns:** the name of the associated branch as a string.
 
-### branch_url_label
+#### branch_url_label
 **Returns:** the associated branch's url label (the last part of the url for linking to a branch).
 
-### branch_id
+#### branch_id
 **Returns:** the associated branch's ID.
 
 #### bedrooms
 **Returns:** An integer for bedroom count that sometimes comes in as zero or empty so needs to be checked.
 
-### bedrooms_text
+#### bedrooms_text
 **Returns:** A string of the number of bedrooms followed by the correctly pluralized word. e.g "1 bedroom" / "2 bedrooms"
 
 #### brochures
@@ -208,7 +208,7 @@ Any links for the property.
 #### nearest_location
 **Returns:** the property's nearest location, as a [LocationDrop](/drops/location-drop.html).
 
-### nodes
+#### nodes
 **Returns:** The nodes for the property, if there are any.
 
 #### photos
