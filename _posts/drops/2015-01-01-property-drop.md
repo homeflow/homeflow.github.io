@@ -176,25 +176,25 @@ e.g.
 **Returns:** The investment yield for the property, if available (defaults to 0).
 
 #### is_auction?
-**Returns a boolean value for whether the property's tags contains 'auction'
+**Returns:** a boolean value for whether the property's tags contains 'auction'
 
 #### is_commercial?
 **Returns:** a boolean value for whether the property's tags contains 'commercial'
 
 #### is_new_homes?
-**Returns a boolean value for whether the property's tags contains 'new homes'
+**Returns:** a boolean value for whether the property's tags contains 'new homes'
 
 #### is_short_let?
 **Returns:** A Boolean if the property is a short let property
 
 #### is_premium?
-**Returns a boolean value for whether the property's tags contains 'premium'
+**Returns:** a boolean value for whether the property's tags contains 'premium'
 
 #### lettings_fee_text
 **Returns:** The body of a content chunk named 'lettings_fee_text' if it exists and the property's primary channel is lettings.
 
 #### links
-Any links for the property.
+**Returns:** Any links for the property.
 
 #### long_description
 **Returns:** the long description for the property.
@@ -235,7 +235,7 @@ Any links for the property.
 #### reception_rooms
 **Returns:** A numerical figure that sometimes comes in as zero or empty so needs to be checked.
 
-### rent_pw_value
+#### rent_pw_value
 **Returns:** The property's rent calculated for one week.
 
 #### road_name
@@ -254,7 +254,7 @@ Any links for the property.
 **Returns:** An array of the tags set for the property.
 
 #### url_description
-A slug for the property - using bedrooms, type, road name and postcode and joined with hyphens.
+**Returns:** A slug for the property - using bedrooms, type, road name and postcode and joined with hyphens.
 
 #### vox_number
 **Returns:** Homeflow is able to generate recorded telephone numbers for properties. Doing a check on this drop can see whether one is available.
