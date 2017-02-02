@@ -75,6 +75,9 @@ category: drops
 {% endraw %}
 {% endhighlight %}
 
+#### is_short_let?
+**Returns** A Boolean if the property is a short let property
+
 #### property_ref
 **Returns:** The agent's supplied property reference.
 
