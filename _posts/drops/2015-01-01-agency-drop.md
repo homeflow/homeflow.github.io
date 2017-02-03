@@ -145,6 +145,9 @@ Below are the methods available on the AgencyDrop, what they return and also wha
 #### sales_enabled
 **Returns:** A boolean to represent if the Agency has sales properties
 
+#### shuffled_carousel_items
+**Returns:** An array of the carousel items, ordered randomly.
+
 #### staff_profiles
 **Returns:** A collection of all the StaffMemberDrop's for the agency
 

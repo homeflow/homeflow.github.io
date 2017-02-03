@@ -54,6 +54,8 @@ Auto scrolling can be turned on or off with the following:
 {% endraw %}
 {% endhighlight %}
 
+The Ctesius event ``'article_infinite_scroll_performed'`` is triggered when the page has been successfully loaded.
+
 If you are planning on using infinite scroll on pages where you have articles for a specific topic you will need to call the following variation on button click to pass in the selected topic:
 
 {% highlight html %}
