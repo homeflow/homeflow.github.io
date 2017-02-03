@@ -10,6 +10,9 @@ Below are the methods available on the AgencyDrop, what they return and also wha
 #### address_html
 **Returns:** Agency address with HTML formatting
 
+#### alphabetical_order_staff_surname
+**Returns:** A array of the staff member's surnames, ordered alphabetically.
+
 #### agency_portal_preferences
 **Returns:** A collection of agency_portal_prefereces. See AgencyPortalPreferenceDrop
 
