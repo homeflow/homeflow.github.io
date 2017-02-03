@@ -14,7 +14,7 @@ Below are the methods available on the AgencyDrop, what they return and also wha
 **Returns:** A collection of agency_portal_prefereces. See AgencyPortalPreferenceDrop
 
 #### articles
-**Returns:** An array of all articles for an Agency. See ArticleDrop
+**Returns:** An array of all articles for an Agency. See [ArticleDrop](#article-drop)
 
 #### article(article_id)
 **Returns:** See ArticleDrop<br/>
@@ -38,7 +38,13 @@ Below are the methods available on the AgencyDrop, what they return and also wha
 **Expects:** A branch_id as a string
 
 #### branches
-**Returns:** A collection of all the Agency branches
+**Returns:** A collection of all the Agency branches as [branch drops](#branch-drop)
+
+#### branches_by_position
+**Returns:** An array of branches, arranged in the order they appear in the agency's admin.
+
+#### branches_ordered_alphanumerically
+**Returns:** An array of branches, in alphanumeric order.
 
 #### carousel_items
 **Returns:** A collection of the Agency's CarouselItemDrop's
@@ -65,6 +71,12 @@ Below are the methods available on the AgencyDrop, what they return and also wha
 
 #### has_social_links
 **Returns:** A boolean whether any of the social links have been set
+
+#### instagram_uri
+**Returns:** A string of the URL for the agency's Instagram page.
+
+#### latest_article
+**Returns:** The agency's latest article, as an [ArticleDrop](#article-drop).
 
 #### lettings_enabled
 **Returns:** Boolean for if lettings are enabled
@@ -95,6 +107,9 @@ Below are the methods available on the AgencyDrop, what they return and also wha
 #### pages
 **Returns:** A collection of CRMPageDrop's for the Agency
 **Limit:** Page size is 10
+
+#### pinterest_uri
+**Returns:** The agency's Pinterest URL as a string, if they have one.
 
 #### properties_from_tag(tag)
 **Returns:** A collection of properties by a specific tag<br/>
@@ -141,3 +156,6 @@ Below are the methods available on the AgencyDrop, what they return and also wha
 
 #### website_logo
 **Returns:** A MrRichardImage of the Agency's website specific logo. This can be used if the original logo does not work well on the site
+
+#### youtube_uri
+**Returns:** A string for the URL of the company's Youtube page.

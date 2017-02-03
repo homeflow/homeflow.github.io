@@ -6,7 +6,7 @@ category: best-practices
 ---
 At Homeflow we like to keep our code base nice and clean and well organized, this is important when designing a theme to be used on the Homeflow platform.
 
-You should aim to keep your files small and concise and to reuse code where possible by using partials, for example you may create a property partial which is reused in multiple areas throughout the site, not just the property pages.
+You should aim to keep your files small and concise, and to reuse code where possible using partials. For example, you may create a property partial which is reused in multiple areas throughout the site, not just the property pages. However, using **too many** partials (especially ones buried deep in the folder structure) can make a project difficult to read and navigate, especially for someone coming to the code for the first time. Bear this in mind and try to organise your code while keeping it readable.
 
 You should also aim to keep your HTML and CSS code as clean as possible by removing unused or unnecessary code and formatting and indenting the files sensibly.
 
