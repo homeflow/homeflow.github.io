@@ -51,6 +51,8 @@ pagination :
 {% endraw %}
 {% endhighlight %}
 
+You can see a comprehensive list of the available variables for a property [here](/drops/property-drop.html).
+
 Now we can define a template that will be used by each infinite scroll page. This template can make use of the variables we defined inside the `_properties_list.ljson` file: 
 
 {% highlight html %}

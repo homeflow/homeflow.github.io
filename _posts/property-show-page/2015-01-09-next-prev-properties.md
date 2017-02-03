@@ -6,7 +6,7 @@ category: property-show-page
 ---
 The next and previous property functions allow the user to cycle through a set of search results, either using the search the user performed to get to the show page, or implying the search based on the details of the property the user is on.
 
-To get up and running, add a partial template under ``js_templates`` called ``_next_prev_recent_search.liquid`` and include in appplication.liquid. In it, add and modify the following template:
+To get up and running, add a partial template under ``js_templates`` called ``_next_prev_recent_search.liquid`` In it, add and modify the following template:
 
 {% highlight html %}
 {% raw %}{{% endraw %}% raw %{% raw %}}{% endraw %}{% raw %}
@@ -21,6 +21,14 @@ To get up and running, add a partial template under ``js_templates`` called ``_n
   </div>
  </script>
 {% endraw %}{% raw %}{{% endraw %}% endraw %{% raw %}}{% endraw %}
+{% endhighlight %}
+
+Then include it in application.liquid:
+
+{% highlight html %}
+{% raw %}
+{% include 'js_templates/next_prev_recent_search' %}
+{% endraw %}
 {% endhighlight %}
 
 Then on your property show page, wherever you want the template to render, add:
