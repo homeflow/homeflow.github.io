@@ -9,16 +9,6 @@ category: drops
 
 This is a comprehensive list of the methods available to theme templates as Liquid variables from property pages. To use these within the infinite scroll template on the properties index page, they will need to be added to the [_properties_list.ljson](/property-results/infinite-scrolling.html) file.
 
-**NOTE:** You should always check that a variable exists before you try to use it, to avoid errors when the value is nil.
-e.g.
-{% highlight html %}
-{% raw %}
-{% if property.video_url %}
-  {% property.video_url | split: '/' %}
-{% endif %}
-{% endraw %}
-{% endhighlight %}
-
 #### audiotour_url
 **Returns:** The url for the property's audio tour as a string, if it has one.
 
