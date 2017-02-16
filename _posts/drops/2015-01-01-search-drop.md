@@ -6,7 +6,7 @@ category: drops
 ---
 
 #### alert frequency
-**Returns:** The search radius in miles, as an integer.
+**Returns:** The alert frequency set for a saved search, as a string.
 
 #### bedrooms_description
 **Returns:** The bedrooms as a String in a more titled format. i.e 'between 6 and 9 bedrooms'
