@@ -36,9 +36,12 @@ Ctesius.registerEvent('saved_search_removed', function(search, collection){
 {% endraw %}
 {% endhighlight %}
 
-###Associated Events
+<br>
 
-To override any default callabacks simply override the following Ctesius events:
+#### Associated Events
 
- - **saved_search_added**
- - **saved_search_removed**
+To override any default callbacks simply override the following Ctesius events:
+
+ - **saved_search_added** (fires when a search is added **and** when the page loads)
+ - **after_saved_search** (fires **only** after a search has been saved)
+ - **saved_search_removed** (fires when a search is removed)
