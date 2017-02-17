@@ -22,6 +22,21 @@ category: drops
 #### has_social_links
 **Returns:** A boolean whether any of the StaffMember's social page URL's have been set
 
+#### twitter_uri
+**Returns:** The staff member's Twitter URI.
+
+#### linkedin_uri
+**Returns:** The staff member's linkedin URI.
+
+#### facebook_uri
+**Returns:** The staff member's Facebook URI.
+
+#### googleplus_uri
+**Returns:** The staff member's Google+ URI.
+
+#### instagram_uri
+**Returns:** The staff member's Instagram URI.
+
 #### long_bio
 **Returns:** The long biography for the StaffMember
 
@@ -33,6 +48,9 @@ category: drops
 
 #### property_commments
 **Returns:** A collection of comments against properties made by the StaffMember
+
+#### staff_member_articles
+**Returns:** The articles where the author is the staff member.
 
 #### video_uri
 **Returns:** If the staff member has a video URL entered on the system, this field will retrieve it. Note there's no guarantee what format or type of link this will be.

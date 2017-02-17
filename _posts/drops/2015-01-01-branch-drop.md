@@ -10,8 +10,16 @@ Below are the methods available on the BranchDrop, what they return and also wha
 #### address_with_line_breaks
 **Returns:** The Branch address with line breaks
 
+#### all_recent_lettings_properties
+**Returns:** A collection of the latest lettings properties, including those with all statuses (including 'sold' etc).<br/>
+**Limit:** 5
+
+#### all_recent_sales_properties
+**Returns:** A collection of the latest sales properties, including those with all statuses (including 'sold' etc).<br/>
+**Limit:** 5
+
 #### agency
-**Returns:** The AgencyDrop for that Branch
+**Returns:** The [AgencyDrop](#agency-drop) for that Branch
 
 #### branch_manager
 **Returns:** The branch manager as a StaffMemberDrop
@@ -29,6 +37,12 @@ Below are the methods available on the BranchDrop, what they return and also wha
 #### contains_staff_member?(staff_member)
 **Returns:** A boolean to check if a staff member is assigned to the Branch<br/>
 **Expects** A StaffMemberDrop
+
+#### content_chunks
+**Returns:** An array of content chunks, as hashes, where the branch has been set to this one.
+
+#### content_blocks
+**Returns:** An array of content chunks, as ContentBlockDrops, where the branch has been set to this one.
 
 #### default_vox_number
 **Returns:** The default VOX telephone number as a string
@@ -60,6 +74,12 @@ Below are the methods available on the BranchDrop, what they return and also wha
 #### member_subscription_level
 **Returns:**
 
+#### node(slug)
+**Returns:** A specific node associated with the branch.
+
+#### nodes
+**Returns:** An array of nodes associated with the branch.
+
 #### photo
 **Returns:** The default photo for the Branch as a MrRichardImage
 
@@ -68,25 +88,33 @@ Below are the methods available on the BranchDrop, what they return and also wha
 
 #### recent_sales_properties
 **Returns:** A collection of the latest sales properties<br/>
-**Limit:** 10
+**Limit:** 5
 
 #### recent_lettings_properties
 **Returns:** A collection of the latest lettings properties<br/>
-**Limit:** 10
+**Limit:** 5
 
 #### recent_properties
 **Returns:** A collection of the latest properties<br/>
-**Limit:** 10
+**Limit:** 5
 
 #### sales_staff_profiles
-**Returns:** A collection of StaffProfileDrop's of any sales negotiators
+**Returns:** A collection of [StaffMemberDrops](#staff-member-drop) of any sales negotiators
 
 #### staff_profiles
-**Returns:** A collection of StaffProfileDrop's for all the Branch employees
+**Returns:** A collection of [StaffMemberDrops](#staff-member-drop) for all the Branch employees
 
 #### staff_member(staff_member_id)
-**Returns:** An individual staff member's StaffMemberDrop<br/>
+**Returns:** An individual staff member's [StaffMemberDrop](#staff-member-drop)<br/>
 **Expects:** A string staff_member_id
+
+#### ten_recent_lettings_properties
+**Returns:** A collection of the latest lettings properties<br/>
+**Limit:** 10
+
+#### ten_recent_sales_properties
+**Returns:** A collection of the latest sales properties<br/>
+**Limit:** 10
 
 #### twitter_uri
 **Returns:** A string URL for the Branch's twitter page
