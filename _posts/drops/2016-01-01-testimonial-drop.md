@@ -14,7 +14,7 @@ category: drops
 **Returns:** A String representation of the channel (sales, lettings)
 
 #### branch
-**Returns:** A BranchDrop for the Testimonial, if available
+**Returns:** A [BranchDrop](#branch-drop) for the Testimonial, if available
 
 #### created_at
 **Returns:** The data and time the Testimonial was created as a String
