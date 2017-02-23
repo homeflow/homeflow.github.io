@@ -49,4 +49,4 @@ If you are unable to solve the issue yourself, ask the Homeflow dev team for hel
 
 When asking a question, make sure it contains all the information we might need. Include the location of the file you're working on within the project, a link to the page on the staging site, any error messages you have encountered as well as the things you've already tried to resolve the issue. This will give us the best chance of giving you a prompt and helpful response.
 
-You can email us at developer-support@homeflow.co.uk
+You can email us at [developer-support@homeflow.co.uk](mailto:developer-support@homeflow.co.uk)
