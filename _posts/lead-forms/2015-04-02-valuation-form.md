@@ -22,7 +22,7 @@ Review the [register form](/cms-pages/#register-form) for the form fields and am
 {% endraw %}           
 {% endhighlight %}
 
-You can also add client bookings to your valuation lead forms,
+You can also add client bookings to your valuation lead forms, for example,
 
 {% highlight html %}
 {% raw %}
@@ -48,4 +48,29 @@ You can also add client bookings to your valuation lead forms,
 <input id="lead_booking[booking_year]" name="lead_booking[booking_year]" type="text">
 {% endraw %}           
 
+{% endhighlight %}
+
+Note: booking_time is optional, but booking_day, booking_month and booking_year are all required otherwise the form will fail.
+
+Note: Months should be passed as a number, not a word. For instance January would be "1". You could use a drop down box for this (and a similar method can be used for the day),
+
+{% highlight html %}
+{% raw %}
+
+<select id="lead_booking[booking_month]" name="lead_booking[booking_month]">
+ <option value="1">January</option>
+ <option value="2">February</option>
+ <option value="3">March</option>
+ <option value="4">April</option>
+ <option value="5">May</option>
+ <option value="6">June</option>
+ <option value="7">July</option>
+ <option value="8">August</option>
+ <option value="9">September</option>
+ <option value="10">October</option>
+ <option value="11">November</option>
+ <option value="12">December</option>
+</select>
+
+{% endraw %}           
 {% endhighlight %}
