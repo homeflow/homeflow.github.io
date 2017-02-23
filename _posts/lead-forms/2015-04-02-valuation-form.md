@@ -49,3 +49,5 @@ You can also add client bookings to your valuation lead forms,
 {% endraw %}           
 
 {% endhighlight %}
+
+Note: booking_time is optional, but booking_day, booking_month and booking_year are all required otherwise the form will fail. 
