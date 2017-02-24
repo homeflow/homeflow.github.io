@@ -11,6 +11,7 @@ Hestia serves up information to the Ctesius app in JSON format. There are a numb
 
 #### Properties
 http://index1.homeflow.co.uk/properties/4631183?api_key=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+http://index1.homeflow.co.uk/properties?api_key=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&search[place][id]=51e7c4a873dadaf60feee624&[search][channel]=sales
 
 #### Agencies
 http://index1.homeflow.co.uk/agencies/9700/?api_key=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
