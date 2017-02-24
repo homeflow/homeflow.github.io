@@ -29,3 +29,5 @@ http://index1.homeflow.co.uk/sites/{:site_id}/nodes/?api_key=XXXXXXXXXXXXXXXXXXX
 http://index1.homeflow.co.uk/sites/{:site_id}/nodes/{:node_id}?api_key=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 For staff, see the agencies Hestia URL.
+
+If you are building a standalone app you can use the Homeflow API Gem. Click [here](http://developer.homeflow.co.uk/homeflow-api-gem/) for info.
