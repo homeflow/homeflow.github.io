@@ -129,7 +129,7 @@ This is a comprehensive list of the methods available to theme templates as Liqu
 {% raw %}
 {% for floorplan in property.floorplans %}
  {% if forloop.first %}
-  <a href="http://mr0.homeflow.co.uk/{{ floorplan.image }}" title="Floor plan">
+  <a href="mr0.homeflow-assets.co.uk/{{ floorplan.image }}" title="Floor plan">
   {% if property.floorplans.size == 1 %}
     View floor plan
    {% else %}
