@@ -12,7 +12,9 @@ Content blocks are called by name and in their most basic form are rendered out 
 {% raw %}
 {% content_block a_nice_content_block %}
  {% if content_block %}
-  {{content_block}}
+  <div data-content-id="{{ content_block_id }}" data-content-type="site_content_chunks">
+    {{content_block}}
+  </div>
  {% endif %}
 {% endcontent_block %}
 {% endraw %}
@@ -30,7 +32,11 @@ Each time the content block tag is used it will yield the following variables:
 - ``{{ content_block_text }}``
       
 - ``{{ content_block_url }}``
-{% endraw %}  
+
+- ``{{ content_block_id }}``
+{% endraw %}
+
+The content-id and content-type data attributes are used to link the content chunks to the relevant Logos page for editing.
 
 And to retrieve the full image path:
 
