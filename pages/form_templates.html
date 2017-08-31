@@ -1,0 +1,120 @@
+---
+layout: pages
+title: Form templates
+permalink: /form_templates
+---
+
+<h4 class="sub-heading col-md-12 col-md-offset-2">Simply fill out the form below and we will be in touch as soon as possible</h4>
+
+<form action="/form_submissions" class="enquiry-form" id="contact_form" method="post">
+	<input name="f_id" type="hidden" value="{ custom form ID }"/>
+	<input id="hidden-redirect-url" name="redirect_url" type="hidden" value="{ url for testing page }"/>
+	<div class="col-md-12 col-md-offset-2">
+		<label>I am looking to</label>
+	</div>
+
+	<div class="radio col-md-12 col-md-offset-2">
+		<label class="radio-inline">
+			<input id="buy_button" name="lookingOptions" type="radio" value="buy" /> Buy
+		</label> 
+		<label class="radio-inline">
+			<input id="sell_button" name="lookingOptions" type="radio" value="sell" /> Sell 
+		</label> 
+		<label class="radio-inline"> 
+			<input id="rent_button" name="lookingOptions" type="radio" value="rent" /> Rent 
+		</label> <label class="radio-inline"> <input id="let_button" name="lookingOptions" type="radio" value="let" /> Let 
+		</label> 
+		<label class="radio-inline"> 
+			<input id="other_button" name="lookingOptions" type="radio" value="other"/> Other Enquiry 
+		</label>
+	</div>
+
+	<div class="col-md-12 col-md-offset-2">
+		<div class="row">
+			<div class="col-md-6">
+				<label id="first_name_title">First name</label>
+				<div class="form-group">
+					<label class="text sr-only" for="input01">First name</label>
+					<input class="form-control" id="contact_first_name" name="form_submission[first_name]" placeholder="" required="" type="text"/>
+				</div>
+			</div>
+			<div class="col-md-6 ">
+				<label id="last_name_title">Last name</label>
+				<div class="form-group">
+					<label class="text sr-only" for="input01">Last name</label> 
+					<input class="form-control" id="contact_last_name" name="form_submission[last_name]" placeholder="" required="" type="text"/>
+				</div>
+			</div>
+		</div>
+		<!--.row -->
+		<div class="row">
+			<div class="col-md-6">
+				<label id="phone_title">Phone</label>
+				<div class="form-group">
+					<label class="text sr-only" for="input01">Phone</label>
+					<input class="form-control" id="contact_phone" name="form_submission[tel_home]" placeholder="" type="text"/>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<label id="email_title">Email</label>
+				<div class="form-group">
+					<label class="text sr-only" for="input01">Email</label>
+					<input class="form-control register-email" id="contact_email" name="form_submission[email]" placeholder="" required="" type="text"/>
+				</div>
+			</div>
+		</div>
+		<!-- .row -->
+		<div class="row">
+			<div class="col-md-6">
+				<label id="postcode_title">Postcode</label>
+				<div class="form-group">
+					<label class="text sr-only" for="input01">Postcode</label>
+					<input class="form-control" id="contact_postcode" name="form_submission[postcode]" placeholder="" required="" type="text"/>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<label id="method_title">Preferred contact method</label>
+				<div class="method_buttons radio">
+					<label class="radio-inline">
+					<input id="phone_method" name="methodOptions" type="radio" value="phone"/> Phone </label>
+					<label class="radio-inline">
+					<input id="email_method" name="methodOptions" type="radio" value="email"/> Email </label>
+				</div>
+			</div>
+		</div>
+		<!-- .row -->
+		<label class="message_title" for="mailer[message]">Message</label>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="form-group">
+					<textarea id="form_message" name="form_submission[message]" required="" rows="4" style="width: 100%;" type="text">
+					</textarea>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<label id="captcha_title">Captcha</label>
+				<div class="form-group">
+					<label id="recaptcha_form" style="margin: 0 auto;">{{ &quot;white&quot; | recaptcha }}</label>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6"><input class="btn contact__button" type="submit" value="Submit" />
+			</div>
+			<!-- .row -->
+		</div>
+	</div>
+		<!--.col-->
+
+		<div class="row">&nbsp;</div>
+		<!-- .row -->
+</form>
+
+
+
+
+
+
+
+
