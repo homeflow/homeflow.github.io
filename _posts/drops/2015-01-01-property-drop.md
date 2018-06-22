@@ -218,6 +218,9 @@ This is a comprehensive list of the methods available to theme templates as Liqu
 #### property_ref
 **Returns:** The agent's supplied property reference.
 
+#### property_type
+**Returns:** The type of property as a string ('house', 'flat' etc)
+
 #### raw_description
 **Returns:** The property's description, with any HTML tags stripped out.
 
