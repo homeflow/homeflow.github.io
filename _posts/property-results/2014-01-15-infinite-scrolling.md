@@ -4,7 +4,7 @@ title: Infinite scrolling
 modal-id: infinite-scrolling
 category: property-results
 ---
-The first step to get up and running is to add a Ctesius ``addConfig`` on your results page within some script tags.
+The first step to get up and running is to add a Ctesius ``addConfig``. This can go anywhere (as long as it's included in some way on the properties index page). It's usually a good idea to keep these config settings together in a single partial and include this in your main layout file (application.liquid).
 
 ``Ctesius.addConfig('enable_infinite_scroll', true)``
 
