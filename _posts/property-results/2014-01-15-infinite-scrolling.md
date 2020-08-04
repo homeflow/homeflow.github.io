@@ -12,7 +12,7 @@ The second step is to wrap your properties results loop in an ``infinite_pages``
 
 {% highlight html %}
 {% raw %}
-<div id="infinite_pages"> 
+<div id="infinite_pages">
  <div class="infinite_page">
   <ul>
    {% for property in properties %}
@@ -53,7 +53,7 @@ pagination :
 
 You can see a comprehensive list of the available variables for a property [here](/drops/property-drop.html).
 
-Now we can define a template that will be used by each infinite scroll page. This template can make use of the variables we defined inside the `_properties_list.ljson` file: 
+Now we can define a template that will be used by each infinite scroll page. As with all HTML template script elements, this can be placed anywhere as long as it's available somewhere in the DOM on the page where it needs to be rendered. This template can make use of the variables we defined inside the `_properties_list.ljson` file:
 
 {% highlight html %}
 {% raw %}{{% endraw %}% raw %{% raw %}}{% endraw %}{% raw %}
@@ -68,7 +68,7 @@ Now we can define a template that will be used by each infinite scroll page. Thi
      <a href="{{ property.property_url }}">
       {{ property.price }}
       {{ property.bedrooms }} bedrooms
-     </a>       
+     </a>
      <a class="btn-primary" href="{{ property.property_url }}">Full Details</a>
     </li>
    {% endfor %}
