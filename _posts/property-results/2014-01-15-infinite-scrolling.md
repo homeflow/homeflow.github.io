@@ -24,7 +24,7 @@ The second step is to wrap your properties results loop in an ``infinite_pages``
 {% endraw %}
 {% endhighlight %}
 
-Next, we'll add a `properties/_properties_list.ljson` file to the project. This file is used by the server to render the properties as liquid objects, along with any variables we define:
+Next, we'll add a `properties/_properties_list.ljson` file to the project (make sure the name's file and location is exactly this). This file is used by the server to render the properties as liquid objects, along with any variables we define:
 
 {% highlight liquid %}
 {% raw %}
