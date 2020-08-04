@@ -77,6 +77,6 @@ Now we can define a template that will be used by each infinite scroll page. As 
 {% endraw %}{% raw %}{{% endraw %}% endraw %{% raw %}}{% endraw %}
 {% endhighlight %}
 
-Note that the template is wrapped in ``raw`` tags, so the serverside parser will ignore it. The consequence of this is that **you cannot use complex liquid statements, includes for partials or JavaScript inside it**. This means that things like liquid filters should be used inside the ljson file, where variables are defined. Also note that this structure will be a direct copy of the structure within your properties for loop.
+Note that the template is wrapped in ``raw`` tags, so the serverside parser will ignore it. The consequence of this is that **you cannot use complex liquid statements, includes for partials or JavaScript inside it**. This means that things like liquid filters should be used inside the ljson file, where variables are defined. It is often best to keep the infinite scroll template entirely separate from the normal property template, as it will need to be structured differently for it to be compiled by the JavaScript Liquid engine. Also note that this structure will be a direct copy of the structure within your properties for loop.
 
 This should be enough to get the infinite scroll working on your property index page. As always, you might need to tweak the containing elements and CSS as required to get it to format well.

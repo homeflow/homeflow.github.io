@@ -29,7 +29,7 @@ If you would prefer a Google style map you still need the ``addConfig branches``
 
 This should then populate your ``branch_map`` div with a Google style map. Note that we're using the ``agency.branches`` ``drop`` to access the branches belonging to an agency. Please note that Google maps do not have pin popups and the customisation capabilites of Leaflet maps.
 
-You can also use a Google tile layer over a leaflet map by adding the following config somewhere (ideally with your other config settings):
+You can also use a Google tile layer over a leaflet map by adding the following config (ideally with your other config settings):
 
 {% highlight html %}
 {% raw %}
