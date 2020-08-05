@@ -59,6 +59,9 @@ sections:
   - title: Branches
     id: branches
     sub: true
+  - title: Cookie consent
+    id: cookie-consent
+    sub: true
   - title: Drops
     id: drops
     sub: true
