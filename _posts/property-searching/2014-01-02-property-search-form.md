@@ -12,6 +12,7 @@ Somewhere in your application layout file you're likely to have a property searc
  <input placeholder='Town or Postcode' type="text" id='location' name="location" value="{{location_field}}"/>
  <input type="radio" name="channel" value="sales" id="buy"> <label>For Sale</label>
  <input type="radio" name="channel" value="lettings" id="let"> <label>To Let</label>
+ <input type="text" name="text_search" value="" id="text_search"> <label>Text Search</label>
  <select id="type" name='type'>
   <option value="" title="Property type">Property type</option>
   {% raw %}{{ agency | tag_dropdown_list }}{% endraw %}
